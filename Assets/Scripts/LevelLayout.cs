@@ -39,7 +39,7 @@ public class LevelLayout : MonoBehaviour
         ReadColor("Maps/" + PlayerPrefs.GetString("LevelToLoad", "level1 19"));
         AudioLoad(PlayerPrefs.GetString("LevelToLoad", "level1 19"));
         Application.targetFrameRate = 60;
-        Screen.SetResolution(1280, 720, true);
+        Screen.SetResolution(1024, 576, true);//Screen.SetResolution(1280, 720, true);
     }
 
     private void AudioLoad(string levelName){

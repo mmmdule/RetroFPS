@@ -12,7 +12,7 @@ public class Imp : MonoBehaviour
     public LayerMask whatIsGround, whatIsPlayer;
 
     public float health;
-    public float damage;
+    public static float damage = 10;
 
     //Patroling
     public Vector3 walkPoint;
@@ -21,7 +21,7 @@ public class Imp : MonoBehaviour
 
     //Attacking
     public float timeBetweenAttacks;
-    bool alreadyAttacked;
+    bool alreadyAttacked, disableAttack = false;
     public GameObject projectile;
 
     //States
@@ -91,6 +91,21 @@ public class Imp : MonoBehaviour
     {
         agent.SetDestination(player.position);
     }
+    private bool targetFound = false;
+    private bool CastRay(){ //checks to see if player is open for shot
+        RaycastHit hit;
+        Quaternion originalRotation = transform.rotation;
+        transform.LookAt(player);
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 64.00f)) {
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.red);
+            
+            targetFound = (hit.transform.gameObject.tag == "Player");
+            //Debug.Log("Imp acquired target.");
+        }
+        transform.rotation = originalRotation;
+        return targetFound;
+    }
+
     public SpriteRenderer thisSprite;
     private void AttackPlayer()
     {
@@ -98,12 +113,16 @@ public class Imp : MonoBehaviour
         //agent.SetDestination(transform.position);
 
 
-        if (!alreadyAttacked)
+        if (!alreadyAttacked && !disableAttack)
         {
+            if(!CastRay()) //prevents shooting at the player through the walls and other obstacles
+                return;
+
             attackSprite.enabled = true;
             thisSprite.enabled = false;
             ///Attack code here
-            Instantiate(projectile, new Vector3(transform.position.x, 1.55f, transform.position.z - 0.3f),  Quaternion.identity);
+            GameObject Fireball = Instantiate(projectile, new Vector3(transform.position.x, 1.55f, transform.position.z - 0.3f),  Quaternion.identity);
+            Fireball.GetComponent<Fireball>().ownerImp = gameObject;
             //Quaternion.Euler(new Vector3(0, 0, 180)));
 
             //changeSprite
@@ -131,8 +150,14 @@ public class Imp : MonoBehaviour
         audioSource.Play(); //play Pain/Death sound
         health -= damage;
 
-        if (health <= 0) 
-            Invoke(nameof(DestroyEnemy), 0.2f);
+        if (health <= 0) {
+            disableAttack = true;
+            attackSprite.sprite = null;
+            thisSprite.sprite = null;
+            attackSprite.enabled = false;
+            thisSprite.enabled = false;
+            Invoke(nameof(DestroyEnemy), audioSource.clip.length - 0.065f);
+        }
     }
     private void DestroyEnemy()
     {

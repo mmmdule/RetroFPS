@@ -46,11 +46,11 @@ public class Shoot : MonoBehaviour
          RaycastHit hit;
         //Stara raycast metoda (slim ray)
         //Bit shift the index of the layer (7) to get a bit mask
-        int layerMask = 1 << 7;
+        //int layerMask = 1 << 7;
         //This would cast rays only against colliders in layer 7.
         switch(currentWeapon){
             case 3:
-            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 64.00f, layerMask)) {
+            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 64.00f)) {
                 Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
                 if(hit.transform.gameObject.tag == "Imp"){
                     hit.transform.gameObject.GetComponent<Imp>().TakeDamage(weaponDamageVals[currentWeapon]);
@@ -82,7 +82,7 @@ public class Shoot : MonoBehaviour
 
     void OnDrawGizmos()
     {
-        Gizmos.DrawSphere(transform.position + charCtrl.center, 64.00f);
+        //Gizmos.DrawSphere(transform.position + charCtrl.center, 64.00f);
     }
     void changeCanShootBool(){
         canShootAgain = true;
