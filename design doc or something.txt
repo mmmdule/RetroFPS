@@ -1,0 +1,79 @@
+Sve u jednoj sceni da bude. Da se na kraju uradi tranzicija kao
+Half-Life ili Ion Fury, pise Loading... i samo se promeni level
+u loader-u, a municijia i health/armor ostanu isti
+
+Ground rules:
+
+-Colors can be mixed and then checked manually via RGB values.
+Like the Yellow for Keys is right now.
+
+-64x64 Grid
+
+-Green		(Player)
+-Blue		(Wall)
+-Black		(Door) (always one pixel)
+-White		(Spot light/Point light) (pozicija Y je 4)
+-Purple[R+B] 	(Win)
+-Yellow[R+G] 	(Key)
+-Gray		(Statue) (for cover and decoration)
+-Red 		(Regular Enemy)
+-<add color>	(Cornodemon)
+-<add color>	(Bomber)
+-<add color>	(PetroBomber)
+-<add color>	(Explosion ring)
+
+0.21y
+
+Ground is for NavMesh-es
+
+Color of lights Specified in the loader object
+
+--------------------------------------------------------------------
+
+Enemies:
+
+Regular Schmuck - Bascally Imp iz Doom-a. Kaze RAAAUR i ispali kuglu koja polako ide ka tebi.
+
+Cornodemon - A flying Cornholio Head that shoots three orbs at you after it's eyes glow red for a bit. The three orbs are in a triangle formation and move a bit faster than the Imp's.
+
+PetroBomber - A black oil goo-ey type thing (like the small symbiotes from Web of Shadows or Spider-Man PSX). It makes a beeline towards you and detonates itself on contact doing moderate to high damage.
+
+--------------------------------------------------------------------
+
+Obstacles:
+
+Explosion ring - A brick with a few light sources around it. It's surrounded by Orbs orbiting around it. Touching an orb blows it up and deals damage to the player.
+
+
+--------------------------------------------------------------------
+
+Klasa LevelLayout{
+	//Key je X, Value je Z
+	//sa .Add() im se dodaju elementi
+	Dictionary<int, int> enemy;
+	Dictionary<int, int> player;
+	Dictionary<int, int> wall;
+	Dictionary<int, int> door;
+	Dictionary<int, int> ground;
+	Dictionary<int, int> win;
+	Dictionary<int, int> key;
+
+	//za prolazenje kroz vrednosti
+	/*foreach( KeyValuePair<int, int> kvp in dictionary)
+	{
+    		Console.WriteLine("Key = {0}, Value = {1}", kvp.Key, kvp.Value);
+	}*/
+}
+
+JSON:
+
+{
+	"ground":[
+		[12, 15],
+		[12, 16]
+	]
+	"enemy":[
+		[15, 14],
+		[30, 12]	
+	]...
+}

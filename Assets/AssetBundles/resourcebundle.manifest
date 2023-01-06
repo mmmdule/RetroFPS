@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 246360062
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 8750628a997ad4e9ec4f43e0a1d83fdc
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 9d489b35fdc17cb93321afca22c6bbef
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Resources/Maps/level1 16.bmp
+- Assets/Resources/Music/level1 19.mp3
+- Assets/Resources/Maps/level1.bmp
+- Assets/Resources/Maps/level1 17.bmp
+- Assets/Resources/Maps/level1 19.bmp
+- Assets/Resources/Music/level1 16.mp3
+- Assets/Resources/Sounds/Rifle.mp3
+- Assets/Resources/Maps/level1 18.bmp
+Dependencies: []
