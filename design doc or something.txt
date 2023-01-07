@@ -15,12 +15,10 @@ Like the Yellow for Keys is right now.
 -White		(Spot light/Point light) (pozicija Y je 4)
 -Purple[R+B] 	(Win)
 -Yellow[R+G] 	(Key)
--Gray		(Statue) (for cover and decoration)
--Red 		(Regular Enemy)
--<add color>	(Cornodemon)
--<add color>	(Bomber)
--<add color>	(PetroBomber)
--<add color>	(Explosion ring)
+-Gray 		(Statue) (for cover and decoration)[R,G,B = 192]
+-Red		(Cornodemon)
+-<add color>	(Tri-Demon)
+-<add color>	(Orb ring)
 
 0.21y
 

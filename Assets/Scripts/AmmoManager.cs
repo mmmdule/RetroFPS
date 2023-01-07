@@ -20,7 +20,10 @@ public class AmmoManager : MonoBehaviour
         
     }
 
+    public void ClearText(){
+        AmmoText.text = "";
+    }
     public void ChangeAmmoText(int value){
-        AmmoText.text = value.ToString();
+        AmmoText.text = value.ToString() + "   III";
     }
 }

@@ -22,6 +22,7 @@ public class LevelLayout : MonoBehaviour
     public GameObject DoorPrefab;
     public GameObject ImpPrefab;
     public GameObject EmptyBlockPrefab;
+    public GameObject TorchPrefab;
     public bool spawnedDoor = false;
 
     public GameObject LightPrefab;
@@ -52,7 +53,7 @@ public class LevelLayout : MonoBehaviour
     private GameObject Key;
 
     private void ReadColor(string levelName){
-        Color currentColor = new Color();
+        Color32 currentColor = new Color();
 
         //konvertuje sliku u teksturu za citanje
         LevelMap = Resources.Load(levelName) as Texture2D;
@@ -60,7 +61,7 @@ public class LevelLayout : MonoBehaviour
         for(int i = 0; i < 64; i++){
             for(int j = 0; j < 64; j++){
                 currentColor = LevelMap.GetPixel(i, j);
-
+                
                 if(currentColor == Color.green){
                     GameObject tmpObject = Instantiate(PlayerPrefab, new Vector3(i, 1.8f, j), Quaternion.identity);
                     GameObject.Find("GameManager").GetComponent<MessageManager>().player = tmpObject;
@@ -77,7 +78,7 @@ public class LevelLayout : MonoBehaviour
                     //spawns light with X rotation of 90 deg (Euler)
                     Instantiate(LightPrefab, new Vector3(i, 4.00f, j), Quaternion.Euler(new Vector3(90, 0, 0))).GetComponent<Light>().color = LightColor;
                 }
-                /*Yellow*/ else if (currentColor.r == 1.00f && currentColor.g == 1.00f && currentColor.b == 0.00f && !spawnedKey){
+                /*Yellow*/ else if (currentColor.r == 255 && currentColor.g == 255 && currentColor.b == 0.00f && !spawnedKey){
                     Key = Instantiate(KeyPrefab, new Vector3(i,  1.5f/*1.2f*/, j), Quaternion.identity);
                     Key.GetComponentInChildren<SpriteRenderer>().color = KeyColor;
                     spawnedKey = true;
@@ -86,7 +87,10 @@ public class LevelLayout : MonoBehaviour
                 }
                 else if (currentColor == Color.red)
                     Instantiate(ImpPrefab, new Vector3(i, 1.79f, j), Quaternion.identity);
-
+                else if (currentColor.r == 192 && currentColor.g == 192 && currentColor.b == 192){
+                    Debug.Log(currentColor);
+                    Instantiate(TorchPrefab, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
+                }
                 // else if (currentColor.r == 0.2f && currentColor.g == 0.00f && currentColor.b == 0.2f){
                 //     Instantiate(EmptyBlockPrefab, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
                 // }
