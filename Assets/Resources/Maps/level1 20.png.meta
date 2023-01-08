@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8975629575fea3241aeae75137b1a031
+guid: c21e519b5f5070748aa444ae27c39932
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -56,20 +56,20 @@ TextureImporter:
   textureType: 0
   textureShape: 1
   singleChannelComponent: 0
-  flipbookRows: 1
-  flipbookColumns: 1
+  flipbookRows: 64
+  flipbookColumns: 64
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  ignorePngGamma: 0
+  ignorePngGamma: 1
   applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
-    textureCompression: 2
+    textureFormat: 3
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -130,5 +130,5 @@ TextureImporter:
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
   userData: 
-  assetBundleName: resourcebundle
+  assetBundleName: 
   assetBundleVariant: 

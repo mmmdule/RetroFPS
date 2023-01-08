@@ -23,6 +23,8 @@ public class LevelLayout : MonoBehaviour
     public GameObject ImpPrefab;
     public GameObject EmptyBlockPrefab;
     public GameObject TorchPrefab;
+    public GameObject KnightPrefab;
+    public GameObject PebblePrefab;
     public bool spawnedDoor = false;
 
     public GameObject LightPrefab;
@@ -40,7 +42,7 @@ public class LevelLayout : MonoBehaviour
         ReadColor("Maps/" + PlayerPrefs.GetString("LevelToLoad", "level1 19"));
         AudioLoad(PlayerPrefs.GetString("LevelToLoad", "level1 19"));
         Application.targetFrameRate = 60;
-        Screen.SetResolution(1024, 576, true);//Screen.SetResolution(1280, 720, true);
+        Screen.SetResolution(1280, 720, true);//Screen.SetResolution(1280, 720, true);
     }
 
     private void AudioLoad(string levelName){
@@ -63,7 +65,7 @@ public class LevelLayout : MonoBehaviour
                 currentColor = LevelMap.GetPixel(i, j);
                 
                 if(currentColor == Color.green){
-                    GameObject tmpObject = Instantiate(PlayerPrefab, new Vector3(i, 1.8f, j), Quaternion.identity);
+                    GameObject tmpObject = Instantiate(PlayerPrefab, new Vector3(i, 1.00f/*1.8f*/, j), Quaternion.identity);
                     GameObject.Find("GameManager").GetComponent<MessageManager>().player = tmpObject;
                 }
                 else if (currentColor == Color.blue)
@@ -88,12 +90,18 @@ public class LevelLayout : MonoBehaviour
                 else if (currentColor == Color.red)
                     Instantiate(ImpPrefab, new Vector3(i, 1.79f, j), Quaternion.identity);
                 else if (currentColor.r == 192 && currentColor.g == 192 && currentColor.b == 192){
-                    Debug.Log(currentColor);
                     Instantiate(TorchPrefab, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
+                }
+                else if (currentColor.r == 255 && currentColor.g == 153 && currentColor.b == 255){
+                    Instantiate(KnightPrefab, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
+                }
+                else if (currentColor.r == 255 && currentColor.g == 128 && currentColor.b == 64){
+                    Instantiate(PebblePrefab, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
                 }
                 // else if (currentColor.r == 0.2f && currentColor.g == 0.00f && currentColor.b == 0.2f){
                 //     Instantiate(EmptyBlockPrefab, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
                 // }
+                Debug.Log(currentColor);
             }
         }
         surface.BuildNavMesh();

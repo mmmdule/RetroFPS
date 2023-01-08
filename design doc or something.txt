@@ -19,6 +19,8 @@ Like the Yellow for Keys is right now.
 -Red		(Cornodemon)
 -<add color>	(Tri-Demon)
 -<add color>	(Orb ring)
+-Purple(Custom)	(KnightArmor)(for decoration) [R 255, G 153, B 255]
+-Orange(Custom)	(Pebbles)(for decoration) [R 255, G 128, B 64]
 
 0.21y
 
