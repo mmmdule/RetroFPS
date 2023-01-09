@@ -4,6 +4,8 @@ u loader-u, a municijia i health/armor ostanu isti
 
 Ground rules:
 
+-Read Boss rules in the AttackPlayer() method of the BossImp script.
+
 -Colors can be mixed and then checked manually via RGB values.
 Like the Yellow for Keys is right now.
 
