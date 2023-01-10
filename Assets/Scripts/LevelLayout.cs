@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class LevelLayout : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class LevelLayout : MonoBehaviour
     
     public GameObject DoorPrefab;
     public GameObject ImpPrefab;
+    public GameObject TriImpPrefab;
     public GameObject EmptyBlockPrefab;
     public GameObject TorchPrefab;
     public GameObject KnightPrefab;
@@ -89,6 +91,8 @@ public class LevelLayout : MonoBehaviour
                 }
                 else if (currentColor == Color.red)
                     Instantiate(ImpPrefab, new Vector3(i, 1.79f, j), Quaternion.identity);
+                /*Dark Red*/else if (currentColor.r == 185 && currentColor.g == 0 && currentColor.b == 30)
+                    Instantiate(TriImpPrefab, new Vector3(i, 1.79f, j), Quaternion.identity);
                 else if (currentColor.r == 192 && currentColor.g == 192 && currentColor.b == 192){
                     Instantiate(TorchPrefab, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
                 }
@@ -101,15 +105,23 @@ public class LevelLayout : MonoBehaviour
                 // else if (currentColor.r == 0.2f && currentColor.g == 0.00f && currentColor.b == 0.2f){
                 //     Instantiate(EmptyBlockPrefab, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
                 // }
-                Debug.Log(currentColor);
+                //Debug.Log(currentColor);
             }
         }
         surface.BuildNavMesh();
     }
 
+    public string[] mapNames;
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.F1)){
+            PlayerPrefs.SetString("LevelToLoad", mapNames[0]);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        else if (Input.GetKeyDown(KeyCode.F2)){
+            PlayerPrefs.SetString("LevelToLoad", mapNames[1]);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 }

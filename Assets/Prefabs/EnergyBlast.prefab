@@ -248,7 +248,7 @@ MonoBehaviour:
   ownerImp: {fileID: 0}
   audioSource: {fileID: 8553981981592248058}
   healthManager: {fileID: 0}
-  Damage: 8
+  Damage: 12
 --- !u!212 &1669300676529367625
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -627,7 +627,7 @@ MonoBehaviour:
   ownerImp: {fileID: 0}
   audioSource: {fileID: 3804799314524179571}
   healthManager: {fileID: 0}
-  Damage: 8
+  Damage: 12
 --- !u!212 &6330807237679753529
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1006,7 +1006,7 @@ MonoBehaviour:
   ownerImp: {fileID: 0}
   audioSource: {fileID: 4449008635041609627}
   healthManager: {fileID: 0}
-  Damage: 8
+  Damage: 12
 --- !u!212 &1543307986859239957
 SpriteRenderer:
   m_ObjectHideFlags: 0

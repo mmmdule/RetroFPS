@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 9010046973426142209}
   m_Layer: 7
   m_Name: Tri-Horn
-  m_TagString: Imp
+  m_TagString: Tri-Imp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -153,7 +153,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5795df520e246b6499ec93b7dc5da4f9, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 68df501bad6f9574b9f1634040523f29, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -262,10 +262,10 @@ MonoBehaviour:
   health: 100
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 15
-  timeBetweenAttacks: 4
+  timeBetweenAttacks: 1.87
   projectile: {fileID: 408866643489954233, guid: a6f1fe94d099d954a9d5b0e568ceed7a, type: 3}
-  sightRange: 17
-  attackRange: 15
+  sightRange: 25
+  attackRange: 20
   playerInSightRange: 0
   playerInAttackRange: 0
   randomZ: 0

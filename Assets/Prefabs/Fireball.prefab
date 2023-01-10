@@ -214,6 +214,7 @@ MonoBehaviour:
   ownerImp: {fileID: 0}
   audioSource: {fileID: 7576933786673954125}
   healthManager: {fileID: 0}
+  Damage: 16
 --- !u!212 &2702737535923401002
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -276,7 +277,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ecce898171ee85143ab06136c55a2068, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 906496efa9f7c9744b1928ca10b5a6c3, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -284,7 +285,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 100
+  Priority: 10
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -322,7 +323,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.691
+      value: 0.25
       inSlope: 0
       outSlope: 0
       tangentMode: 0

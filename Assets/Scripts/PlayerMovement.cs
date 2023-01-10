@@ -49,6 +49,16 @@ public class PlayerMovement : MonoBehaviour
             moveDirection.y = movementDirectionY;
         }
 
+        if (Input.GetKeyDown(KeyCode.DownArrow)){
+            //transform.rotation *= Quaternion.Lerp(transform.rotation, Quaternion.Euler(transform.rotation.x, transform.rotation.y + 180, transform.rotation.z), 3f * Time.deltaTime);
+            transform.rotation *= Quaternion.Euler(0, transform.rotation.y + 180, 0);
+        }
+        if (Input.GetKeyDown(KeyCode.T)){
+            transform.rotation = Quaternion.Euler(transform.rotation.x, 0.00f, transform.rotation.z);
+        }
+        
+            transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
+
         // Apply gravity. Gravity is multiplied by deltaTime twice (once here, and once below
         // when the moveDirection is multiplied by deltaTime). This is because gravity should be applied
         // as an acceleration (ms^-2)
@@ -63,10 +73,11 @@ public class PlayerMovement : MonoBehaviour
         // Player and Camera rotation
         if (canMove)
         {
-            //rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;
+            rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;
             rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
             playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
+            transform.rotation *= Quaternion.Euler(0, Input.GetAxis("KeyBoardCamAxis") * lookSpeed, 0);
         }
     }
 }

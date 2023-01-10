@@ -19,7 +19,7 @@ Like the Yellow for Keys is right now.
 -Yellow[R+G] 	(Key)
 -Gray 		(Statue) (for cover and decoration)[R,G,B = 192]
 -Red		(Cornodemon)
--<add color>	(Tri-Demon)
+-<add color>	(Tri-Demon) [R 185, G 0, B 30] (Dark Red)
 -<add color>	(Orb ring)
 -Purple(Custom)	(KnightArmor)(for decoration) [R 255, G 153, B 255]
 -Orange(Custom)	(Pebbles)(for decoration) [R 255, G 128, B 64]

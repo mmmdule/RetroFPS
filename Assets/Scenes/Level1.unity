@@ -159,6 +159,7 @@ MonoBehaviour:
   PlayerPrefab: {fileID: 2193862527941193284, guid: 38260699676fcb444bd39a8167395b50, type: 3}
   DoorPrefab: {fileID: 7452410133261940078, guid: 25a447479e5805542a55e3f7aa4c8d70, type: 3}
   ImpPrefab: {fileID: 1234464940151881635, guid: 6979a8d4d4013754eb975ad576b5ca36, type: 3}
+  TriImpPrefab: {fileID: 1234464940151881635, guid: 2f50501d9a5b3f94b824540fbd5e8b03, type: 3}
   EmptyBlockPrefab: {fileID: 7452410133261940078, guid: 21749673c689d6443b93d94f519594aa, type: 3}
   TorchPrefab: {fileID: 7452410133261940078, guid: 7e30bb90734a96a4ba6e5166e6956876, type: 3}
   KnightPrefab: {fileID: 7452410133261940078, guid: bb2270db8f121fa43bcec9c59cc5aacb, type: 3}
@@ -170,6 +171,9 @@ MonoBehaviour:
   KeyColor: {r: 1, g: 1, b: 0, a: 1}
   spawnedKey: 0
   surface: {fileID: 679709144}
+  mapNames:
+  - level1 19
+  - level1 20
 --- !u!4 &609089124
 Transform:
   m_ObjectHideFlags: 0
@@ -210,7 +214,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.9
   m_Pitch: 1
   Loop: 1
   Mute: 0
