@@ -8,6 +8,7 @@ public class AmmoManager : MonoBehaviour
     public Text AmmoText;
 
     public int shotgunAmmo;
+    public int pistolAmmo;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +21,12 @@ public class AmmoManager : MonoBehaviour
         
     }
 
-    public void ChangeAmmoText(int value){
-        AmmoText.text = value.ToString();
+    public void ClearText(){
+        AmmoText.text = "";
+    }
+    string[] weaponMark = {"", "   I", "   III"};
+    public void ChangeAmmoText(int value, int weaponNum){
+
+        AmmoText.text = value.ToString() + weaponMark[weaponNum];
     }
 }

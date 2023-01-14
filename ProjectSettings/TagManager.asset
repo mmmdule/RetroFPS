@@ -9,6 +9,7 @@ TagManager:
   - Key
   - Imp
   - Floor
+  - Tri-Imp
   layers:
   - Default
   - TransparentFX

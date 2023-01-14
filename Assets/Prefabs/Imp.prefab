@@ -114,9 +114,9 @@ MonoBehaviour:
   health: 50
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 10
-  timeBetweenAttacks: 2.75
+  timeBetweenAttacks: 2.25
   projectile: {fileID: 6961421590780974241, guid: 052b7e9cea5920d41b022c88778de787, type: 3}
-  sightRange: 15
+  sightRange: 18
   attackRange: 13.5
   playerInSightRange: 0
   playerInAttackRange: 0
@@ -195,7 +195,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 69
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -233,7 +233,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.509
+      value: 0.173
       inSlope: 0
       outSlope: 0
       tangentMode: 0
