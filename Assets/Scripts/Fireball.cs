@@ -40,7 +40,6 @@ public class Fireball : MonoBehaviour
         //rb.MovePosition(player.transform.position * Time.deltaTime);
     }
     public HealthManager healthManager;
-    public int Damage = 10;
     void OnTriggerEnter(Collider collided){
         switch(collided.gameObject.tag){
             case "Wall":
@@ -49,7 +48,7 @@ public class Fireball : MonoBehaviour
                 break;
             case "Player":
                 Debug.LogWarning("Fireball Hit Player");
-                healthManager.TakeDamage(Damage);
+                healthManager.TakeDamage((int)Imp.damage);
                 gameObject.SetActive(false);
                 break;
             /*
