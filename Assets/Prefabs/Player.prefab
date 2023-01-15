@@ -426,6 +426,7 @@ GameObject:
   - component: {fileID: 2213000504877343248}
   - component: {fileID: 1605372274591907034}
   - component: {fileID: 7780058269365210552}
+  - component: {fileID: 3172688117957022929}
   m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -487,7 +488,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
+  m_AllowDynamicResolution: 1
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
@@ -558,6 +559,23 @@ MonoBehaviour:
   pattern: {fileID: 2800000, guid: a76e25d4c254adc43b581240ea669058, type: 3}
   threshold: 0.45
   strength: 0.45
+--- !u!114 &3172688117957022929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2818204228672158913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15540c21610a41943a63134370a75736, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resX: 1280
+  resY: 720
+  framerate: 60
+  dither: {fileID: 7780058269365210552}
+  crtEffect: {fileID: 1605372274591907034}
 --- !u!1 &2826431957335990066
 GameObject:
   m_ObjectHideFlags: 0

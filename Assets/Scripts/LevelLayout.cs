@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
+using System.IO;
 
 public class LevelLayout : MonoBehaviour
 {
@@ -42,15 +43,10 @@ public class LevelLayout : MonoBehaviour
 
     // Start is called before the first frame update
     
-    [Header("Health Settings")]
-    public int resX = 1280;
-    public int resY = 720;
     void Start()
     {
         ReadColor("Maps/" + PlayerPrefs.GetString("LevelToLoad", "level1 19"));
         AudioLoad(PlayerPrefs.GetString("LevelToLoad", "level1 19"));
-        Application.targetFrameRate = 60;
-        Screen.SetResolution(resX, resY, true);//Screen.SetResolution(1280, 720, true);
     }
 
     private void AudioLoad(string levelName){
