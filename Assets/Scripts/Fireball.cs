@@ -23,13 +23,15 @@ public class Fireball : MonoBehaviour
         rb.AddRelativeForce(Vector3.forward * Speed, ForceMode.Impulse);
         audioSource.Play();
     }
-
+    public bool notStatic = true;
 
     // Update is called once per frame
     void Update()
     {
         SpriteChild.transform.LookAt(player.transform);
-        rb.AddRelativeForce(Vector3.forward * Speed, ForceMode.Impulse);
+        if(notStatic){
+            rb.AddRelativeForce(Vector3.forward * Speed, ForceMode.Impulse);
+        }
         
         //transform.Translate(Vector3.forward * Time.deltaTime * Speed);
         

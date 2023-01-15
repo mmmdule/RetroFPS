@@ -45,4 +45,9 @@ public class HealthManager : MonoBehaviour
     public void ChangeHealthText(int value){
         HealthText.text = "+ " + value.ToString();
     }
+
+    public void HealthPickup(int value){
+        health = health + value > 100 ? 100 : health + value;
+        ChangeHealthText(health);
+    }
 }

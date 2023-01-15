@@ -10,6 +10,7 @@ TagManager:
   - Imp
   - Floor
   - Tri-Imp
+  - Pickup
   layers:
   - Default
   - TransparentFX
@@ -19,8 +20,8 @@ TagManager:
   - UI
   - Player
   - Enemy
-  - 
-  - 
+  - EnergyTrap
+  - Pickups
   - 
   - 
   - 

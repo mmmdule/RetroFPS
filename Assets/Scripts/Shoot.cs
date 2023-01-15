@@ -8,6 +8,7 @@ public class Shoot : MonoBehaviour
     private Animator animator;
     public AmmoManager ammoManager;
     public AudioSource playerAudioSource;
+    public AudioClip RevolverSoundClip;
 
     void Start(){
         animator = gameObject.GetComponent<Animator>();
@@ -24,6 +25,7 @@ public class Shoot : MonoBehaviour
                 //Invoke("CastRay", 0.25f); //ray = slim, sphere = thick
                 Invoke("DoDamagIfShotHits", 0.25f); //invoke after 0.25f (approx. length of the shotgun animation)
                 ammoManager.ChangeAmmoText(--ammoManager.shotgunAmmo, 2);
+                playerAudioSource.Play();
                 break;
             case 2:
                 if(ammoManager.pistolAmmo == 0)
@@ -34,11 +36,11 @@ public class Shoot : MonoBehaviour
                 //Invoke("CastRay", 0.25f); //ray = slim, sphere = thick
                 Invoke("DoDamagIfShotHits", 0.25f); //invoke after 0.25f (approx. length of the shotgun animation)
                 ammoManager.ChangeAmmoText(--ammoManager.pistolAmmo, 1);
+                playerAudioSource.PlayOneShot(RevolverSoundClip);
                 break;
         }
         //change the sound based on the weapon. Use the same thing as changing the level/music.
         //Load from resources/Sounds/<weapon_sound_name>
-        playerAudioSource.Play();
     }
 
     private void DoDamagIfShotHits(){
@@ -74,6 +76,7 @@ public class Shoot : MonoBehaviour
             }
             currentWeapon = 2;
             ammoManager.ChangeAmmoText(ammoManager.pistolAmmo, 1);
+            ammoManager.currentWeapon = currentWeapon;
         }
         if(Input.GetKeyDown(KeyCode.Alpha3)){
             if(currentWeapon != 3){
@@ -83,6 +86,7 @@ public class Shoot : MonoBehaviour
             }
             currentWeapon = 3;
             ammoManager.ChangeAmmoText(ammoManager.shotgunAmmo, 2);
+            ammoManager.currentWeapon = currentWeapon;
         }
     }
 

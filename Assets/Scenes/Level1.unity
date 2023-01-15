@@ -164,6 +164,10 @@ MonoBehaviour:
   TorchPrefab: {fileID: 7452410133261940078, guid: 7e30bb90734a96a4ba6e5166e6956876, type: 3}
   KnightPrefab: {fileID: 7452410133261940078, guid: bb2270db8f121fa43bcec9c59cc5aacb, type: 3}
   PebblePrefab: {fileID: 7452410133261940078, guid: 4f7d5da7e9c590a418bd48f2f15bfb28, type: 3}
+  EnergySphereTrapPrefab: {fileID: 7452410133261940078, guid: e75a37711f14a8549a68eb83b5798e03, type: 3}
+  HealthPickup: {fileID: 7452410133261940078, guid: 4446ec69a3d37854b80e8149aaaa39b2, type: 3}
+  ShotgunAmmoPickup: {fileID: 7452410133261940078, guid: d87c4dbe1a9b3074e968011b15d889e3, type: 3}
+  RevolverAmmoPickup: {fileID: 7452410133261940078, guid: 11f131ce070e1d447b3f4b3925d50284, type: 3}
   spawnedDoor: 0
   LightPrefab: {fileID: 2077886325596256415, guid: e0c7b9efda856ac4bba925a1c23bf7ed, type: 3}
   LightColor: {r: 1, g: 0, b: 0, a: 1}
@@ -171,8 +175,8 @@ MonoBehaviour:
   KeyColor: {r: 1, g: 1, b: 0, a: 1}
   spawnedKey: 0
   surface: {fileID: 679709144}
-  resX: 1024
-  resY: 576
+  resX: 1280
+  resY: 720
   mapNames:
   - level1 19
   - level1 20

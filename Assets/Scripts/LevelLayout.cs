@@ -27,6 +27,8 @@ public class LevelLayout : MonoBehaviour
     public GameObject TorchPrefab;
     public GameObject KnightPrefab;
     public GameObject PebblePrefab;
+    public GameObject EnergySphereTrapPrefab;
+    public GameObject HealthPickup, ShotgunAmmoPickup, RevolverAmmoPickup;
     public bool spawnedDoor = false;
 
     public GameObject LightPrefab;
@@ -105,6 +107,18 @@ public class LevelLayout : MonoBehaviour
                 }
                 else if (currentColor.r == 255 && currentColor.g == 128 && currentColor.b == 64){
                     Instantiate(PebblePrefab, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
+                }
+                else if (currentColor.r == 0 && currentColor.g == 162 && currentColor.b == 232){
+                    Instantiate(EnergySphereTrapPrefab, new Vector3(i, 0.5f/*1.2f*/, j), Quaternion.identity);
+                }
+                else if (currentColor.r == 0 && currentColor.g == 64 && currentColor.b == 0){
+                    Instantiate(HealthPickup, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
+                }
+                else if (currentColor.r == 128 && currentColor.g == 64 && currentColor.b == 64){
+                    Instantiate(ShotgunAmmoPickup, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
+                }
+                else if (currentColor.r == 128 && currentColor.g == 0 && currentColor.b == 64){
+                    Instantiate(RevolverAmmoPickup, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
                 }
                 // else if (currentColor.r == 0.2f && currentColor.g == 0.00f && currentColor.b == 0.2f){
                 //     Instantiate(EmptyBlockPrefab, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
