@@ -39,6 +39,8 @@ public class Shoot : MonoBehaviour
                 playerAudioSource.PlayOneShot(RevolverSoundClip);
                 break;
         }
+        ToggleLight();
+        Invoke("ToggleLight", lightDelay);
         //change the sound based on the weapon. Use the same thing as changing the level/music.
         //Load from resources/Sounds/<weapon_sound_name>
     }
@@ -56,7 +58,7 @@ public class Shoot : MonoBehaviour
             target.GetComponent<TriImp>().TakeDamage(weaponDamageVals[currentWeapon]);
         }
     }
-
+    
     private bool canShootAgain = true;
     public CharacterController charCtrl;
     public int currentWeapon = 3; //3 - shotgun, 2 - pistol
@@ -196,5 +198,12 @@ public class Shoot : MonoBehaviour
         canShootAgain = true;
         hitTarget = false;
         target = null;
+    }
+
+    [HeaderAttribute("Gun light")]
+    public Light gunLight;
+    public float lightDelay = 0.5f;
+    void ToggleLight(){
+        gunLight.enabled = !gunLight.enabled;
     }
 }

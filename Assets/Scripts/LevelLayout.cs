@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 using System.IO;
+using UnityEngine.Networking;
 
 public class LevelLayout : MonoBehaviour
 {
@@ -16,25 +17,39 @@ public class LevelLayout : MonoBehaviour
 	private Dictionary<int, int> key = new Dictionary<int, int>();
 
     public Texture2D LevelMap;
-
-    public GameObject WallPrefab;
     
     public GameObject PlayerPrefab;
     
+
+    [HeaderAttribute("Walls and Doors")]
+    public GameObject WallPrefab;
+    public GameObject CobwebWallPrefab;
+    
     public GameObject DoorPrefab;
+    
+    [HeaderAttribute("Enemies")]
     public GameObject ImpPrefab;
     public GameObject TriImpPrefab;
     public GameObject EmptyBlockPrefab;
+    [HeaderAttribute("Traps")]
+    public GameObject EnergySphereTrapPrefab;
+    [HeaderAttribute("Decorations")]
+    public GameObject Column;
+    public GameObject ColumnTwo;
     public GameObject TorchPrefab;
     public GameObject KnightPrefab;
     public GameObject PebblePrefab;
-    public GameObject EnergySphereTrapPrefab;
-    public GameObject HealthPickup, ShotgunAmmoPickup, RevolverAmmoPickup;
+    [HeaderAttribute("Pickups")]
+    public GameObject HealthPickup; 
+    public GameObject ShotgunAmmoPickup;
+    public GameObject RevolverAmmoPickup;
     public bool spawnedDoor = false;
 
+    [HeaderAttribute("Lights")]
     public GameObject LightPrefab;
     public Color LightColor;
 
+    [HeaderAttribute("Keys")]
     public GameObject KeyPrefab;
     public Color KeyColor;
     public bool spawnedKey = false;
@@ -43,13 +58,34 @@ public class LevelLayout : MonoBehaviour
 
     // Start is called before the first frame update
     
+    private string[] mapNames;
+    private string levelName;
     void Start()
     {
-        ReadColor("Maps/" + PlayerPrefs.GetString("LevelToLoad", "level1 19"));
-        AudioLoad(PlayerPrefs.GetString("LevelToLoad", "level1 19"));
+        //string dir = Application.streamingAssetsPath.Replace(@"/", @"\") + @"\Maps\";
+        //string levelName = PlayerPrefs.GetString("LevelToLoad", "level1.png"); //+ ".png";
+        //Debug.Log(dir + levelName);
+        
+        //Debug.Log(File.Exists((dir + levelName)) ? "Map file exists." : "Map file doesn't exist.");
+        
+
+
+        using (StreamReader sr = new StreamReader(Application.streamingAssetsPath + "/MapNames.txt")){
+            mapNames = sr.ReadToEnd().Split("\n");
+            foreach(string s in mapNames)
+                //Debug.Log(s);
+            sr.Close();
+        }
+        
+        levelName = PlayerPrefs.GetString("LevelToLoad", "level1.png");
+        //ReadColor();//PlayerPrefs.GetString("LevelToLoad", "level1"));
+        AudioLoad(PlayerPrefs.GetString("LevelToLoad", "level1.png"));
+        StartCoroutine(GetMapFileUWR());
+        
     }
 
     private void AudioLoad(string levelName){
+        levelName = levelName.Split(".png")[0];
         AudioClip musicTrack = Resources.Load("Music/" + levelName) as AudioClip;
         GetComponent<AudioSource>().clip = musicTrack;
         GetComponent<AudioSource>().Play();
@@ -58,11 +94,43 @@ public class LevelLayout : MonoBehaviour
     private GameObject Door;
     private GameObject Key;
 
-    private void ReadColor(string levelName){
+    private IEnumerator GetMapFileUWR(){
+        string relativePath = "/Maps/" + levelName;
+        string fullPath = "file:////" + Application.streamingAssetsPath + relativePath;//Path.Combine(Application.streamingAssetsPath, relativePath);
+        Debug.LogWarning(fullPath);
+        LevelMap = new Texture2D(2, 2, TextureFormat.RGB24, false);
+
+        using (UnityWebRequest uwr = UnityWebRequestTexture.GetTexture(fullPath)){
+            yield return uwr.SendWebRequest(); 
+            if (uwr.result == UnityWebRequest.Result.ConnectionError) { 
+                Debug.Log(uwr.error); 
+            }
+            else { 
+               LevelMap = DownloadHandlerTexture.GetContent(uwr); 
+               ReadColor();
+            }
+        }
+    }
+    
+    private void ReadColor(){
         Color32 currentColor = new Color();
 
         //konvertuje sliku u teksturu za citanje
-        LevelMap = Resources.Load(levelName) as Texture2D;
+        //LevelMap = Resources.Load(levelName) as Texture2D;
+        
+        // string relativePath = "Maps//" + levelName;
+        // string fullPath = "file://" + Path.Combine(Application.streamingAssetsPath, relativePath);
+        
+
+        //LevelMap = new Texture2D(2, 2, TextureFormat.RGB24, false);
+        
+
+        //byte[] imageBytes = File.ReadAllBytes(@fullPath);
+
+        // LevelMap = new Texture2D(2, 2, TextureFormat.RGB24, false);
+        //LevelMap.LoadImage(imageBytes);
+
+        
 
         for(int i = 0; i < 64; i++){
             for(int j = 0; j < 64; j++){
@@ -125,16 +193,55 @@ public class LevelLayout : MonoBehaviour
         surface.BuildNavMesh();
     }
 
-    public string[] mapNames;
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.F1)){
+        if(Input.GetKeyDown(KeyCode.F1) && mapNames.Length > (KeyCode.F1 - KeyCode.F1)){
             PlayerPrefs.SetString("LevelToLoad", mapNames[0]);
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
-        else if (Input.GetKeyDown(KeyCode.F2)){
+        else if (Input.GetKeyDown(KeyCode.F2) && mapNames.Length > (KeyCode.F2 - KeyCode.F1)){
             PlayerPrefs.SetString("LevelToLoad", mapNames[1]);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        else if (Input.GetKeyDown(KeyCode.F3) && mapNames.Length > (KeyCode.F3 - KeyCode.F1)){
+            PlayerPrefs.SetString("LevelToLoad", mapNames[2]);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        else if (Input.GetKeyDown(KeyCode.F4) && mapNames.Length > (KeyCode.F4 - KeyCode.F1)){
+            PlayerPrefs.SetString("LevelToLoad", mapNames[3]);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        else if (Input.GetKeyDown(KeyCode.F5) && mapNames.Length > (KeyCode.F5 - KeyCode.F1)){
+            PlayerPrefs.SetString("LevelToLoad", mapNames[4]);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        else if (Input.GetKeyDown(KeyCode.F6) && mapNames.Length > (KeyCode.F6 - KeyCode.F1)){
+            PlayerPrefs.SetString("LevelToLoad", mapNames[5]);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        else if (Input.GetKeyDown(KeyCode.F7) && mapNames.Length > (KeyCode.F7 - KeyCode.F1)){
+            PlayerPrefs.SetString("LevelToLoad", mapNames[6]);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        else if (Input.GetKeyDown(KeyCode.F8) && mapNames.Length > (KeyCode.F8 - KeyCode.F1)){
+            PlayerPrefs.SetString("LevelToLoad", mapNames[7]);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        else if (Input.GetKeyDown(KeyCode.F9) && mapNames.Length > (KeyCode.F9 - KeyCode.F1)){
+            PlayerPrefs.SetString("LevelToLoad", mapNames[8]);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        else if (Input.GetKeyDown(KeyCode.F10) && mapNames.Length > (KeyCode.F10 - KeyCode.F1)){
+            PlayerPrefs.SetString("LevelToLoad", mapNames[9]);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        else if (Input.GetKeyDown(KeyCode.F11) && mapNames.Length > (KeyCode.F11 - KeyCode.F1)){
+            PlayerPrefs.SetString("LevelToLoad", mapNames[10]);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        else if (Input.GetKeyDown(KeyCode.F12) && mapNames.Length > (KeyCode.F12 - KeyCode.F1)){
+            PlayerPrefs.SetString("LevelToLoad", mapNames[11]);
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
