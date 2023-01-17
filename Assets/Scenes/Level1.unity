@@ -155,16 +155,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelMap: {fileID: 2800000, guid: 8c77f7521ad2bf743a0a66b2f2be52b9, type: 3}
-  WallPrefab: {fileID: 7452410133261940078, guid: 6cd427e942a89e74d8847bc2da05e288, type: 3}
   PlayerPrefab: {fileID: 2193862527941193284, guid: 38260699676fcb444bd39a8167395b50, type: 3}
+  WallPrefab: {fileID: 7452410133261940078, guid: 6cd427e942a89e74d8847bc2da05e288, type: 3}
+  CobwebWallPrefab: {fileID: 7452410133261940078, guid: 1f94b78e5028ea1468c1ccb8592019fb, type: 3}
   DoorPrefab: {fileID: 7452410133261940078, guid: 25a447479e5805542a55e3f7aa4c8d70, type: 3}
+  ExitPrefab: {fileID: 7452410133261940078, guid: e280d0c5039e63048be280f1b40bd264, type: 3}
   ImpPrefab: {fileID: 1234464940151881635, guid: 6979a8d4d4013754eb975ad576b5ca36, type: 3}
   TriImpPrefab: {fileID: 1234464940151881635, guid: 2f50501d9a5b3f94b824540fbd5e8b03, type: 3}
   EmptyBlockPrefab: {fileID: 7452410133261940078, guid: 21749673c689d6443b93d94f519594aa, type: 3}
+  EnergySphereTrapPrefab: {fileID: 7452410133261940078, guid: e75a37711f14a8549a68eb83b5798e03, type: 3}
+  Column: {fileID: 7452410133261940078, guid: 2434c8d67ab047b4f92eb8a91da55a8d, type: 3}
+  ColumnTwo: {fileID: 7452410133261940078, guid: a201364bf1cab2040a7efce5dcd18ffd, type: 3}
   TorchPrefab: {fileID: 7452410133261940078, guid: 7e30bb90734a96a4ba6e5166e6956876, type: 3}
   KnightPrefab: {fileID: 7452410133261940078, guid: bb2270db8f121fa43bcec9c59cc5aacb, type: 3}
   PebblePrefab: {fileID: 7452410133261940078, guid: 4f7d5da7e9c590a418bd48f2f15bfb28, type: 3}
-  EnergySphereTrapPrefab: {fileID: 7452410133261940078, guid: e75a37711f14a8549a68eb83b5798e03, type: 3}
   HealthPickup: {fileID: 7452410133261940078, guid: 4446ec69a3d37854b80e8149aaaa39b2, type: 3}
   ShotgunAmmoPickup: {fileID: 7452410133261940078, guid: d87c4dbe1a9b3074e968011b15d889e3, type: 3}
   RevolverAmmoPickup: {fileID: 7452410133261940078, guid: 11f131ce070e1d447b3f4b3925d50284, type: 3}
@@ -175,6 +179,7 @@ MonoBehaviour:
   KeyColor: {r: 1, g: 1, b: 0, a: 1}
   spawnedKey: 0
   surface: {fileID: 679709144}
+  nextLevel: 
 --- !u!4 &609089124
 Transform:
   m_ObjectHideFlags: 0

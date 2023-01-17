@@ -27,6 +27,8 @@ public class LevelLayout : MonoBehaviour
     
     public GameObject DoorPrefab;
     
+    public GameObject ExitPrefab;
+    
     [HeaderAttribute("Enemies")]
     public GameObject ImpPrefab;
     public GameObject TriImpPrefab;
@@ -60,28 +62,32 @@ public class LevelLayout : MonoBehaviour
     
     private string[] mapNames;
     private string levelName;
+    public string nextLevel;
     void Start()
     {
-        //string dir = Application.streamingAssetsPath.Replace(@"/", @"\") + @"\Maps\";
-        //string levelName = PlayerPrefs.GetString("LevelToLoad", "level1.png"); //+ ".png";
-        //Debug.Log(dir + levelName);
-        
-        //Debug.Log(File.Exists((dir + levelName)) ? "Map file exists." : "Map file doesn't exist.");
-        
-
-
-        using (StreamReader sr = new StreamReader(Application.streamingAssetsPath + "/MapNames.txt")){
-            mapNames = sr.ReadToEnd().Split("\n");
-            foreach(string s in mapNames)
-                //Debug.Log(s);
-            sr.Close();
-        }
-        
         levelName = PlayerPrefs.GetString("LevelToLoad", "level1.png");
+        if(levelName.Equals("END.png")){
+            LoadEnd();
+            return;
+        }
         //ReadColor();//PlayerPrefs.GetString("LevelToLoad", "level1"));
         AudioLoad(PlayerPrefs.GetString("LevelToLoad", "level1.png"));
         StartCoroutine(GetMapFileUWR());
-        
+
+        string levelNameTmp = PlayerPrefs.GetString("LevelToLoad", "level1.png");
+        using (StreamReader sr = new StreamReader(Application.streamingAssetsPath + "/MapNames.txt")){
+            mapNames = sr.ReadToEnd().Split("\n");
+            int i;
+            for(i = 0; i < mapNames.Length - 1; i++) //-1 jer je 1 "END.png"
+                if(mapNames[i].Equals(levelNameTmp))
+                    break;
+            nextLevel = mapNames[i+1];
+            sr.Close();
+        }
+    }
+
+    private void LoadEnd(){
+
     }
 
     private void AudioLoad(string levelName){
@@ -142,6 +148,10 @@ public class LevelLayout : MonoBehaviour
                 }
                 else if (currentColor == Color.blue)
                     Instantiate(WallPrefab, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
+                else if (currentColor.r == 255 && currentColor.g == 0 && currentColor.b == 255)
+                    Instantiate(ExitPrefab, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.Euler(0, 270, 0)).GetComponent<ExitDoor>().nextLevel = nextLevel;
+                else if (currentColor.r == 15 && currentColor.g == 10 && currentColor.b == 120f)
+                    Instantiate(CobwebWallPrefab, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
                 else if (currentColor == Color.black && !spawnedDoor){
                     Door = Instantiate(DoorPrefab, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
                     spawnedDoor = true;
@@ -183,6 +193,12 @@ public class LevelLayout : MonoBehaviour
                 }
                 else if (currentColor.r == 128 && currentColor.g == 0 && currentColor.b == 64){
                     Instantiate(RevolverAmmoPickup, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
+                }
+                else if (currentColor.r == 0 && currentColor.g == 217 && currentColor.b == 234){
+                    Instantiate(Column, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
+                }
+                else if (currentColor.r == 155 && currentColor.g == 17 && currentColor.b == 124){
+                    Instantiate(ColumnTwo, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
                 }
                 // else if (currentColor.r == 0.2f && currentColor.g == 0.00f && currentColor.b == 0.2f){
                 //     Instantiate(EmptyBlockPrefab, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);

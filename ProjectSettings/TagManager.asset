@@ -11,6 +11,7 @@ TagManager:
   - Floor
   - Tri-Imp
   - Pickup
+  - Column
   layers:
   - Default
   - TransparentFX
