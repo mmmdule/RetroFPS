@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 905630461199075031}
   - component: {fileID: 8042457806382862244}
   - component: {fileID: 9010046973426142209}
+  - component: {fileID: 4328384308381624667}
   m_Layer: 7
   m_Name: Tri-Horn
   m_TagString: Tri-Imp
@@ -273,6 +274,27 @@ MonoBehaviour:
   thisSprite: {fileID: 2463759178599113764}
   attackSprite: {fileID: 226589503363604851}
   audioSource: {fileID: 8042457806382862244}
+  animator: {fileID: 4328384308381624667}
+--- !u!95 &4328384308381624667
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234464940151881635}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0de1d3d583187a44289de8c62505ab21, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2664885188092112410
 GameObject:
   m_ObjectHideFlags: 0

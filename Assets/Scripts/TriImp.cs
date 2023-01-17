@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Animations;
 using UnityEngine.AI;
 
 public class TriImp : MonoBehaviour
@@ -160,12 +161,15 @@ public class TriImp : MonoBehaviour
             thisSprite.sprite = null;
             attackSprite.enabled = false;
             thisSprite.enabled = false;
+            animator.Play("ImpDeath");
             Invoke(nameof(DestroyEnemy), audioSource.clip.length - 0.065f);
         }
     }
+    public Animator animator;
     private void DestroyEnemy()
     {
         gameObject.SetActive(false);
+        Destroy(gameObject);
     }
 
     private void OnDrawGizmosSelected()

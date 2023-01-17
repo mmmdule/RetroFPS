@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Animations;
 using UnityEngine.AI;
 
 public class Imp : MonoBehaviour
@@ -156,12 +157,15 @@ public class Imp : MonoBehaviour
             thisSprite.sprite = null;
             attackSprite.enabled = false;
             thisSprite.enabled = false;
+            animator.Play("ImpDeath");
             Invoke(nameof(DestroyEnemy), audioSource.clip.length - 0.065f);
         }
     }
+    public Animator animator;
     private void DestroyEnemy()
     {
         gameObject.SetActive(false);
+        Destroy(gameObject);
     }
 
     private void OnDrawGizmosSelected()
@@ -179,6 +183,8 @@ public class Imp : MonoBehaviour
 
 
 }
+
+
 
 
 //my code (CTRL K + U to uncomment)

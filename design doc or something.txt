@@ -55,6 +55,36 @@ Explosion ring - A brick with a few light sources around it. It's surrounded by 
 
 --------------------------------------------------------------------
 
+Config file reference:
+
+Color codes (Red = 0 and so on): Red, Blue, White, Yellow, Magenta, Green
+
+--------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Klasa LevelLayout{
 	//Key je X, Value je Z
 	//sa .Add() im se dodaju elementi

@@ -174,7 +174,6 @@ MonoBehaviour:
   RevolverAmmoPickup: {fileID: 7452410133261940078, guid: 11f131ce070e1d447b3f4b3925d50284, type: 3}
   spawnedDoor: 0
   LightPrefab: {fileID: 2077886325596256415, guid: e0c7b9efda856ac4bba925a1c23bf7ed, type: 3}
-  LightColor: {r: 1, g: 0, b: 0, a: 1}
   KeyPrefab: {fileID: 7452410133261940078, guid: 702b1b707e2e4a847ad54a774bb50844, type: 3}
   KeyColor: {r: 1, g: 1, b: 0, a: 1}
   spawnedKey: 0
