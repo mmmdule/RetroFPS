@@ -17,6 +17,8 @@ public class MainMenu : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        PlayerPrefs.SetString("LevelToLoad", "level1.png"); //sets the default just in case
+
         ReadHeadingFile();
         ReadLevelNames();
         

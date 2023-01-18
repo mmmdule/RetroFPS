@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -26,10 +27,36 @@ public class PlayerMovement : MonoBehaviour
         // Lock cursor
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        SecondaryCamera = GameObject.FindGameObjectWithTag("SecondaryCamera").GetComponent<Camera>();
+        if(SecondaryCamera!=null)
+            Debug.Log("FoundSecondaryCamera");
     }
-
+    Camera SecondaryCamera;
+    public static bool paused = false;
+    [SerializeField]
+    Shoot ShootScript;
     void Update()
     {
+        if(!paused && (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))){
+            paused = true;
+            SecondaryCamera.enabled = true;
+            playerCamera.enabled = false;
+            ShootScript.enabled = false;
+            Time.timeScale = 0;
+        }
+        if(paused && (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))){
+            paused = false;
+            SecondaryCamera.enabled = false;
+            playerCamera.enabled = true;
+            ShootScript.enabled = true;
+            Time.timeScale = 1;
+        }
+        else if (paused && (Input.GetKeyDown(KeyCode.R))){
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        if(paused)
+            return;
+        
         // We are grounded, so recalculate move direction based on axes
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);

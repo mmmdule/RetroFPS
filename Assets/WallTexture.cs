@@ -17,6 +17,8 @@ public class WallTexture : MonoBehaviour
         using (StreamReader sr = new StreamReader(Application.streamingAssetsPath + "/MapNames.txt")){
             mapNames = sr.ReadToEnd().Split("\n");
             for(i = 0; i < mapNames.Length; i++)
+                mapNames[i] = mapNames[i].Substring(0, mapNames[i].Length - 1);
+            for(i = 0; i < mapNames.Length; i++)
                 if(mapNames[i].Equals(currentMap))
                     break;
             sr.Close();

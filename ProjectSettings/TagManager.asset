@@ -12,6 +12,7 @@ TagManager:
   - Tri-Imp
   - Pickup
   - Column
+  - SecondaryCamera
   layers:
   - Default
   - TransparentFX

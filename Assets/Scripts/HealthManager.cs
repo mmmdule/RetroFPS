@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class HealthManager : MonoBehaviour
@@ -9,7 +10,7 @@ public class HealthManager : MonoBehaviour
 
     public int health = 100;
     public AudioSource audioSource;
-    public MessageManager messageManager;
+    private MessageManager messageManager;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,8 @@ public class HealthManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(health <= 0 && Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Space))
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     public void TakeDamage(int damage)
     {
@@ -34,12 +36,15 @@ public class HealthManager : MonoBehaviour
         }
     }
 
+    [SerializeField]
+    AmmoManager ammoManager;
     public void ShowGameOver(){
         HealthText.text = "GAME OVER";
         transform.position = new Vector3(1000, 1000, 1000);
         gameObject.GetComponentInChildren<Image>().enabled = false;
         (gameObject.GetComponentsInParent<Shoot>())[0].enabled = false;
         (gameObject.GetComponentsInParent<PlayerMovement>())[0].enabled = false;
+        ammoManager.AmmoText.text = "";
     }
 
     public void ChangeHealthText(int value){

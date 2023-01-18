@@ -6,11 +6,10 @@ using TMPro;
 
 public class LevelButton : MonoBehaviour
 {
-    [SerializeField]
     TextMeshProUGUI text;
     public void ChangeLevel(){
         text = GetComponentInChildren<TextMeshProUGUI>();
-        PlayerPrefs.GetString("LevelToLoad", text.text + ".png");
+        PlayerPrefs.SetString("LevelToLoad", text.text + ".png");
         SceneManager.LoadScene("Level1");
     }
 }

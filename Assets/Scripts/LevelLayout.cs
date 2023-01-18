@@ -1,4 +1,5 @@
 using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -79,13 +80,33 @@ public class LevelLayout : MonoBehaviour
 
         //Read NextLevel (for ExitDoor)
         string levelNameTmp = PlayerPrefs.GetString("LevelToLoad", "level1.png");
+        Debug.LogWarning("PlayerPref value: " + levelNameTmp);
         int i;
         using (StreamReader sr = new StreamReader(Application.streamingAssetsPath + "/MapNames.txt")){
             mapNames = sr.ReadToEnd().Split("\n");
-            for(i = 0; i < mapNames.Length - 1; i++) //-1 jer je 1 "END.png"
-                if(mapNames[i].Equals(levelNameTmp))
-                    break;
-            nextLevel = mapNames[i+1];
+            for(int j = 0; j < mapNames.Length - 1; j++) //-1 jer je 1 "END"
+                 mapNames[j] = mapNames[j].Substring(0, mapNames[j].Length-1);
+            i = Array.IndexOf(mapNames, levelNameTmp);
+            if(i != -1){
+                Debug.Log("found it");
+                nextLevel = mapNames[i+1];
+            }
+            // for(i = 0; i < mapNames.Length; i++){
+            //     Debug.Log($"String[{i}] = {mapNames[i]};    -       Length:{mapNames[i].Length}");
+            // }
+
+            // for(i = 0; i < mapNames.Length - 1; i++){ //-1 jer je 1 "END"
+            //     Debug.Log("i = " + i + ";   MapNames[i] = " + mapNames[i]);
+            //     Debug.LogWarning("PlayerPref value: " + levelNameTmp);
+                
+
+            //     if(string.Compare(mapNames[i], levelNameTmp) == 0){
+            //         Debug.Log("Found name.      i = " + i + ";   MapNames[i] = " + mapNames[i]);
+            //         break;
+            //     }
+            // }
+
+            //nextLevel = mapNames[i+1];
             sr.Close();
         }
 

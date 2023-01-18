@@ -9,7 +9,10 @@ public class Pickup : MonoBehaviour
     private bool foundPlayer = false;
     public SpriteRenderer spriteRenderer;
     public BoxCollider boxCollider;
-
+    MessageManager msg;
+    void Awake(){
+        msg = GameObject.Find("GameManager").GetComponent<MessageManager>();
+    }
     void Start(){
         //spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         //boxCollider = GetComponent<BoxCollider>();
@@ -52,17 +55,20 @@ public class Pickup : MonoBehaviour
             if(health){
                 if(healthManager.health < 100){
                     healthManager.HealthPickup(HealthPickupValue);
+                    msg.MessageUpdate("+" + HealthPickupValue + " health", 0.9f);
                     delete = true;
                 }
             }
             else if(shotgunAmmo){
                 if(ammoManager.shotgunAmmo < ShotgunLimit){
                     ammoManager.IncreaseAmmo(ShotgunAmmoPickupValue, 3);
+                    msg.MessageUpdate("+" + ShotgunAmmoPickupValue + " shells", 0.9f);
                     delete = true;
                 }
             }
             else if(revolverAmmo){
                 if(ammoManager.pistolAmmo < RevolverLimit){
+                    msg.MessageUpdate("+" + RevolverAmmoPickupValue + " bullets", 0.9f);
                     ammoManager.IncreaseAmmo(RevolverAmmoPickupValue, 2);
                     delete = true;
                 }

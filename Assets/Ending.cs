@@ -35,7 +35,7 @@ public class Ending : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(index >= array.Length && Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Space)){
+        if(index >= array.Length && (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Space))){
             SceneManager.LoadScene("MainMenu");
         }
     }

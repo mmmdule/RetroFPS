@@ -28,6 +28,9 @@ public class Fireball : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(PlayerMovement.paused)
+            return;
+            
         SpriteChild.transform.LookAt(player.transform);
         if(notStatic){
             rb.AddRelativeForce(Vector3.forward * Speed, ForceMode.Impulse);

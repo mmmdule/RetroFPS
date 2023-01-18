@@ -38,6 +38,9 @@ public class TriImp : MonoBehaviour
     Camera mainCamera;
     private void Update()
     {
+        if(PlayerMovement.paused)
+            return;
+            
         if(!cameraIsSet){
             if(GameObject.FindGameObjectWithTag("Player") == null)
                 return;

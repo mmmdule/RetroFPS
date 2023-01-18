@@ -223,6 +223,7 @@ MonoBehaviour:
   lookSpeed: 2
   lookXLimit: 45
   canMove: 1
+  ShootScript: {fileID: 2102298998739788204}
 --- !u!114 &2102298998739788204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -415,6 +416,7 @@ MonoBehaviour:
   health: 100
   audioSource: {fileID: 1377706833371418053}
   messageManager: {fileID: 0}
+  ammoManager: {fileID: 3736320551858223543}
 --- !u!1 &2818204228672158913
 GameObject:
   m_ObjectHideFlags: 0
