@@ -40,8 +40,10 @@ public class HealthManager : MonoBehaviour
         health -= damage;
         
         audioSource.volume = 1;
-        if(health <= 0)
+        if(health <= 0){
+            audioSource.volume = 0.9f;
             audioSource.PlayOneShot(DeathScream);
+        }
         else
             audioSource.Play(); //play Pain/Death sound
         

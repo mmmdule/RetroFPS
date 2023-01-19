@@ -24,6 +24,15 @@ public class PlayerMovement : MonoBehaviour
     {
         characterController = gameObject.GetComponent<CharacterController>();
 
+        //un-pause at start
+        paused = false;
+        Time.timeScale = 1;
+        ShootScript.enabled = true;
+        AudioListener.pause = false;
+        canvasPause.enabled = false;
+        canvasPlay.enabled = true;
+        //un-pause at start
+
         //Cursor.lockState = CursorLockMode.None;
         // Lock cursor
         Cursor.lockState = CursorLockMode.Locked;

@@ -4,9 +4,10 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-
 public class MainMenu : MonoBehaviour
 {
+
+
 
     private string heading, episode;
     private string[] mapNames;
@@ -14,9 +15,14 @@ public class MainMenu : MonoBehaviour
     TextMeshProUGUI Heading;
     [SerializeField]
     TextMeshProUGUI EpisodeTitle;
+    bool canExit = false;
     // Start is called before the first frame update
     void Awake()
     {
+        
+        #if UNITY_STANDALONE && !UNITY_EDITOR
+            canExit = true;
+        #endif
         
         AudioListener.pause = false;
 
@@ -33,6 +39,13 @@ public class MainMenu : MonoBehaviour
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.Confined;
     }
+    
+    void Update(){
+        if(Input.GetKey(KeyCode.Escape) && canExit)
+            Application.Quit();
+    }
+
+
     [SerializeField]
     GameObject buttonPrefab;
     [SerializeField]

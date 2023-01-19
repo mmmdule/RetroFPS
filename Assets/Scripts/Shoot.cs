@@ -10,8 +10,10 @@ public class Shoot : MonoBehaviour
     public AudioSource playerAudioSource;
     public AudioClip RevolverSoundClip;
 
+    public RuntimeAnimatorController newController;
     void Start(){
         animator = gameObject.GetComponent<Animator>();
+        newController = (RuntimeAnimatorController)Resources.Load("Animator/Player 1");
     }
 
     public void ShootBullet(int shotType){
@@ -92,6 +94,7 @@ public class Shoot : MonoBehaviour
         }
     }
     public void Die(){
+        animator.runtimeAnimatorController = newController; 
         canShootAgain = false;
         animator.Play("PlayerDeath");
     }
