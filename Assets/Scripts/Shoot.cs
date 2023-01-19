@@ -91,7 +91,10 @@ public class Shoot : MonoBehaviour
             ammoManager.currentWeapon = currentWeapon;
         }
     }
-
+    public void Die(){
+        canShootAgain = false;
+        animator.Play("PlayerDeath");
+    }
     public Sprite[] weaponSprites;
     public Image WeaponImage;
     public void ChangeSprite(/*int Sprite*/){

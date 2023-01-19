@@ -149,12 +149,14 @@ public class Imp : MonoBehaviour
         alreadyAttacked = false;
     }
     public AudioSource audioSource;
+    [SerializeField]
+    AudioClip ImpDeathScream;
     public void TakeDamage(int damage)
     {
-        audioSource.Play(); //play Pain/Death sound
         health -= damage;
 
         if (health <= 0) {
+            audioSource.PlayOneShot(ImpDeathScream);    //play Death sound
             disableAttack = true;
             attackSprite.sprite = null;
             thisSprite.sprite = null;
@@ -163,6 +165,8 @@ public class Imp : MonoBehaviour
             animator.Play("ImpDeath");
             Invoke(nameof(DestroyEnemy), audioSource.clip.length - 0.065f);
         }
+        else
+            audioSource.Play();  //play Pain sound
     }
     public Animator animator;
     private void DestroyEnemy()

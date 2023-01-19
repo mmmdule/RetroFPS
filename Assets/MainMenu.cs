@@ -17,6 +17,9 @@ public class MainMenu : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        
+        AudioListener.pause = false;
+
         PlayerPrefs.SetString("LevelToLoad", "level1.png"); //sets the default just in case
 
         ReadHeadingFile();
@@ -26,6 +29,9 @@ public class MainMenu : MonoBehaviour
         EpisodeTitle.text = episode;
         
         CreateList();
+        
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
     }
     [SerializeField]
     GameObject buttonPrefab;

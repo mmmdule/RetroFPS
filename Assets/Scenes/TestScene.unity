@@ -265,25 +265,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1798474799154984806, guid: 38260699676fcb444bd39a8167395b50, type: 3}
-      propertyPath: m_ClearFlags
-      value: 1
+    - target: {fileID: 131205285, guid: 38260699676fcb444bd39a8167395b50, type: 3}
+      propertyPath: m_Camera
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2193862527941193284, guid: 38260699676fcb444bd39a8167395b50, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 2193862527941193284, guid: 38260699676fcb444bd39a8167395b50, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3238575161597045086, guid: 38260699676fcb444bd39a8167395b50, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7780058269365210552, guid: 38260699676fcb444bd39a8167395b50, type: 3}
-      propertyPath: m_Enabled
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9141114579197831873, guid: 38260699676fcb444bd39a8167395b50, type: 3}
       propertyPath: m_RootOrder
@@ -460,25 +448,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelMap: {fileID: 2800000, guid: 0cc760eca42852c4aa9ceb38424d7516, type: 3}
-  WallPrefab: {fileID: 7452410133261940078, guid: 6cd427e942a89e74d8847bc2da05e288, type: 3}
   PlayerPrefab: {fileID: 2193862527941193284, guid: 38260699676fcb444bd39a8167395b50, type: 3}
+  WallPrefab: {fileID: 7452410133261940078, guid: 6cd427e942a89e74d8847bc2da05e288, type: 3}
+  CobwebWallPrefab: {fileID: 0}
   DoorPrefab: {fileID: 0}
+  ExitPrefab: {fileID: 0}
   ImpPrefab: {fileID: 0}
   TriImpPrefab: {fileID: 0}
   EmptyBlockPrefab: {fileID: 0}
+  EnergySphereTrapPrefab: {fileID: 0}
+  Column: {fileID: 0}
+  ColumnTwo: {fileID: 0}
   TorchPrefab: {fileID: 0}
   KnightPrefab: {fileID: 0}
   PebblePrefab: {fileID: 0}
+  HealthPickup: {fileID: 0}
+  ShotgunAmmoPickup: {fileID: 0}
+  RevolverAmmoPickup: {fileID: 0}
   spawnedDoor: 0
   LightPrefab: {fileID: 0}
-  LightColor: {r: 0, g: 0, b: 0, a: 0}
   KeyPrefab: {fileID: 0}
   KeyColor: {r: 0, g: 0, b: 0, a: 0}
   spawnedKey: 0
   surface: {fileID: 0}
-  resX: 1280
-  resY: 720
-  mapNames: []
+  nextLevel: 
 --- !u!4 &2099963424
 Transform:
   m_ObjectHideFlags: 0
@@ -509,3 +502,6 @@ MonoBehaviour:
   AmmoText: {fileID: 900111328}
   shotgunAmmo: 50
   pistolAmmo: 0
+  currentWeapon: 0
+  RevolverLimit: 100
+  ShotgunLimit: 50

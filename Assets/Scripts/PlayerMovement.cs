@@ -24,37 +24,43 @@ public class PlayerMovement : MonoBehaviour
     {
         characterController = gameObject.GetComponent<CharacterController>();
 
+        //Cursor.lockState = CursorLockMode.None;
         // Lock cursor
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        SecondaryCamera = GameObject.FindGameObjectWithTag("SecondaryCamera").GetComponent<Camera>();
-        if(SecondaryCamera!=null)
-            Debug.Log("FoundSecondaryCamera");
     }
-    Camera SecondaryCamera;
     public static bool paused = false;
+    [SerializeField]
+    Canvas canvasPause;
+    [SerializeField]
+    Canvas canvasPlay;
     [SerializeField]
     Shoot ShootScript;
     void Update()
     {
         if(!paused && (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))){
             paused = true;
-            SecondaryCamera.enabled = true;
-            playerCamera.enabled = false;
-            ShootScript.enabled = false;
             Time.timeScale = 0;
+            ShootScript.enabled = false;
+            AudioListener.pause = true;
+            canvasPause.enabled = true;
+            canvasPlay.enabled = false;
         }
-        if(paused && (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))){
+        else if(paused && (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))){
             paused = false;
-            SecondaryCamera.enabled = false;
-            playerCamera.enabled = true;
-            ShootScript.enabled = true;
             Time.timeScale = 1;
+            ShootScript.enabled = true;
+            AudioListener.pause = false;
+            canvasPause.enabled = false;
+            canvasPlay.enabled = true;
         }
         else if (paused && (Input.GetKeyDown(KeyCode.R))){
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
-        if(paused)
+        else if (paused && (Input.GetKeyDown(KeyCode.Q))){
+            SceneManager.LoadScene(0);
+        }
+        else if(paused)
             return;
         
         // We are grounded, so recalculate move direction based on axes

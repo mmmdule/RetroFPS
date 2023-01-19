@@ -76,6 +76,7 @@ public class LevelLayout : MonoBehaviour
             return;
         }
 
+        AudioListener.pause = false;
         
 
         //Read NextLevel (for ExitDoor)
@@ -91,22 +92,6 @@ public class LevelLayout : MonoBehaviour
                 Debug.Log("found it");
                 nextLevel = mapNames[i+1];
             }
-            // for(i = 0; i < mapNames.Length; i++){
-            //     Debug.Log($"String[{i}] = {mapNames[i]};    -       Length:{mapNames[i].Length}");
-            // }
-
-            // for(i = 0; i < mapNames.Length - 1; i++){ //-1 jer je 1 "END"
-            //     Debug.Log("i = " + i + ";   MapNames[i] = " + mapNames[i]);
-            //     Debug.LogWarning("PlayerPref value: " + levelNameTmp);
-                
-
-            //     if(string.Compare(mapNames[i], levelNameTmp) == 0){
-            //         Debug.Log("Found name.      i = " + i + ";   MapNames[i] = " + mapNames[i]);
-            //         break;
-            //     }
-            // }
-
-            //nextLevel = mapNames[i+1];
             sr.Close();
         }
 
@@ -118,8 +103,8 @@ public class LevelLayout : MonoBehaviour
             sr.Close();
         }
 
-        //ReadColor();//PlayerPrefs.GetString("LevelToLoad", "level1"));
-        AudioLoad(PlayerPrefs.GetString("LevelToLoad", "level1.png"));
+
+        AudioLoad(9); //Loads random track from Resources/Music 
         StartCoroutine(GetMapFileUWR());
 
 
@@ -130,9 +115,9 @@ public class LevelLayout : MonoBehaviour
         SceneManager.LoadScene("End");
     }
 
-    private void AudioLoad(string levelName){
-        levelName = levelName.Split(".png")[0];
-        AudioClip musicTrack = Resources.Load("Music/" + levelName) as AudioClip;
+    private void AudioLoad(int SongCount){
+        int randomInt = UnityEngine.Random.Range(1, SongCount + 1);
+        AudioClip musicTrack = Resources.Load("Music/" + randomInt) as AudioClip;
         GetComponent<AudioSource>().clip = musicTrack;
         GetComponent<AudioSource>().Play();
     }
