@@ -52,7 +52,9 @@ public class HealthManager : MonoBehaviour
         if (health <= 0) {
             ChangeHealthText(0);
             
+            (gameObject.GetComponentsInParent<PlayerMovement>())[0].canMove = false;
             (gameObject.GetComponentsInParent<Shoot>())[0].Die();
+            (gameObject.GetComponentsInParent<Shoot>())[0].enabled = false;
             Invoke(nameof(ShowGameOver), audioSource.clip.length - 0.035f);
         }
     }
