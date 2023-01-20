@@ -11,16 +11,16 @@ Like the Yellow for Keys is right now.
 
 -64x64 Grid
 
--Green				(Player)
--Blue				(Wall) [R 0, G 217, B 234]
+-Green			(Player)
+-Blue			(Wall) [R 0, G 217, B 234]
 -Dark Blue (Custom)	(Cobweb Wall) [R 15, G 10, B 120]
--Black				(Door) (always one pixel)
--White				(Spot light/Point light) (pozicija Y je 4)
+-Black			(Door) (always one pixel)
+-White			(Spot light/Point light) (pozicija Y je 4)
 -Purple[R+B] 		(Win)
 -Yellow[R+G] 		(Key)
--Gray 				(Statue) (for cover and decoration)[R,G,B = 192]
--Red				(Demon)
--Dark Red			(Tri-Demon) [R 185, G 0, B 30]
+-Gray 			(Torches)[R,G,B = 192]
+-Red			(Demon)
+-Dark Red		(Tri-Demon) [R 185, G 0, B 30]
 -Blue(Custom)		(Orb ring) [R 0, G 162, B 232]
 -Purple(Custom)		(KnightArmor)(for decoration) [R 255, G 153, B 255]
 -Orange(Custom)		(Pebbles)(for decoration) [R 255, G 128, B 64]

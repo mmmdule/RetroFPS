@@ -566,6 +566,7 @@ MonoBehaviour:
   ammoManager: {fileID: 3736320551858223543}
   playerAudioSource: {fileID: 4919194370403581707}
   RevolverSoundClip: {fileID: 8300000, guid: 5f5bb83684c34dc4a8807cc861635e1d, type: 3}
+  newController: {fileID: 0}
   charCtrl: {fileID: 2726212441745694604}
   currentWeapon: 3
   weaponSprites:
@@ -649,7 +650,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 7
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
