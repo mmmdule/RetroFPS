@@ -51,6 +51,9 @@ public class TriImp : MonoBehaviour
             cameraIsSet = true;
         }
 
+        if(agent.velocity.magnitude < 0.15f)
+            SearchWalkPoint();
+
         //transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 0.00f, transform.rotation.y));
         thisSprite.gameObject.transform.LookAt(player);
         attackSprite.gameObject.transform.LookAt(player);
@@ -60,8 +63,8 @@ public class TriImp : MonoBehaviour
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);
         
         if (!playerInSightRange && !playerInAttackRange) Patroling();
-        if (playerInSightRange && !playerInAttackRange) ChasePlayer();
-        if (playerInAttackRange && playerInSightRange) AttackPlayer();
+        if (playerInSightRange /* && !playerInAttackRange */) ChasePlayer();
+        if (playerInAttackRange/*  && playerInSightRange */) AttackPlayer();
     }
 
     private void Patroling()
@@ -189,8 +192,8 @@ public class TriImp : MonoBehaviour
     }
 
     void OnCollisionEnter2D(Collision2D collision){
-        if(collision.gameObject.tag == "Wall")
-            SearchWalkPoint();
+        //if(collision.gameObject.tag == "Wall")
+            //SearchWalkPoint();
     }
 
 

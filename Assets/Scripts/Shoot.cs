@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class Shoot : MonoBehaviour
 {
+    [SerializeField]
+    Camera FpsCam;
+
     private Animator animator;
     public AmmoManager ammoManager;
     public AudioSource playerAudioSource;
@@ -48,8 +51,11 @@ public class Shoot : MonoBehaviour
     }
 
     private void DoDamagIfShotHits(){
+        //maybe add check to see if playing in Keyboard-only mode
         CastRay(); //ray = slim, sphere = thick
         CastRaySphere(); //shoots sphere out
+        CastRayToScreen();
+
         if(!hitTarget || target == null)
             return;
 
@@ -76,6 +82,8 @@ public class Shoot : MonoBehaviour
             if(currentWeapon != 2){
                 animator.Play("ShotgunToRevolver");
                 animator.SetInteger("Weapon",2);
+                changeCanShootBool(false);
+                Invoke("changeCanShootBool",0.77f);//changes to true
                 //Invoke(nameof(ChangeSprite), 0.77f);
             }
             currentWeapon = 2;
@@ -86,6 +94,8 @@ public class Shoot : MonoBehaviour
             if(currentWeapon != 3){
                 animator.Play("RevolverToShotgun");
                 animator.SetInteger("Weapon",3);
+                changeCanShootBool(false);
+                Invoke("changeCanShootBool",0.77f);//changes to true
                 //Invoke(nameof(ChangeSprite), 0.77f);
             }
             currentWeapon = 3;
@@ -196,12 +206,63 @@ public class Shoot : MonoBehaviour
         }
     }
 
+    void CastRayToScreen(){
+        // Create a vector at the center of our camera's viewport
+        Vector3 rayOrigin = FpsCam.ViewportToWorldPoint (new Vector3(0.5f, 0.5f, 0.0f));
+
+        // Declare a raycast hit to store information about what our raycast has hit
+        RaycastHit hit;
+
+        switch(currentWeapon){
+            case 3:
+            // Cast a sphere wrapping character controller 64 meters forward
+            // to see if it is about to hit anything.
+                if (Physics.Raycast (rayOrigin, FpsCam.transform.forward, out hit, 64.00f)) //64 == WeaponRange
+                {
+                    if(hit.transform.gameObject.tag == "Imp"){
+                        //hit.transform.gameObject.GetComponent<Imp>().TakeDamage(weaponDamageVals[currentWeapon]);
+                        hitTarget = true;
+                        Debug.Log("Hit Imp.");
+                    }
+                    else if(hit.transform.gameObject.tag == "Tri-Imp"){
+                        //hit.transform.gameObject.GetComponent<TriImp>().TakeDamage(weaponDamageVals[currentWeapon]);
+                        hitTarget = true;
+                        Debug.Log("Hit Tri-Imp.");
+                    }
+                }
+                break;
+            case 2:
+            // Cast a sphere wrapping character controller 64 meters forward
+            // to see if it is about to hit anything.
+                if (Physics.Raycast (rayOrigin, FpsCam.transform.forward, out hit, 64.00f)) //64 == WeaponRange
+                {
+                    if(hit.transform.gameObject.tag == "Imp"){
+                        //hit.transform.gameObject.GetComponent<Imp>().TakeDamage(weaponDamageVals[currentWeapon]);
+                        hitTarget = true;
+                        Debug.Log("Hit Imp.");
+                    }
+                    else if(hit.transform.gameObject.tag == "Tri-Imp"){
+                        //hit.transform.gameObject.GetComponent<TriImp>().TakeDamage(weaponDamageVals[currentWeapon]);
+                        hitTarget = true;
+                        Debug.Log("Hit Tri-Imp.");
+                    }
+                }
+                break;
+        }
+    }
+
     void OnDrawGizmos()
     {
         //Gizmos.DrawSphere(transform.position + charCtrl.center, 64.00f);
     }
     void changeCanShootBool(){
         canShootAgain = true;
+        hitTarget = false;
+        target = null;
+    }
+
+    public void changeCanShootBool(bool boolValue){
+        canShootAgain = boolValue;
         hitTarget = false;
         target = null;
     }

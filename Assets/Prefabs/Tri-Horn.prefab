@@ -112,8 +112,8 @@ NavMeshAgent:
   m_AutoRepath: 1
   m_Height: 6.73
   m_BaseOffset: 8.35
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
+  m_WalkableMask: 1
+  m_ObstacleAvoidanceType: 2
 --- !u!136 &7881335147851722235
 CapsuleCollider:
   m_ObjectHideFlags: 0
