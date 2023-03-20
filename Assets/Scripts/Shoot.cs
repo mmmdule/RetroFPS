@@ -39,7 +39,7 @@ public class Shoot : MonoBehaviour
                 animator.Play("ShootingRevolver");
                 //Invoke("CastRaySphere", 0.25f); //shoots sphere out after 0.25f (approx. length of the shotgun animation)
                 //Invoke("CastRay", 0.25f); //ray = slim, sphere = thick
-                Invoke("DoDamagIfShotHits", 0.25f); //invoke after 0.25f (approx. length of the shotgun animation)
+                Invoke("DoDamagIfShotHits", 0.20f); //invoke after 0.25f (approx. length of the shotgun animation)
                 ammoManager.ChangeAmmoText(--ammoManager.pistolAmmo, 1);
                 playerAudioSource.PlayOneShot(RevolverSoundClip);
                 break;
@@ -71,16 +71,30 @@ public class Shoot : MonoBehaviour
     public CharacterController charCtrl;
     public int currentWeapon = 3; //3 - shotgun, 2 - pistol
     void Update(){
-        if( (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.LeftControl)) && canShootAgain){
+        if(!animator.GetBool("CanShoot"))
+            return;
+
+        if( (Input.GetMouseButtonDown(0) || Input.GetMouseButton(0) 
+             || Input.GetKey(KeyCode.LeftControl) || Input.GetKeyDown(KeyCode.LeftControl)) 
+             && canShootAgain){
+
             ShootBullet(currentWeapon);
             canShootAgain = false;
-            Invoke("changeCanShootBool", 0.70f);
+            switch(currentWeapon){
+                case 2:
+                    Invoke("changeCanShootBool", 0.45f);
+                    break;
+                case 3:
+                    Invoke("changeCanShootBool", 0.70f);
+                    break;
+            }
             
         }
 
         if(Input.GetKeyDown(KeyCode.Alpha2)){
             if(currentWeapon != 2){
                 animator.Play("ShotgunToRevolver");
+                animator.SetBool("CanShoot", false);   
                 animator.SetInteger("Weapon",2);
                 changeCanShootBool(false);
                 Invoke("changeCanShootBool",0.77f);//changes to true
@@ -93,6 +107,7 @@ public class Shoot : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Alpha3)){
             if(currentWeapon != 3){
                 animator.Play("RevolverToShotgun");
+                animator.SetBool("CanShoot", false);   
                 animator.SetInteger("Weapon",3);
                 changeCanShootBool(false);
                 Invoke("changeCanShootBool",0.77f);//changes to true
