@@ -17,3 +17,7 @@ The [current version](https://shorturl.at/adf01) contains a couple of demo maps,
 Maps are currently read from a bitmap files stored in the game's StreamingAssets folder. Each pixel on the grid represents an object type which is instantiated during gameplay. 
 
 The [Map Editor desktop app](https://github.com/mmmdule/RetroFPS-LevelEditor) is coming soon, and will allow for much greater map customization with added parameter editing for every object.
+
+## Gameplay video (Older version)
+https://user-images.githubusercontent.com/113645355/232907015-cc5c44cf-72e5-4824-9f24-dcf0b61c20b5.mp4
+
