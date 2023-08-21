@@ -564,6 +564,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11cfad8235e93464f889a4c46d4b2c56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WeaponSmokePrefab:
+  - {fileID: 0}
+  - {fileID: 8539593663757096828, guid: f044540c590018b49a7d1d955aed854e, type: 3}
+  - {fileID: 8539593663757096828, guid: 77f8978143fba1f419b3d576692731c9, type: 3}
   FpsCam: {fileID: 1798474799154984806}
   ammoManager: {fileID: 3736320551858223543}
   playerAudioSource: {fileID: 4919194370403581707}

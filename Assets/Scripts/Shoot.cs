@@ -6,6 +6,10 @@ using UnityEngine.UI;
 public class Shoot : MonoBehaviour
 {
     [SerializeField]
+    GameObject[] WeaponSmokePrefab;
+
+
+    [SerializeField]
     Camera FpsCam;
 
     private Animator animator;
@@ -234,6 +238,7 @@ public class Shoot : MonoBehaviour
             // to see if it is about to hit anything.
                 if (Physics.Raycast (rayOrigin, FpsCam.transform.forward, out hit, 64.00f)) //64 == WeaponRange
                 {
+                    GameObject tmp = Instantiate(WeaponSmokePrefab[currentWeapon-1], hit.point, Quaternion.LookRotation(rayOrigin));
                     if(hit.transform.gameObject.tag == "Imp"){
                         //hit.transform.gameObject.GetComponent<Imp>().TakeDamage(weaponDamageVals[currentWeapon]);
                         hitTarget = true;
@@ -251,6 +256,7 @@ public class Shoot : MonoBehaviour
             // to see if it is about to hit anything.
                 if (Physics.Raycast (rayOrigin, FpsCam.transform.forward, out hit, 64.00f)) //64 == WeaponRange
                 {
+                    GameObject tmp = Instantiate(WeaponSmokePrefab[currentWeapon-1], hit.point, Quaternion.LookRotation(rayOrigin));
                     if(hit.transform.gameObject.tag == "Imp"){
                         //hit.transform.gameObject.GetComponent<Imp>().TakeDamage(weaponDamageVals[currentWeapon]);
                         hitTarget = true;
