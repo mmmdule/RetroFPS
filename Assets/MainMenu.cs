@@ -6,38 +6,39 @@ using UnityEngine.UI;
 using TMPro;
 public class MainMenu : MonoBehaviour
 {
+    private List<string> mapNames;
 
-
-
-    private string heading, episode;
-    private string[] mapNames;
     [SerializeField]
     TextMeshProUGUI Heading;
     [SerializeField]
     TextMeshProUGUI EpisodeTitle;
+    
     bool canExit = false;
+
+    private ProjectJson project;
+
     // Start is called before the first frame update
     void Awake()
     {
-        
         #if UNITY_STANDALONE && !UNITY_EDITOR
             canExit = true;
         #endif
         
         AudioListener.pause = false;
 
-        PlayerPrefs.SetString("LevelToLoad", "level1.png"); //sets the default just in case
+        PlayerPrefs.SetString("LevelToLoad", "primera.lem"); //sets the default just in case
 
-        ReadHeadingFile();
-        ReadLevelNames();
-        
-        Heading.text = heading;
-        EpisodeTitle.text = episode;
-        
-        CreateList();
-        
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.Confined;
+
+        project = ReadProjectFile();
+        if(project == null)
+            return;
+
+        Heading.text = project.GameTitle;
+        EpisodeTitle.text = project.GameSubtitle;
+        ReadLevels();
+        CreateList();
     }
     
     void Update(){
@@ -55,7 +56,7 @@ public class MainMenu : MonoBehaviour
         float y = 100;
         RectTransform DefaultButtonRect = buttonPrefab.GetComponent<RectTransform>();
         buttonList = new List<GameObject>();
-        for(int i = 0; i < mapNames.Length - 1; i++){
+        for(int i = 0; i < mapNames.Count - 1; i++){
             GameObject tmp = Instantiate(buttonPrefab);
             tmp.transform.SetParent(content.transform);
             tmp.GetComponent<RectTransform>().anchoredPosition3D = new Vector3(DefaultButtonRect.anchoredPosition3D.x, (y - (i * 100.00f)), DefaultButtonRect.anchoredPosition3D.z);
@@ -66,26 +67,51 @@ public class MainMenu : MonoBehaviour
             //i+1 * 100
         }
         buttonPrefab.SetActive(false);
-        for(int i = 0; i < mapNames.Length - 1; i++){
+        for(int i = 0; i < mapNames.Count - 1; i++){
             RectTransform tmpRect = buttonList[i].GetComponent<RectTransform>();
             tmpRect.anchoredPosition3D = new Vector3(tmpRect.anchoredPosition3D.x, (y - (i * 100.00f)), tmpRect.anchoredPosition3D.z);
         }
     }
     
-    void ReadHeadingFile(){
-        using (StreamReader sr = new StreamReader(Application.streamingAssetsPath + "/GameTitle.txt")){
-            heading = sr.ReadLine();
-            episode = sr.ReadLine();
-            sr.Close();
+    private ProjectJson ReadProjectFile(){
+        //locate all .lem files in the streaming assets folder
+        string[] lepFiles = Directory.GetFiles(Application.streamingAssetsPath, "*.lep");
+        
+        if (lepFiles.Length != 1){
+            //TODO: Show error message (depending on .lem count) on prefab button and disable it's script
+            Heading.text = "ERROR";
+            EpisodeTitle.text = lepFiles.Length == 0 ? "No .lep files found" : "Multiple .lep files found";
+            buttonPrefab.GetComponentInChildren<TextMeshProUGUI>().text = "Please have only one .lep file at a time";
+            buttonPrefab.GetComponent<LevelButton>().enabled = false;
+            return null;
+        }
+       
+        //json parse the 1 .lem file and return it as ProjectJson
+        Debug.Log(lepFiles[0]);
+        return JsonUtility.FromJson<ProjectJson>(File.ReadAllText(lepFiles[0]));
+        
+    }
+    void ReadLevels(){
+        mapNames = new List<string>();
+        foreach(string mapName in project.MapNameList){
+            MapJson map = ReadMap(mapName);
+            if(!map.StoryTextSegment)
+                mapNames.Add(mapName);
         }
     }
-    void ReadLevelNames(){
-        using (StreamReader sr = new StreamReader(Application.streamingAssetsPath + "/MapNames.txt")){
-            mapNames = sr.ReadToEnd().Split("\n");
-            sr.Close();
+
+    public MapJson ReadMap(string mapName)
+    {
+        try
+        {
+            //json parse map from streaming assets/maps/<MapName>.lem
+            MapJson map = JsonUtility.FromJson<MapJson>(File.ReadAllText(Application.streamingAssetsPath + "\\maps\\" + mapName + ".lem"));
+
+            return map;
         }
-        for(int i = 0; i < mapNames.Length - 1; i++){
-            mapNames[i] = mapNames[i].Split(".png")[0];
+        catch
+        {
+            return null;
         }
     }
 }
