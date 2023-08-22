@@ -1,44 +1,65 @@
 ﻿using System.Collections.Generic;
-
+using System;
 //original classes moved to C:\Code\Temp Unity Stuff
 
+[System.Serializable]
 public class MapObjectJson
 {
-    public int X { get; set; }
-    public int Y { get; set; }
-    public string Type { get; set; }
+    public int X;
+    public int Y;
+    public string Type;
 }
 
+[System.Serializable]
 public class PickupJson
 {
-    public int Value { get; set; }
-    public int X { get; set; }
-    public int Y { get; set; }
-    public string Type { get; set; }
+    public int Value;
+    public int X;
+    public int Y;
+    public string Type;
 }
 
+[System.Serializable]
 public class PlayerObjectJson
 {
-    public int Health { get; set; }
-    public bool HasRevolver { get; set; }
-    public int RevolverAmmo { get; set; }
-    public bool HasShotgun { get; set; }
-    public int ShotgunAmmo { get; set; }
-    public int X { get; set; }
-    public int Y { get; set; }
-    public string Type { get; set; }
+    public int Health;
+    public bool HasRevolver;
+    public int RevolverAmmo;
+    public bool HasShotgun;
+    public int ShotgunAmmo;
+    public int X;
+    public int Y;
+    public string Type;
+}
+
+[System.Serializable]
+public class MapNpcObjectJson
+{
+    public int Health;
+    public int ProjectileDamage;
+    public float FiringRate;
+    public float PatrolRange;
+    public float AttackRange;
+    public float ChaseRange;
+    public bool CanMove;
+    public int X;
+    public int Y;
+    public string Type;
 }
 
 public class MapJson
 {
-    public List<MapObjectJson> MapObjects { get; set; }
-    public List<MapObjectJson> MapNpcObjects { get; set; }
-    public List<PickupJson> Pickups { get; set; }
-    public PlayerObjectJson PlayerGameObject { get; set; }
-    public string Name { get; set; }
-    public bool StoryTextSegment { get; set; }
-    public string StoryText { get; set; }
-    public int WallTexture { get; set; }
-    public int StartX { get; set; }
-    public int StartY { get; set; }
+    // public List<MapObjectJson> MapObjects;
+    // public List<MapNpcObjectJson> MapNpcObjects;
+    // public List<PickupJson> Pickups;
+    public MapObjectJson[] MapObjects;
+    public MapNpcObjectJson[] MapNpcObjects;
+    public PickupJson[] Pickups;
+    public PlayerObjectJson PlayerGameObject;
+    public string Name;
+    public bool StoryTextSegment;    
+    public string StoryText;
+    public int WallTexture;
+    public int StartX;
+    public int StartY;
 }

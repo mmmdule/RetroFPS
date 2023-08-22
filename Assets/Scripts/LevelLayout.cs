@@ -9,16 +9,7 @@ using UnityEngine.Networking;
 
 public class LevelLayout : MonoBehaviour
 {
-    private Dictionary<int, int> enemy = new Dictionary<int, int>();
-	private Dictionary<int, int> player = new Dictionary<int, int>();
-	private Dictionary<int, int> wall = new Dictionary<int, int>();
-	private Dictionary<int, int> door = new Dictionary<int, int>();
-	private Dictionary<int, int> ground = new Dictionary<int, int>();
-	private Dictionary<int, int> win = new Dictionary<int, int>();
-	private Dictionary<int, int> key = new Dictionary<int, int>();
-
-    public Texture2D LevelMap;
-    
+    [HeaderAttribute("Player")]
     public GameObject PlayerPrefab;
     
 
@@ -37,8 +28,8 @@ public class LevelLayout : MonoBehaviour
     [HeaderAttribute("Traps")]
     public GameObject EnergySphereTrapPrefab;
     [HeaderAttribute("Decorations")]
-    public GameObject Column;
-    public GameObject ColumnTwo;
+    public GameObject Archway;
+    public GameObject ArchwaySmall;
     public GameObject TorchPrefab;
     public GameObject KnightPrefab;
     public GameObject PebblePrefab;
@@ -68,9 +59,12 @@ public class LevelLayout : MonoBehaviour
     private string levelName;
     public string nextLevel;
     private string LightColorString;
+
+    private MapJson mapJson;
+
     void Awake()//Start()
     {
-        levelName = PlayerPrefs.GetString("LevelToLoad", "level1.png");
+        levelName = PlayerPrefs.GetString("LevelToLoad", "level1.lem");
         if(levelName.Equals("END")){
             LoadEnd();
             return;
@@ -79,33 +73,12 @@ public class LevelLayout : MonoBehaviour
         AudioListener.pause = false;
         
 
-        //Read NextLevel (for ExitDoor)
-        string levelNameTmp = PlayerPrefs.GetString("LevelToLoad", "level1.png");
-        Debug.LogWarning("PlayerPref value: " + levelNameTmp);
-        int i;
-        using (StreamReader sr = new StreamReader(Application.streamingAssetsPath + "/MapNames.txt")){
-            mapNames = sr.ReadToEnd().Split("\n");
-            for(int j = 0; j < mapNames.Length - 1; j++) //-1 jer je 1 "END"
-                 mapNames[j] = mapNames[j].Substring(0, mapNames[j].Length-1);
-            i = Array.IndexOf(mapNames, levelNameTmp);
-            if(i != -1){
-                Debug.Log("found it");
-                nextLevel = mapNames[i+1];
-            }
-            sr.Close();
-        }
-
-        //Read LightColors (for SpotLights)
-        using (StreamReader sr = new StreamReader(Application.streamingAssetsPath + "/LightColors.txt")){
-            lightColors = sr.ReadToEnd().Split("\n");
-            LightColorString = lightColors[i];
-            Debug.Log(LightColorString);
-            sr.Close();
-        }
+        //TODO: ReadNextLevel(because of the exit door, so we know what to load next)
 
 
         AudioLoad(9); //Loads random track from Resources/Music 
-        StartCoroutine(GetMapFileUWR());
+        ReadMap();
+        AddObjectsToScene();
 
 
 
@@ -125,148 +98,120 @@ public class LevelLayout : MonoBehaviour
     private GameObject Door;
     private GameObject Key;
 
-    private IEnumerator GetMapFileUWR(){
-        string relativePath = "/Maps/" + levelName;
-        string fullPath = "file:////" + Application.streamingAssetsPath + relativePath;//Path.Combine(Application.streamingAssetsPath, relativePath);
-        Debug.LogWarning(fullPath);
-        LevelMap = new Texture2D(2, 2, TextureFormat.RGB24, false);
+    private void ReadMap(){
+        string levelToLoad = PlayerPrefs.GetString("LevelToLoad");
+        string path = Application.streamingAssetsPath + "/Maps/" + levelToLoad;
+        string levelJsonData = System.IO.File.ReadAllText(path);
+        mapJson = JsonUtility.FromJson<MapJson>(levelJsonData);
+    }
 
-        using (UnityWebRequest uwr = UnityWebRequestTexture.GetTexture(fullPath)){
-            yield return uwr.SendWebRequest(); 
-            if (uwr.result == UnityWebRequest.Result.ConnectionError) { 
-                Debug.Log(uwr.error); 
+    private void AddObjectsToScene(){
+        //add all members of the mapJson to the scene
+        //to see which prefab to instantiate, check the string value "type" of the object
+        AddMapObjects();
+        AddPlayer();
+        AddPickups();
+        AddNpcs();
+        surface.BuildNavMesh();
+    }
+
+    private void AddPlayer(){
+        //add player to the scene
+        GameObject playerObject = Instantiate(PlayerPrefab, new Vector3(mapJson.PlayerGameObject.X, 1.00f, mapJson.PlayerGameObject.Y), Quaternion.identity);
+        GameObject.Find("GameManager").GetComponent<MessageManager>().player = playerObject;
+        //TODO: add player properties
+    }
+
+    private void AddPickups(){
+        //add pickups to the scene
+        foreach(PickupJson pickup in mapJson.Pickups){
+            switch(pickup.Type){
+                case "Health":
+                    Instantiate(HealthPickup, new Vector3(pickup.X, 1.5f, pickup.Y), Quaternion.identity);
+                    break;
+                case "ShotgunAmmo":
+                    Instantiate(ShotgunAmmoPickup, new Vector3(pickup.X, 1.5f, pickup.Y), Quaternion.identity);
+                    break;
+                case "RevolverAmmo":
+                    Instantiate(RevolverAmmoPickup, new Vector3(pickup.X, 1.5f, pickup.Y), Quaternion.identity);
+                    break;
             }
-            else { 
-               LevelMap = DownloadHandlerTexture.GetContent(uwr); 
-               ReadColor();
-            }
+            //TODO: set pickup properties
         }
     }
-    private enum ColorCode{
-        Red, Blue, White, Yellow, Magenta, Green
-    }
-    private void IntToLightColor(string ColorName){
-        ColorCode ColorInt = (ColorCode)int.Parse(ColorName);
-        //Debug.Log("Light Color String passed to method is: " + ColorName);
-        float[] rgb = {1.00f, 1.00f, 1.00f};
-        switch(ColorInt){
-            case ColorCode.Red:
-                rgb[0] = 1.00f;
-                rgb[1] = 0.00f;
-                rgb[2] = 0.00f;
-                //the default standard
-                break;
-            case ColorCode.Blue:
-                rgb[0] = 0.00f;
-                rgb[1] = 0.00f;
-                rgb[2] = 1.00f;
-                break;
-            case ColorCode.White:
-                rgb[0] = 1.00f;
-                rgb[1] = 1.00f;
-                rgb[2] = 1.00f;
-                break;
-            case ColorCode.Yellow:
-                rgb[0] = 1.00f;
-                rgb[1] = 0.92f;
-                rgb[2] = 0.016f;
-                break;
-            case ColorCode.Magenta:
-                rgb[0] = 1.00f;
-                rgb[1] = 0.00f;
-                rgb[2] = 1.00f;
-                break;
-            case ColorCode.Green:
-                rgb[0] = 0.00f;
-                rgb[1] = 1.00f;
-                rgb[2] = 0.00f;
-                break;
-            default:
-                break;
+
+    private void AddNpcs(){
+        //add npc objects to the scene
+        foreach(MapNpcObjectJson npc in mapJson.MapNpcObjects){
+            GameObject tmp;
+            switch(npc.Type){
+                case "Tri_horn":
+                    tmp = Instantiate(TriImpPrefab, new Vector3(npc.X, 1.79f, npc.Y), Quaternion.identity);
+                    break;
+                case "Imp":
+                    tmp = Instantiate(ImpPrefab, new Vector3(npc.X, 1.79f, npc.Y), Quaternion.identity);
+                    break;
+            }
+            //TODO: set npc properties
         }
-        Debug.LogWarning("RGB array: " + rgb[0] + " " + rgb[1] + " " + rgb[2]);
-        LightColor[0] = rgb[0];
-        LightColor[1] = rgb[1];
-        LightColor[2] = rgb[2];
-        LightColor[3] =  1.00f;
-        //Debug.LogWarning("Light Color at end of to method is: " + LightColor);
     }
-    private void ReadColor(){
-        Color32 currentColor = new Color();
 
-        IntToLightColor(LightColorString);
-        Debug.LogError(LightColor);
-
-
-        for(int i = 0; i < 64; i++){
-            for(int j = 0; j < 64; j++){
-                currentColor = LevelMap.GetPixel(i, j);
-                
-                if(currentColor == Color.green){
-                    GameObject tmpObject = Instantiate(PlayerPrefab, new Vector3(i, 1.00f/*1.8f*/, j), Quaternion.identity);
-                    GameObject.Find("GameManager").GetComponent<MessageManager>().player = tmpObject;
-                }
-                else if (currentColor == Color.blue)
-                    Instantiate(WallPrefab, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
-                else if (currentColor.r == 255 && currentColor.g == 0 && currentColor.b == 255)
-                    Instantiate(ExitPrefab, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.Euler(0, 270, 0)).GetComponent<ExitDoor>().nextLevel = nextLevel;
-                else if (currentColor.r == 15 && currentColor.g == 10 && currentColor.b == 120f)
-                    Instantiate(CobwebWallPrefab, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
-                else if (currentColor == Color.black && !spawnedDoor){
-                    Door = Instantiate(DoorPrefab, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
-                    spawnedDoor = true;
-                    if(spawnedKey)
-                        Key.GetComponent<Key>().Door = Door;
-                }
-                else if (currentColor == Color.white){
-                    //spawns light with X rotation of 90 deg (Euler)
-                    Instantiate(LightPrefab, new Vector3(i, 4.00f, j), Quaternion.Euler(new Vector3(90, 0, 0))).GetComponent<Light>().color = LightColor;
-                }
-                /*Yellow*/ else if (currentColor.r == 255 && currentColor.g == 255 && currentColor.b == 0.00f && !spawnedKey){
-                    Key = Instantiate(KeyPrefab, new Vector3(i,  1.5f/*1.2f*/, j), Quaternion.identity);
+    private void AddMapObjects(){
+        foreach(MapObjectJson obj in mapJson.MapObjects){
+            switch(obj.Type){
+                case "wallBrick":
+                    Instantiate(WallPrefab, new Vector3(obj.X, 1.5f, obj.Y), Quaternion.identity);
+                    break;
+                case "wallStone":
+                    Instantiate(WallPrefab, new Vector3(obj.X, 1.5f, obj.Y), Quaternion.identity);
+                    //change wall texture
+                    break;
+                case "wallMoss":
+                    Instantiate(WallPrefab, new Vector3(obj.X, 1.5f, obj.Y), Quaternion.identity);
+                    //change wall texture
+                    break;
+                case "tileWall":
+                    Instantiate(WallPrefab, new Vector3(obj.X, 1.5f, obj.Y), Quaternion.identity);
+                    //change wall texture
+                    break;
+                case "Cobweb_Wall":
+                    Instantiate(CobwebWallPrefab, new Vector3(obj.X, 1.5f, obj.Y), Quaternion.identity);
+                    break;
+                case "Torch":
+                    Instantiate(TorchPrefab, new Vector3(obj.X, 1.5f, obj.Y), Quaternion.identity);
+                    break;
+                case "ArmorBlink":
+                    Instantiate(KnightPrefab, new Vector3(obj.X, 1.5f, obj.Y), Quaternion.identity);
+                    break;
+                case "Stone":
+                    Instantiate(PebblePrefab, new Vector3(obj.X, 1.5f, obj.Y), Quaternion.identity);
+                    break;
+                case "ExitDoor":
+                    Instantiate(ExitPrefab, new Vector3(obj.X, 1.5f, obj.Y), Quaternion.identity);
+                    break;
+                case "EnergyBall":
+                    Instantiate(EnergySphereTrapPrefab, new Vector3(obj.X, 0.5f, obj.Y), Quaternion.identity);
+                    break;
+                case "ArchwaySingle":
+                    Instantiate(Archway, new Vector3(obj.X, 1.5f/*1.2f*/, obj.Y), Quaternion.identity);
+                    break;
+                case "ArchwaySmall":
+                    Instantiate(ArchwaySmall, new Vector3(obj.X, 1.5f/*1.2f*/, obj.Y), Quaternion.identity);
+                    break;
+                case "Key":
+                    Key = Instantiate(KeyPrefab, new Vector3(obj.X, 1.5f, obj.Y), Quaternion.identity);
                     Key.GetComponentInChildren<SpriteRenderer>().color = KeyColor;
                     spawnedKey = true;
                     if(spawnedDoor)
                         Key.GetComponent<Key>().Door = Door;
-                }
-                else if (currentColor == Color.red)
-                    Instantiate(ImpPrefab, new Vector3(i, 1.79f, j), Quaternion.identity);
-                /*Dark Red*/else if (currentColor.r == 185 && currentColor.g == 0 && currentColor.b == 30)
-                    Instantiate(TriImpPrefab, new Vector3(i, 1.79f, j), Quaternion.identity);
-                else if (currentColor.r == 192 && currentColor.g == 192 && currentColor.b == 192){
-                    Instantiate(TorchPrefab, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
-                }
-                else if (currentColor.r == 255 && currentColor.g == 153 && currentColor.b == 255){
-                    Instantiate(KnightPrefab, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
-                }
-                else if (currentColor.r == 255 && currentColor.g == 128 && currentColor.b == 64){
-                    Instantiate(PebblePrefab, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
-                }
-                else if (currentColor.r == 0 && currentColor.g == 162 && currentColor.b == 232){
-                    Instantiate(EnergySphereTrapPrefab, new Vector3(i, 0.5f/*1.2f*/, j), Quaternion.identity);
-                }
-                else if (currentColor.r == 0 && currentColor.g == 64 && currentColor.b == 0){
-                    Instantiate(HealthPickup, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
-                }
-                else if (currentColor.r == 128 && currentColor.g == 64 && currentColor.b == 64){
-                    Instantiate(ShotgunAmmoPickup, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
-                }
-                else if (currentColor.r == 128 && currentColor.g == 0 && currentColor.b == 64){
-                    Instantiate(RevolverAmmoPickup, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
-                }
-                else if (currentColor.r == 0 && currentColor.g == 217 && currentColor.b == 234){
-                    Instantiate(Column, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
-                }
-                else if (currentColor.r == 155 && currentColor.g == 17 && currentColor.b == 124){
-                    Instantiate(ColumnTwo, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
-                }
-                // else if (currentColor.r == 0.2f && currentColor.g == 0.00f && currentColor.b == 0.2f){
-                //     Instantiate(EmptyBlockPrefab, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
-                // }
-                //Debug.Log(currentColor);
+                    break;
+                case "DoorGate":
+                    Door = Instantiate(DoorPrefab, new Vector3(obj.X, 1.5f, obj.Y), Quaternion.identity);
+                    if(spawnedKey)
+                        Key.GetComponent<Key>().Door = Door;
+                    break;
             }
         }
-        surface.BuildNavMesh();
     }
 
     private bool devMode = false;

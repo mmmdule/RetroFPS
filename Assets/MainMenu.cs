@@ -56,7 +56,7 @@ public class MainMenu : MonoBehaviour
         float y = 100;
         RectTransform DefaultButtonRect = buttonPrefab.GetComponent<RectTransform>();
         buttonList = new List<GameObject>();
-        for(int i = 0; i < mapNames.Count - 1; i++){
+        for(int i = 0; i < mapNames.Count; i++){
             GameObject tmp = Instantiate(buttonPrefab);
             tmp.transform.SetParent(content.transform);
             tmp.GetComponent<RectTransform>().anchoredPosition3D = new Vector3(DefaultButtonRect.anchoredPosition3D.x, (y - (i * 100.00f)), DefaultButtonRect.anchoredPosition3D.z);
@@ -95,6 +95,7 @@ public class MainMenu : MonoBehaviour
         mapNames = new List<string>();
         foreach(string mapName in project.MapNameList){
             MapJson map = ReadMap(mapName);
+            Debug.Log(mapName + "; is story text segment: " + map.StoryTextSegment);
             if(!map.StoryTextSegment)
                 mapNames.Add(mapName);
         }

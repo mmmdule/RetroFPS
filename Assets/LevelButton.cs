@@ -9,7 +9,7 @@ public class LevelButton : MonoBehaviour
     TextMeshProUGUI text;
     public void ChangeLevel(){
         text = GetComponentInChildren<TextMeshProUGUI>();
-        PlayerPrefs.SetString("LevelToLoad", text.text + ".png");
-        SceneManager.LoadScene("Level1");
+        PlayerPrefs.SetString("LevelToLoad", text.text + ".lem");
+        SceneManager.LoadScene("LoadingScene");
     }
 }

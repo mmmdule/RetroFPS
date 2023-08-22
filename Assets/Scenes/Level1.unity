@@ -154,7 +154,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c41f521548b26d4da8967201dc1b57c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelMap: {fileID: 2800000, guid: 8c77f7521ad2bf743a0a66b2f2be52b9, type: 3}
   PlayerPrefab: {fileID: 2193862527941193284, guid: 38260699676fcb444bd39a8167395b50, type: 3}
   WallPrefab: {fileID: 7452410133261940078, guid: 6cd427e942a89e74d8847bc2da05e288, type: 3}
   CobwebWallPrefab: {fileID: 7452410133261940078, guid: 1f94b78e5028ea1468c1ccb8592019fb, type: 3}
@@ -164,8 +163,8 @@ MonoBehaviour:
   TriImpPrefab: {fileID: 1234464940151881635, guid: 2f50501d9a5b3f94b824540fbd5e8b03, type: 3}
   EmptyBlockPrefab: {fileID: 7452410133261940078, guid: 21749673c689d6443b93d94f519594aa, type: 3}
   EnergySphereTrapPrefab: {fileID: 7452410133261940078, guid: e75a37711f14a8549a68eb83b5798e03, type: 3}
-  Column: {fileID: 7452410133261940078, guid: 2434c8d67ab047b4f92eb8a91da55a8d, type: 3}
-  ColumnTwo: {fileID: 7452410133261940078, guid: a201364bf1cab2040a7efce5dcd18ffd, type: 3}
+  Archway: {fileID: 7452410133261940078, guid: 2434c8d67ab047b4f92eb8a91da55a8d, type: 3}
+  ArchwaySmall: {fileID: 7452410133261940078, guid: a201364bf1cab2040a7efce5dcd18ffd, type: 3}
   TorchPrefab: {fileID: 7452410133261940078, guid: 7e30bb90734a96a4ba6e5166e6956876, type: 3}
   KnightPrefab: {fileID: 7452410133261940078, guid: bb2270db8f121fa43bcec9c59cc5aacb, type: 3}
   PebblePrefab: {fileID: 7452410133261940078, guid: 4f7d5da7e9c590a418bd48f2f15bfb28, type: 3}
