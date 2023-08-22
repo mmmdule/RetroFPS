@@ -65,27 +65,23 @@ public class LevelLayout : MonoBehaviour
     void Awake()//Start()
     {
         levelName = PlayerPrefs.GetString("LevelToLoad", "level1.lem");
-        if(levelName.Equals("END")){
-            LoadEnd();
-            return;
-        }
 
         AudioListener.pause = false;
         
 
         //TODO: ReadNextLevel(because of the exit door, so we know what to load next)
 
+        //has to be done before adding objects to the scene
 
         AudioLoad(9); //Loads random track from Resources/Music 
         ReadMap();
+        string levelBeforeChange = PlayerPrefs.GetString("LevelToLoad");
+        NextLevelManager.NextSegment(); //sets the next level to load
+        nextLevel = PlayerPrefs.GetString("LevelToLoad");
         AddObjectsToScene();
 
-
-
-    }
-
-    private void LoadEnd(){
-        SceneManager.LoadScene("End");
+        if(levelBeforeChange == nextLevel)
+            PlayerPrefs.SetString("LevelToLoad", null); //this way exit door will load main menu
     }
 
     private void AudioLoad(int SongCount){
@@ -157,21 +153,25 @@ public class LevelLayout : MonoBehaviour
     }
 
     private void AddMapObjects(){
+        GameObject tmp;
         foreach(MapObjectJson obj in mapJson.MapObjects){
             switch(obj.Type){
                 case "wallBrick":
                     Instantiate(WallPrefab, new Vector3(obj.X, 1.5f, obj.Y), Quaternion.identity);
                     break;
                 case "wallStone":
-                    Instantiate(WallPrefab, new Vector3(obj.X, 1.5f, obj.Y), Quaternion.identity);
+                    tmp = Instantiate(WallPrefab, new Vector3(obj.X, 1.5f, obj.Y), Quaternion.identity);
+                    tmp.GetComponentInChildren<WallTexture>().materialIndex = 1;
                     //change wall texture
                     break;
                 case "wallMoss":
-                    Instantiate(WallPrefab, new Vector3(obj.X, 1.5f, obj.Y), Quaternion.identity);
+                    tmp = Instantiate(WallPrefab, new Vector3(obj.X, 1.5f, obj.Y), Quaternion.identity);
+                    tmp.GetComponentInChildren<WallTexture>().materialIndex = 2;
                     //change wall texture
                     break;
                 case "tileWall":
-                    Instantiate(WallPrefab, new Vector3(obj.X, 1.5f, obj.Y), Quaternion.identity);
+                    tmp = Instantiate(WallPrefab, new Vector3(obj.X, 1.5f, obj.Y), Quaternion.identity);
+                    tmp.GetComponentInChildren<WallTexture>().materialIndex = 3;
                     //change wall texture
                     break;
                 case "Cobweb_Wall":

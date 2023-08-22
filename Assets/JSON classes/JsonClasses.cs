@@ -49,9 +49,6 @@ public class MapNpcObjectJson
 
 public class MapJson
 {
-    // public List<MapObjectJson> MapObjects;
-    // public List<MapNpcObjectJson> MapNpcObjects;
-    // public List<PickupJson> Pickups;
     public MapObjectJson[] MapObjects;
     public MapNpcObjectJson[] MapNpcObjects;
     public PickupJson[] Pickups;

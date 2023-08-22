@@ -22,17 +22,13 @@ public class LoadGameLevel : MonoBehaviour
             if(levelToLoad == null || levelToLoad == "")
                 throw new Exception("LevelToLoad is null or empty!");
 
-            Debug.LogWarning(Application.streamingAssetsPath + "/Maps/" + levelToLoad);
-
             string levelJson =  System.IO.File.ReadAllText(Application.streamingAssetsPath + "/Maps/" + levelToLoad);
             MapJson map = JsonUtility.FromJson<MapJson>(levelJson);
-            //why is the player game object alway null?
-            Debug.Log(map);
-            
 
             if(map.PlayerGameObject == null)
                 throw new Exception("PlayerGameObject is null!");
-            SceneManager.LoadScene("Level1");
+
+            SceneManager.LoadScene(map.StoryTextSegment ? "End" : "Level1");
         }
         catch (Exception ex){
             if(ex.Message != null)

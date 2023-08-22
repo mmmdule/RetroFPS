@@ -11,8 +11,8 @@ public class ExitDoor : MonoBehaviour
     void OnTriggerEnter(Collider collision)
     {
         if(collision.gameObject.tag == "Player"){
-            PlayerPrefs.SetString("LevelToLoad", nextLevel);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            string mapName = PlayerPrefs.GetString("LevelToLoad");
+            SceneManager.LoadScene(mapName == null || mapName == "" ? "MainMenu" : "LoadingScene");
         }
     }
 }

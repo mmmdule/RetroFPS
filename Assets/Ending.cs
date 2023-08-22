@@ -9,23 +9,35 @@ public class Ending : MonoBehaviour
 {
     // Start is called before the first frame update
     char[] array;
+    
     [SerializeField]
     float delay;
+
     [SerializeField]
     float repeatRate;
-    void Awake()
-    {
-        ReadEndingText();
-        array = endingText.ToCharArray();
-        InvokeRepeating(nameof(LetterByLetter), delay, repeatRate);
-    }
-    string endingText;
+
+    string storyText;
+
     [SerializeField]
     TextMeshProUGUI textMeshPro;
+
     [SerializeField]
     AudioSource audioSource;
 
     int index = 0;
+    
+    int nextLevelInt = -1;
+
+    ProjectJson project;
+    MapJson map;
+
+    void Awake()
+    {
+        storyText = ReadStoryText();
+        array = storyText.ToCharArray();
+        nextLevelInt = NextLevelManager.NextSegment();
+        InvokeRepeating(nameof(LetterByLetter), delay, repeatRate);
+    }
     void LetterByLetter(){
         if(index < array.Length){
             textMeshPro.text += array[index++];
@@ -36,14 +48,26 @@ public class Ending : MonoBehaviour
     void Update()
     {
         if(index >= array.Length && (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Space))){
-            SceneManager.LoadScene("MainMenu");
+            switch(nextLevelInt){
+                case 0:
+                    SceneManager.LoadScene("MainMenu");
+                    break;
+                case 1:
+                    SceneManager.LoadScene("End");
+                    break;
+                case 2:
+                    SceneManager.LoadScene("LoadingScene");
+                    break;
+                default:
+                    break;
+            }
         }
     }
 
-    void ReadEndingText(){
-        using (StreamReader sr = new StreamReader(Application.streamingAssetsPath + "/EndText.txt")){
-            endingText = sr.ReadToEnd();
-            sr.Close();
-        }
+    private string ReadStoryText(){
+        string levelToLoad = PlayerPrefs.GetString("LevelToLoad");
+        string levelJson =  System.IO.File.ReadAllText(Application.streamingAssetsPath + "/Maps/" + levelToLoad);
+        map = JsonUtility.FromJson<MapJson>(levelJson);
+        return map.StoryText;
     }
 }

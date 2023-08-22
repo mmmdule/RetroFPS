@@ -1566,11 +1566,6 @@
       "Type": "tileWall"
     },
     {
-      "X": 18,
-      "Y": 8,
-      "Type": "tileWall"
-    },
-    {
       "X": 17,
       "Y": 8,
       "Type": "tileWall"
@@ -1666,79 +1661,109 @@
       "Type": "tileWall"
     },
     {
-      "X": 38,
-      "Y": 9,
+      "X": 14,
+      "Y": 10,
       "Type": "Key"
     },
     {
-      "X": 34,
+      "X": 18,
       "Y": 8,
-      "Type": "Key"
+      "Type": "ExitDoor"
     },
     {
-      "X": 26,
-      "Y": 7,
-      "Type": "Key"
+      "X": 6,
+      "Y": 16,
+      "Type": "Torch"
     },
     {
-      "X": 24,
-      "Y": 7,
-      "Type": "Key"
+      "X": 11,
+      "Y": 10,
+      "Type": "Torch"
     },
     {
-      "X": 23,
-      "Y": 7,
-      "Type": "Key"
+      "X": 19,
+      "Y": 21,
+      "Type": "Torch"
     },
     {
-      "X": 24,
-      "Y": 6,
-      "Type": "Key"
-    },
-    {
-      "X": 36,
-      "Y": 3,
-      "Type": "Key"
-    },
-    {
-      "X": 36,
-      "Y": 2,
-      "Type": "Key"
-    },
-    {
-      "X": 33,
-      "Y": 4,
-      "Type": "Key"
-    },
-    {
-      "X": 25,
-      "Y": 8,
-      "Type": "Key"
+      "X": 11,
+      "Y": 22,
+      "Type": "Torch"
     },
     {
       "X": 17,
-      "Y": 10,
-      "Type": "Key"
+      "Y": 16,
+      "Type": "Torch"
     },
     {
-      "X": 14,
-      "Y": 10,
-      "Type": "Key"
+      "X": 24,
+      "Y": 14,
+      "Type": "Torch"
     },
     {
-      "X": 14,
-      "Y": 9,
-      "Type": "Key"
+      "X": 26,
+      "Y": 17,
+      "Type": "Torch"
     },
     {
-      "X": 20,
-      "Y": 7,
-      "Type": "Key"
+      "X": 8,
+      "Y": 19,
+      "Type": "EnergyBall"
     },
     {
-      "X": 23,
+      "X": 21,
+      "Y": 18,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 27,
+      "Y": 13,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 27,
+      "Y": 5,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 16,
+      "Y": 12,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 17,
+      "Y": 12,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 16,
       "Y": 8,
-      "Type": "Key"
+      "Type": "DoorGate"
+    },
+    {
+      "X": 8,
+      "Y": 5,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 10,
+      "Y": 5,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 16,
+      "Y": 4,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 14,
+      "Y": 4,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 12,
+      "Y": 4,
+      "Type": "EnergyBall"
     }
   ],
   "MapNpcObjects": [
@@ -2081,7 +2106,7 @@
   "Name": "playerNull",
   "StoryTextSegment": false,
   "StoryText": "",
-  "WallTexture": 3,
+  "WallTexture": 2,
   "StartX": 8,
   "StartY": 11
 }

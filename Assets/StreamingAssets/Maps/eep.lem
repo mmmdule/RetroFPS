@@ -1,0 +1,12 @@
+{
+  "MapObjects": [],
+  "MapNpcObjects": [],
+  "Pickups": [],
+  "PlayerGameObject": null,
+  "Name": "eep",
+  "StoryTextSegment": true,
+  "StoryText": "And so, our hero was eepy.\r\n\r\nHe went to bed.\r\n\r\nBefore his eep, he had this to say\r\nto his beautiful girlfriend:\r\n\r\nGood night, sweetie pie <3\r\nSleep well",
+  "WallTexture": 0,
+  "StartX": 0,
+  "StartY": 0
+}

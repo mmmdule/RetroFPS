@@ -101,7 +101,7 @@ public class MainMenu : MonoBehaviour
         }
     }
 
-    public MapJson ReadMap(string mapName)
+    public static MapJson ReadMap(string mapName)
     {
         try
         {
