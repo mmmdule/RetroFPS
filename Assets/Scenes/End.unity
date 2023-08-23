@@ -265,7 +265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delay: 0
-  repeatRate: 0.1
+  repeatRate: 0.07
   textMeshPro: {fileID: 756435219}
   audioSource: {fileID: 609089126}
 --- !u!1 &615529760

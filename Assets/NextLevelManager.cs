@@ -27,4 +27,8 @@ public class NextLevelManager //: MonoBehaviour
         
         return -1; //something went wrong
     }
+
+    public static void SetGameOverPref(){
+        PlayerPrefs.SetString("GameOverLevel", PlayerPrefs.GetString("LevelToLoad"));
+    }
 }

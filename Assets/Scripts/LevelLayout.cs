@@ -68,7 +68,6 @@ public class LevelLayout : MonoBehaviour
 
         AudioListener.pause = false;
         
-
         //TODO: ReadNextLevel(because of the exit door, so we know what to load next)
 
         //has to be done before adding objects to the scene
@@ -76,6 +75,7 @@ public class LevelLayout : MonoBehaviour
         AudioLoad(9); //Loads random track from Resources/Music 
         ReadMap();
         string levelBeforeChange = PlayerPrefs.GetString("LevelToLoad");
+        NextLevelManager.SetGameOverPref();
         NextLevelManager.NextSegment(); //sets the next level to load
         nextLevel = PlayerPrefs.GetString("LevelToLoad");
         AddObjectsToScene();

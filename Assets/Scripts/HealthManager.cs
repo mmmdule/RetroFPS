@@ -28,8 +28,11 @@ public class HealthManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(health <= 0 && (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Space)))
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        if(health <= 0 && (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Space))){
+            PlayerPrefs.SetString("LevelToLoad", PlayerPrefs.GetString("GameOverLevel"));
+            SceneManager.LoadScene("LoadingScene");
+        }
+            
     }
     [SerializeField]
     AudioClip DeathScream;
