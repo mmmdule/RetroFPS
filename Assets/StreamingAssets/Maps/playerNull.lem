@@ -2094,11 +2094,11 @@
   ],
   "Pickups": [],
   "PlayerGameObject": {
-    "Health": 100,
+    "Health": 400,
     "HasRevolver": true,
-    "RevolverAmmo": 75,
+    "RevolverAmmo": 250,
     "HasShotgun": true,
-    "ShotgunAmmo": 50,
+    "ShotgunAmmo": 150,
     "X": 8,
     "Y": 11,
     "Type": "player"

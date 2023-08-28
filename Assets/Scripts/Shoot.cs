@@ -71,6 +71,9 @@ public class Shoot : MonoBehaviour
         }
     }
     
+    public bool HasRevolver = true;
+    public bool HasShotgun = true;
+
     private bool canShootAgain = true;
     public CharacterController charCtrl;
     public int currentWeapon = 3; //3 - shotgun, 2 - pistol
@@ -95,7 +98,7 @@ public class Shoot : MonoBehaviour
             
         }
 
-        if(Input.GetKeyDown(KeyCode.Alpha2)){
+        if(Input.GetKeyDown(KeyCode.Alpha2) && HasRevolver){
             if(currentWeapon != 2){
                 animator.Play("ShotgunToRevolver");
                 animator.SetBool("CanShoot", false);   
@@ -108,7 +111,7 @@ public class Shoot : MonoBehaviour
             ammoManager.ChangeAmmoText(ammoManager.pistolAmmo, 1);
             ammoManager.currentWeapon = currentWeapon;
         }
-        if(Input.GetKeyDown(KeyCode.Alpha3)){
+        if(Input.GetKeyDown(KeyCode.Alpha3) && HasShotgun){
             if(currentWeapon != 3){
                 animator.Play("RevolverToShotgun");
                 animator.SetBool("CanShoot", false);   
@@ -134,6 +137,18 @@ public class Shoot : MonoBehaviour
         //GetComponentsInChildren<Image>()[0].sprite = weaponSprites[Sprite-1];
         GetComponentsInChildren<Image>()[0].sprite = weaponSprites[currentWeapon-1];
         Debug.Log("Sprite Index is now: " + (currentWeapon-1));
+    }
+
+    public void ChangeSprite(int weaponNumber){
+        GetComponentsInChildren<Image>()[0].sprite = weaponSprites[weaponNumber-1];
+        currentWeapon = weaponNumber;
+        Debug.Log("Sprite Index is now: " + (weaponNumber-1));
+    }
+
+    public void NoWeaponSprite(){
+        GetComponentsInChildren<Image>()[0].enabled = false;//sprite = weaponSprites[weaponNumber-1];
+        currentWeapon = 1;
+        Debug.Log("Player has no weapons.");
     }
     
     //indexes match currentWeapon values

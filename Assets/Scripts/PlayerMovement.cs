@@ -64,6 +64,7 @@ public class PlayerMovement : MonoBehaviour
             canvasPlay.enabled = true;
         }
         else if (paused && (Input.GetKeyDown(KeyCode.R))){
+            PlayerPrefs.SetString("LevelToLoad", PlayerPrefs.GetString("GameOverLevel"));
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
         else if (paused && (Input.GetKeyDown(KeyCode.Q))){

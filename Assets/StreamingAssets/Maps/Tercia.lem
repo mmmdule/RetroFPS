@@ -1270,11 +1270,11 @@
     {
       "Health": 55,
       "ProjectileDamage": 16,
-      "FiringRate": 2.25,
+      "FiringRate": 10,
       "PatrolRange": 10,
       "AttackRange": 13.5,
       "ChaseRange": 13.5,
-      "CanMove": true,
+      "CanMove": false,
       "X": 1,
       "Y": 3,
       "Type": "Imp"
@@ -1282,11 +1282,11 @@
     {
       "Health": 100,
       "ProjectileDamage": 36,
-      "FiringRate": 1.87,
+      "FiringRate": 0.1,
       "PatrolRange": 15,
       "AttackRange": 13.5,
       "ChaseRange": 25,
-      "CanMove": true,
+      "CanMove": false,
       "X": 2,
       "Y": 2,
       "Type": "Tri_horn"
@@ -1302,9 +1302,9 @@
   ],
   "PlayerGameObject": {
     "Health": 100,
-    "HasRevolver": true,
+    "HasRevolver": false,
     "RevolverAmmo": 75,
-    "HasShotgun": true,
+    "HasShotgun": false,
     "ShotgunAmmo": 50,
     "X": 1,
     "Y": 1,

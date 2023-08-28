@@ -37,7 +37,7 @@ public class LevelLayout : MonoBehaviour
     public GameObject HealthPickup; 
     public GameObject ShotgunAmmoPickup;
     public GameObject RevolverAmmoPickup;
-    public bool spawnedDoor = false;
+    
 
     [HeaderAttribute("Lights")]
     public GameObject LightPrefab;
@@ -49,7 +49,7 @@ public class LevelLayout : MonoBehaviour
     [HeaderAttribute("Keys")]
     public GameObject KeyPrefab;
     public Color KeyColor;
-    public bool spawnedKey = false;
+    
 
     public NavMeshSurface surface;
 
@@ -78,7 +78,7 @@ public class LevelLayout : MonoBehaviour
         NextLevelManager.SetGameOverPref();
         NextLevelManager.NextSegment(); //sets the next level to load
         nextLevel = PlayerPrefs.GetString("LevelToLoad");
-        AddObjectsToScene();
+        AddObjectsToScene(mapJson);
 
         if(levelBeforeChange == nextLevel)
             PlayerPrefs.SetString("LevelToLoad", null); //this way exit door will load main menu
@@ -91,6 +91,8 @@ public class LevelLayout : MonoBehaviour
         GetComponent<AudioSource>().Play();
     }
 
+    public bool spawnedDoor = false;
+    public bool spawnedKey = false;
     private GameObject Door;
     private GameObject Key;
 
@@ -101,35 +103,65 @@ public class LevelLayout : MonoBehaviour
         mapJson = JsonUtility.FromJson<MapJson>(levelJsonData);
     }
 
-    private void AddObjectsToScene(){
+    private void AddObjectsToScene(MapJson map){
         //add all members of the mapJson to the scene
         //to see which prefab to instantiate, check the string value "type" of the object
         AddMapObjects();
-        AddPlayer();
+        AddPlayer(map.PlayerGameObject);
         AddPickups();
         AddNpcs();
         surface.BuildNavMesh();
     }
 
-    private void AddPlayer(){
+    private void AddPlayer(PlayerObjectJson playerObjectJson){
         //add player to the scene
-        GameObject playerObject = Instantiate(PlayerPrefab, new Vector3(mapJson.PlayerGameObject.X, 1.00f, mapJson.PlayerGameObject.Y), Quaternion.identity);
+        GameObject playerObject = Instantiate(PlayerPrefab, new Vector3(playerObjectJson.X, 1.00f, playerObjectJson.Y), Quaternion.identity);
         GameObject.Find("GameManager").GetComponent<MessageManager>().player = playerObject;
         //TODO: add player properties
+        HealthManager healthManager = playerObject.GetComponent<HealthManager>();
+        healthManager.health = playerObjectJson.Health;
+        healthManager.ChangeHealthText(playerObjectJson.Health);
+
+        AmmoManager ammoManager = playerObject.GetComponent<AmmoManager>();
+        ammoManager.shotgunAmmo = playerObjectJson.ShotgunAmmo;
+        ammoManager.pistolAmmo = playerObjectJson.RevolverAmmo;
+        
+        Shoot shoot = playerObject.GetComponent<Shoot>();
+        shoot.HasRevolver = playerObjectJson.HasRevolver;
+        shoot.HasShotgun = playerObjectJson.HasShotgun;
+        if(playerObjectJson.HasShotgun) {
+            shoot.currentWeapon = 3;
+            shoot.ChangeSprite(3);
+            ammoManager.ChangeAmmoText(ammoManager.shotgunAmmo, 2);
+        }
+        else if(playerObjectJson.HasRevolver) {
+            shoot.currentWeapon = 2;
+            shoot.ChangeSprite(2);
+            ammoManager.ChangeAmmoText(ammoManager.shotgunAmmo, 1);
+        }
+        else {
+            shoot.currentWeapon = 1;
+            shoot.NoWeaponSprite();
+            ammoManager.ClearText();
+        }
     }
 
     private void AddPickups(){
         //add pickups to the scene
         foreach(PickupJson pickup in mapJson.Pickups){
+            GameObject tmp;
             switch(pickup.Type){
                 case "Health":
-                    Instantiate(HealthPickup, new Vector3(pickup.X, 1.5f, pickup.Y), Quaternion.identity);
+                    tmp = Instantiate(HealthPickup, new Vector3(pickup.X, 1.5f, pickup.Y), Quaternion.identity);
+                    tmp.GetComponent<Pickup>().HealthPickupValue = pickup.Value;
                     break;
                 case "ShotgunAmmo":
-                    Instantiate(ShotgunAmmoPickup, new Vector3(pickup.X, 1.5f, pickup.Y), Quaternion.identity);
+                    tmp = Instantiate(ShotgunAmmoPickup, new Vector3(pickup.X, 1.5f, pickup.Y), Quaternion.identity);
+                    tmp.GetComponent<Pickup>().ShotgunAmmoPickupValue = pickup.Value;
                     break;
                 case "RevolverAmmo":
-                    Instantiate(RevolverAmmoPickup, new Vector3(pickup.X, 1.5f, pickup.Y), Quaternion.identity);
+                    tmp = Instantiate(RevolverAmmoPickup, new Vector3(pickup.X, 1.5f, pickup.Y), Quaternion.identity);
+                    tmp.GetComponent<Pickup>().RevolverAmmoPickupValue = pickup.Value;
                     break;
             }
             //TODO: set pickup properties
@@ -137,15 +169,39 @@ public class LevelLayout : MonoBehaviour
     }
 
     private void AddNpcs(){
+        //maybe default should handle properties of the npc, if every npc ends up extending the same class
+        //probably the 'Imp' class
+        //but leave this for now
+
         //add npc objects to the scene
         foreach(MapNpcObjectJson npc in mapJson.MapNpcObjects){
             GameObject tmp;
             switch(npc.Type){
                 case "Tri_horn":
                     tmp = Instantiate(TriImpPrefab, new Vector3(npc.X, 1.79f, npc.Y), Quaternion.identity);
+                    TriImp tri = tmp.GetComponent<TriImp>();
+                    tri.health = npc.Health;
+                    tri.walkRange = npc.PatrolRange;
+                    tri.sightRange = npc.ChaseRange;
+                    tri.attackRange = npc.AttackRange;
+                    tri.timeBetweenAttacks = npc.FiringRate;
+                    Fireball[] fireballs = tri.projectile.GetComponentsInChildren<Fireball>();
+                    foreach(Fireball fireball in fireballs) //evenly distribute damage between fireballs
+                        fireball.Damage = npc.ProjectileDamage / fireballs.Length;
+                    if(!npc.CanMove)
+                        tri.agent.enabled = false;
                     break;
                 case "Imp":
                     tmp = Instantiate(ImpPrefab, new Vector3(npc.X, 1.79f, npc.Y), Quaternion.identity);
+                    Imp imp = tmp.GetComponent<Imp>();
+                    imp.health = npc.Health;
+                    imp.walkRange = npc.PatrolRange;
+                    imp.sightRange = npc.ChaseRange;
+                    imp.attackRange = npc.AttackRange;
+                    imp.timeBetweenAttacks = npc.FiringRate;
+                    imp.projectile.GetComponent<Fireball>().Damage = npc.ProjectileDamage;
+                    if(!npc.CanMove)
+                        imp.agent.enabled = false;
                     break;
             }
             //TODO: set npc properties
@@ -207,6 +263,7 @@ public class LevelLayout : MonoBehaviour
                     break;
                 case "DoorGate":
                     Door = Instantiate(DoorPrefab, new Vector3(obj.X, 1.5f, obj.Y), Quaternion.identity);
+                    spawnedDoor = true;
                     if(spawnedKey)
                         Key.GetComponent<Key>().Door = Door;
                     break;

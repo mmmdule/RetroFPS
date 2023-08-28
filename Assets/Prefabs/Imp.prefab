@@ -126,7 +126,7 @@ MonoBehaviour:
   thisSprite: {fileID: 2463759178599113764}
   attackSprite: {fileID: 226589503363604851}
   audioSource: {fileID: 8042457806382862244}
-  ImpDeathScream: {fileID: 8300000, guid: 4874752cba55c7d4a8584f2022d48a0c, type: 3}
+  DeathScream: {fileID: 8300000, guid: 4874752cba55c7d4a8584f2022d48a0c, type: 3}
   animator: {fileID: 2330890799700691584}
 --- !u!195 &7440839106917718588
 NavMeshAgent:
