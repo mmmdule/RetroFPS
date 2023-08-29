@@ -1261,59 +1261,1074 @@
       "Type": "wallBrick"
     },
     {
-      "X": 1,
-      "Y": 4,
+      "X": 12,
+      "Y": 17,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 12,
+      "Y": 18,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 12,
+      "Y": 19,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 12,
+      "Y": 20,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 12,
+      "Y": 23,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 12,
+      "Y": 24,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 12,
+      "Y": 25,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 12,
+      "Y": 26,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 12,
+      "Y": 27,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 12,
+      "Y": 28,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 12,
+      "Y": 29,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 12,
+      "Y": 30,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 12,
+      "Y": 31,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 12,
+      "Y": 33,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 12,
+      "Y": 34,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 12,
+      "Y": 35,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 12,
+      "Y": 16,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 12,
+      "Y": 15,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 13,
+      "Y": 15,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 24,
+      "Y": 15,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 37,
+      "Y": 15,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 35,
+      "Y": 15,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 34,
+      "Y": 15,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 32,
+      "Y": 15,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 31,
+      "Y": 15,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 30,
+      "Y": 15,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 29,
+      "Y": 15,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 28,
+      "Y": 15,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 27,
+      "Y": 15,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 26,
+      "Y": 15,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 25,
+      "Y": 15,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 23,
+      "Y": 15,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 22,
+      "Y": 15,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 21,
+      "Y": 15,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 20,
+      "Y": 15,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 18,
+      "Y": 15,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 17,
+      "Y": 15,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 12,
+      "Y": 32,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 15,
+      "Y": 32,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 16,
+      "Y": 32,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 17,
+      "Y": 32,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 18,
+      "Y": 32,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 19,
+      "Y": 32,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 20,
+      "Y": 32,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 21,
+      "Y": 32,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 34,
+      "Y": 32,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 35,
+      "Y": 32,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 37,
+      "Y": 32,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 36,
+      "Y": 32,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 33,
+      "Y": 32,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 32,
+      "Y": 32,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 31,
+      "Y": 32,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 30,
+      "Y": 32,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 29,
+      "Y": 32,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 28,
+      "Y": 32,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 27,
+      "Y": 32,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 26,
+      "Y": 32,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 25,
+      "Y": 32,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 24,
+      "Y": 32,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 23,
+      "Y": 32,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 22,
+      "Y": 32,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 37,
+      "Y": 18,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 37,
+      "Y": 19,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 37,
+      "Y": 20,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 37,
+      "Y": 21,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 37,
+      "Y": 22,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 37,
+      "Y": 23,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 37,
+      "Y": 24,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 37,
+      "Y": 25,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 37,
+      "Y": 26,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 37,
+      "Y": 27,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 37,
+      "Y": 28,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 37,
+      "Y": 29,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 37,
+      "Y": 31,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 37,
+      "Y": 30,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 37,
+      "Y": 16,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 37,
+      "Y": 17,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 32,
+      "Y": 28,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 32,
+      "Y": 19,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 12,
+      "Y": 36,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 14,
+      "Y": 37,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 15,
+      "Y": 37,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 16,
+      "Y": 37,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 17,
+      "Y": 37,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 13,
+      "Y": 37,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 12,
+      "Y": 37,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 38,
+      "Y": 14,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 38,
+      "Y": 13,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 32,
+      "Y": 13,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 32,
+      "Y": 14,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 38,
+      "Y": 12,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 37,
+      "Y": 11,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 36,
+      "Y": 11,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 35,
+      "Y": 11,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 34,
+      "Y": 11,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 33,
+      "Y": 11,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 32,
+      "Y": 11,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 32,
+      "Y": 12,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 18,
+      "Y": 37,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 18,
+      "Y": 33,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 19,
+      "Y": 33,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 20,
+      "Y": 33,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 21,
+      "Y": 33,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 26,
+      "Y": 33,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 27,
+      "Y": 33,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 24,
+      "Y": 33,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 23,
+      "Y": 33,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 22,
+      "Y": 33,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 18,
+      "Y": 36,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 20,
+      "Y": 36,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 21,
+      "Y": 36,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 22,
+      "Y": 36,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 23,
+      "Y": 36,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 24,
+      "Y": 36,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 25,
+      "Y": 36,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 26,
+      "Y": 36,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 27,
+      "Y": 36,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 28,
+      "Y": 36,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 25,
+      "Y": 33,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 19,
+      "Y": 36,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 29,
+      "Y": 36,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 29,
+      "Y": 35,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 29,
+      "Y": 34,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 29,
+      "Y": 33,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 36,
+      "Y": 31,
+      "Type": "Torch"
+    },
+    {
+      "X": 33,
+      "Y": 12,
+      "Type": "Torch"
+    },
+    {
+      "X": 37,
+      "Y": 12,
+      "Type": "Torch"
+    },
+    {
+      "X": 13,
+      "Y": 16,
+      "Type": "Torch"
+    },
+    {
+      "X": 34,
+      "Y": 16,
+      "Type": "Torch"
+    },
+    {
+      "X": 13,
+      "Y": 29,
+      "Type": "Torch"
+    },
+    {
+      "X": 17,
+      "Y": 33,
+      "Type": "Torch"
+    },
+    {
+      "X": 17,
+      "Y": 36,
+      "Type": "Torch"
+    },
+    {
+      "X": 13,
+      "Y": 34,
+      "Type": "ArmorBlink"
+    },
+    {
+      "X": 17,
+      "Y": 28,
+      "Type": "Cobweb_Wall"
+    },
+    {
+      "X": 33,
+      "Y": 15,
+      "Type": "Cobweb_Wall"
+    },
+    {
+      "X": 38,
+      "Y": 11,
+      "Type": "Cobweb_Wall"
+    },
+    {
+      "X": 19,
+      "Y": 15,
+      "Type": "Cobweb_Wall"
+    },
+    {
+      "X": 13,
+      "Y": 24,
+      "Type": "Stone"
+    },
+    {
+      "X": 22,
+      "Y": 31,
+      "Type": "Stone"
+    },
+    {
+      "X": 24,
+      "Y": 31,
+      "Type": "Stone"
+    },
+    {
+      "X": 26,
+      "Y": 31,
+      "Type": "Stone"
+    },
+    {
+      "X": 28,
+      "Y": 31,
+      "Type": "Stone"
+    },
+    {
+      "X": 18,
+      "Y": 31,
+      "Type": "Torch"
+    },
+    {
+      "X": 36,
+      "Y": 20,
+      "Type": "ArchwaySmall"
+    },
+    {
+      "X": 25,
+      "Y": 16,
+      "Type": "ArchwaySmall"
+    },
+    {
+      "X": 21,
+      "Y": 16,
+      "Type": "ArchwaySmall"
+    },
+    {
+      "X": 24,
+      "Y": 24,
+      "Type": "Key"
+    },
+    {
+      "X": 14,
+      "Y": 15,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 14,
+      "Y": 14,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 14,
+      "Y": 13,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 14,
+      "Y": 12,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 14,
+      "Y": 11,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 15,
+      "Y": 11,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 16,
+      "Y": 12,
+      "Type": "DoorGate"
+    },
+    {
+      "X": 18,
+      "Y": 13,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 17,
+      "Y": 11,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 18,
+      "Y": 11,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 19,
+      "Y": 10,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 19,
+      "Y": 13,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 20,
+      "Y": 13,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 21,
+      "Y": 13,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 22,
+      "Y": 13,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 20,
+      "Y": 8,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 19,
+      "Y": 8,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 19,
+      "Y": 9,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 22,
+      "Y": 8,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 23,
+      "Y": 8,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 23,
+      "Y": 9,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 23,
+      "Y": 13,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 23,
+      "Y": 10,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 23,
+      "Y": 11,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 23,
+      "Y": 12,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 21,
+      "Y": 8,
+      "Type": "ExitDoor"
+    },
+    {
+      "X": 19,
+      "Y": 7,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 20,
+      "Y": 7,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 22,
+      "Y": 7,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 23,
+      "Y": 7,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 22,
+      "Y": 12,
+      "Type": "Torch"
+    },
+    {
+      "X": 22,
+      "Y": 9,
+      "Type": "Torch"
+    },
+    {
+      "X": 20,
+      "Y": 9,
+      "Type": "Torch"
+    },
+    {
+      "X": 15,
+      "Y": 19,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 12,
+      "Y": 22,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 12,
+      "Y": 21,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 13,
+      "Y": 22,
+      "Type": "Stone"
+    },
+    {
+      "X": 13,
+      "Y": 26,
+      "Type": "Stone"
+    },
+    {
+      "X": 13,
+      "Y": 27,
+      "Type": "Stone"
+    },
+    {
+      "X": 36,
+      "Y": 22,
+      "Type": "Torch"
+    },
+    {
+      "X": 16,
+      "Y": 11,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 17,
+      "Y": 14,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 17,
+      "Y": 13,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 17,
+      "Y": 16,
+      "Type": "Torch"
+    },
+    {
+      "X": 28,
+      "Y": 33,
       "Type": "Cobweb_Wall"
     }
   ],
   "MapNpcObjects": [
     {
-      "Health": 55,
-      "ProjectileDamage": 16,
-      "FiringRate": 10,
-      "PatrolRange": 10,
+      "Health": 700,
+      "ProjectileDamage": 30,
+      "FiringRate": 0.07,
+      "PatrolRange": 0,
+      "AttackRange": 25,
+      "ChaseRange": 25,
+      "CanMove": false,
+      "X": 24,
+      "Y": 23,
+      "Type": "Tri_horn"
+    },
+    {
+      "Health": 700,
+      "ProjectileDamage": 30,
+      "FiringRate": 0.07,
+      "PatrolRange": 0,
+      "AttackRange": 25,
+      "ChaseRange": 25,
+      "CanMove": false,
+      "X": 23,
+      "Y": 24,
+      "Type": "Tri_horn"
+    },
+    {
+      "Health": 700,
+      "ProjectileDamage": 32,
+      "FiringRate": 0.07,
+      "PatrolRange": 0,
       "AttackRange": 13.5,
       "ChaseRange": 13.5,
       "CanMove": false,
-      "X": 1,
-      "Y": 3,
-      "Type": "Imp"
+      "X": 24,
+      "Y": 25,
+      "Type": "Tri_horn"
     },
     {
-      "Health": 100,
-      "ProjectileDamage": 36,
-      "FiringRate": 0.1,
-      "PatrolRange": 15,
-      "AttackRange": 13.5,
+      "Health": 700,
+      "ProjectileDamage": 30,
+      "FiringRate": 0.07,
+      "PatrolRange": 0,
+      "AttackRange": 25,
       "ChaseRange": 25,
       "CanMove": false,
-      "X": 2,
-      "Y": 2,
+      "X": 25,
+      "Y": 24,
       "Type": "Tri_horn"
     }
   ],
   "Pickups": [
     {
       "Value": 10,
-      "X": 1,
-      "Y": 2,
+      "X": 34,
+      "Y": 12,
       "Type": "SmallMedkit"
+    },
+    {
+      "Value": 10,
+      "X": 36,
+      "Y": 30,
+      "Type": "SmallMedkit"
+    },
+    {
+      "Value": 7,
+      "X": 33,
+      "Y": 13,
+      "Type": "ShotgunAmmo"
+    },
+    {
+      "Value": 7,
+      "X": 33,
+      "Y": 14,
+      "Type": "ShotgunAmmo"
+    },
+    {
+      "Value": 15,
+      "X": 37,
+      "Y": 13,
+      "Type": "Bullets"
+    },
+    {
+      "Value": 15,
+      "X": 37,
+      "Y": 14,
+      "Type": "Bullets"
+    },
+    {
+      "Value": 15,
+      "X": 30,
+      "Y": 21,
+      "Type": "Bullets"
     }
   ],
   "PlayerGameObject": {
     "Health": 100,
-    "HasRevolver": false,
+    "HasRevolver": true,
     "RevolverAmmo": 75,
-    "HasShotgun": false,
+    "HasShotgun": true,
     "ShotgunAmmo": 50,
-    "X": 1,
-    "Y": 1,
+    "X": 28,
+    "Y": 34,
     "Type": "player"
   },
-  "Name": "Tercia",
+  "Name": "Boss area 1",
   "StoryTextSegment": false,
   "StoryText": "",
   "WallTexture": 0,
-  "StartX": 1,
-  "StartY": 1
+  "StartX": 28,
+  "StartY": 34
 }

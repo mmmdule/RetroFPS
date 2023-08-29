@@ -1261,852 +1261,192 @@
       "Type": "wallBrick"
     },
     {
-      "X": 9,
+      "X": 18,
+      "Y": 14,
+      "Type": "DoorGate"
+    },
+    {
+      "X": 17,
+      "Y": 13,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 19,
       "Y": 13,
       "Type": "wallBrick"
     },
     {
       "X": 16,
-      "Y": 13,
+      "Y": 14,
       "Type": "wallBrick"
     },
     {
-      "X": 25,
-      "Y": 10,
+      "X": 16,
+      "Y": 15,
       "Type": "wallBrick"
     },
     {
-      "X": 20,
-      "Y": 8,
-      "Type": "wallBrick"
-    },
-    {
-      "X": 13,
-      "Y": 8,
-      "Type": "wallBrick"
-    },
-    {
-      "X": 9,
-      "Y": 12,
-      "Type": "wallBrick"
-    },
-    {
-      "X": 12,
-      "Y": 13,
-      "Type": "wallBrick"
-    },
-    {
-      "X": 21,
-      "Y": 11,
-      "Type": "wallBrick"
-    },
-    {
-      "X": 21,
-      "Y": 8,
-      "Type": "wallBrick"
-    },
-    {
-      "X": 15,
-      "Y": 10,
-      "Type": "wallBrick"
-    },
-    {
-      "X": 18,
-      "Y": 12,
-      "Type": "wallBrick"
-    },
-    {
-      "X": 21,
-      "Y": 12,
-      "Type": "wallBrick"
-    },
-    {
-      "X": 25,
-      "Y": 11,
-      "Type": "wallBrick"
-    },
-    {
-      "X": 26,
-      "Y": 8,
-      "Type": "wallBrick"
-    },
-    {
-      "X": 22,
-      "Y": 4,
-      "Type": "wallBrick"
-    },
-    {
-      "X": 18,
-      "Y": 5,
-      "Type": "wallBrick"
-    },
-    {
-      "X": 13,
-      "Y": 7,
-      "Type": "wallBrick"
-    },
-    {
-      "X": 10,
+      "X": 16,
       "Y": 16,
       "Type": "wallBrick"
     },
     {
-      "X": 17,
-      "Y": 14,
-      "Type": "wallBrick"
-    },
-    {
-      "X": 19,
-      "Y": 9,
-      "Type": "wallBrick"
-    },
-    {
-      "X": 18,
-      "Y": 7,
-      "Type": "wallBrick"
-    },
-    {
-      "X": 9,
-      "Y": 8,
-      "Type": "tileWall"
-    },
-    {
-      "X": 10,
-      "Y": 8,
-      "Type": "tileWall"
-    },
-    {
-      "X": 10,
-      "Y": 9,
-      "Type": "tileWall"
-    },
-    {
-      "X": 9,
-      "Y": 9,
-      "Type": "tileWall"
-    },
-    {
-      "X": 10,
-      "Y": 10,
-      "Type": "tileWall"
-    },
-    {
-      "X": 10,
-      "Y": 11,
-      "Type": "tileWall"
-    },
-    {
-      "X": 10,
-      "Y": 13,
-      "Type": "tileWall"
-    },
-    {
-      "X": 11,
-      "Y": 13,
-      "Type": "tileWall"
-    },
-    {
-      "X": 11,
-      "Y": 14,
-      "Type": "tileWall"
-    },
-    {
-      "X": 12,
-      "Y": 14,
-      "Type": "tileWall"
-    },
-    {
-      "X": 14,
-      "Y": 13,
-      "Type": "tileWall"
-    },
-    {
-      "X": 14,
-      "Y": 14,
-      "Type": "tileWall"
-    },
-    {
-      "X": 13,
+      "X": 16,
       "Y": 17,
-      "Type": "tileWall"
+      "Type": "wallBrick"
     },
     {
-      "X": 13,
+      "X": 20,
+      "Y": 14,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 20,
+      "Y": 15,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 20,
+      "Y": 16,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 20,
+      "Y": 17,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 20,
+      "Y": 18,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 20,
+      "Y": 19,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 20,
       "Y": 20,
-      "Type": "tileWall"
+      "Type": "wallBrick"
     },
     {
       "X": 20,
-      "Y": 16,
-      "Type": "tileWall"
-    },
-    {
-      "X": 23,
-      "Y": 12,
-      "Type": "tileWall"
-    },
-    {
-      "X": 23,
-      "Y": 10,
-      "Type": "tileWall"
-    },
-    {
-      "X": 21,
-      "Y": 10,
-      "Type": "tileWall"
-    },
-    {
-      "X": 19,
-      "Y": 11,
-      "Type": "tileWall"
+      "Y": 21,
+      "Type": "wallBrick"
     },
     {
       "X": 20,
-      "Y": 11,
-      "Type": "tileWall"
-    },
-    {
-      "X": 24,
-      "Y": 10,
-      "Type": "tileWall"
-    },
-    {
-      "X": 22,
-      "Y": 10,
-      "Type": "tileWall"
-    },
-    {
-      "X": 24,
-      "Y": 9,
-      "Type": "tileWall"
-    },
-    {
-      "X": 25,
-      "Y": 9,
-      "Type": "tileWall"
-    },
-    {
-      "X": 10,
-      "Y": 12,
-      "Type": "tileWall"
-    },
-    {
-      "X": 2,
-      "Y": 10,
-      "Type": "tileWall"
-    },
-    {
-      "X": 7,
-      "Y": 8,
-      "Type": "tileWall"
-    },
-    {
-      "X": 14,
-      "Y": 8,
-      "Type": "tileWall"
-    },
-    {
-      "X": 21,
-      "Y": 14,
-      "Type": "tileWall"
-    },
-    {
-      "X": 11,
-      "Y": 16,
-      "Type": "tileWall"
-    },
-    {
-      "X": 3,
-      "Y": 16,
-      "Type": "tileWall"
-    },
-    {
-      "X": 2,
-      "Y": 16,
-      "Type": "tileWall"
-    },
-    {
-      "X": 3,
-      "Y": 14,
-      "Type": "tileWall"
-    },
-    {
-      "X": 7,
-      "Y": 11,
-      "Type": "tileWall"
-    },
-    {
-      "X": 15,
-      "Y": 9,
-      "Type": "tileWall"
-    },
-    {
-      "X": 19,
-      "Y": 10,
-      "Type": "tileWall"
+      "Y": 22,
+      "Type": "wallBrick"
     },
     {
       "X": 16,
-      "Y": 11,
-      "Type": "tileWall"
+      "Y": 18,
+      "Type": "wallBrick"
     },
     {
-      "X": 5,
-      "Y": 14,
-      "Type": "tileWall"
+      "X": 16,
+      "Y": 19,
+      "Type": "wallBrick"
     },
     {
-      "X": 2,
-      "Y": 13,
-      "Type": "tileWall"
+      "X": 16,
+      "Y": 20,
+      "Type": "wallBrick"
     },
     {
-      "X": 11,
-      "Y": 9,
-      "Type": "tileWall"
+      "X": 16,
+      "Y": 21,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 16,
+      "Y": 22,
+      "Type": "wallBrick"
     },
     {
       "X": 17,
-      "Y": 8,
-      "Type": "tileWall"
+      "Y": 22,
+      "Type": "wallBrick"
     },
     {
-      "X": 9,
-      "Y": 10,
-      "Type": "tileWall"
-    },
-    {
-      "X": 19,
-      "Y": 8,
-      "Type": "tileWall"
-    },
-    {
-      "X": 21,
-      "Y": 7,
-      "Type": "tileWall"
+      "X": 18,
+      "Y": 22,
+      "Type": "wallBrick"
     },
     {
       "X": 19,
-      "Y": 6,
-      "Type": "tileWall"
+      "Y": 22,
+      "Type": "wallBrick"
     },
     {
-      "X": 14,
-      "Y": 6,
-      "Type": "tileWall"
-    },
-    {
-      "X": 10,
-      "Y": 7,
-      "Type": "tileWall"
-    },
-    {
-      "X": 8,
-      "Y": 7,
-      "Type": "tileWall"
-    },
-    {
-      "X": 12,
-      "Y": 6,
-      "Type": "tileWall"
-    },
-    {
-      "X": 16,
-      "Y": 5,
-      "Type": "tileWall"
-    },
-    {
-      "X": 19,
-      "Y": 5,
-      "Type": "tileWall"
-    },
-    {
-      "X": 15,
-      "Y": 7,
-      "Type": "tileWall"
-    },
-    {
-      "X": 8,
-      "Y": 8,
-      "Type": "tileWall"
-    },
-    {
-      "X": 2,
-      "Y": 9,
-      "Type": "tileWall"
-    },
-    {
-      "X": 1,
-      "Y": 8,
-      "Type": "tileWall"
-    },
-    {
-      "X": 4,
-      "Y": 8,
-      "Type": "tileWall"
-    },
-    {
-      "X": 13,
-      "Y": 6,
-      "Type": "tileWall"
-    },
-    {
-      "X": 23,
-      "Y": 5,
-      "Type": "tileWall"
-    },
-    {
-      "X": 30,
-      "Y": 5,
-      "Type": "tileWall"
-    },
-    {
-      "X": 14,
-      "Y": 10,
+      "X": 18,
+      "Y": 18,
       "Type": "Key"
     },
     {
       "X": 18,
-      "Y": 8,
+      "Y": 10,
       "Type": "ExitDoor"
     },
     {
-      "X": 6,
-      "Y": 16,
-      "Type": "Torch"
+      "X": 16,
+      "Y": 12,
+      "Type": "wallBrick"
     },
     {
-      "X": 11,
+      "X": 16,
+      "Y": 11,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 16,
       "Y": 10,
-      "Type": "Torch"
+      "Type": "wallBrick"
+    },
+    {
+      "X": 20,
+      "Y": 12,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 20,
+      "Y": 11,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 20,
+      "Y": 10,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 17,
+      "Y": 10,
+      "Type": "wallBrick"
     },
     {
       "X": 19,
-      "Y": 21,
-      "Type": "Torch"
-    },
-    {
-      "X": 11,
-      "Y": 22,
-      "Type": "Torch"
-    },
-    {
-      "X": 17,
-      "Y": 16,
-      "Type": "Torch"
-    },
-    {
-      "X": 24,
-      "Y": 14,
-      "Type": "Torch"
-    },
-    {
-      "X": 26,
-      "Y": 17,
-      "Type": "Torch"
-    },
-    {
-      "X": 8,
-      "Y": 19,
-      "Type": "EnergyBall"
-    },
-    {
-      "X": 21,
-      "Y": 18,
-      "Type": "EnergyBall"
-    },
-    {
-      "X": 27,
-      "Y": 13,
-      "Type": "EnergyBall"
-    },
-    {
-      "X": 27,
-      "Y": 5,
-      "Type": "EnergyBall"
-    },
-    {
-      "X": 16,
-      "Y": 12,
-      "Type": "wallMoss"
-    },
-    {
-      "X": 17,
-      "Y": 12,
-      "Type": "wallMoss"
-    },
-    {
-      "X": 16,
-      "Y": 8,
-      "Type": "DoorGate"
-    },
-    {
-      "X": 8,
-      "Y": 5,
-      "Type": "EnergyBall"
-    },
-    {
-      "X": 10,
-      "Y": 5,
-      "Type": "EnergyBall"
-    },
-    {
-      "X": 16,
-      "Y": 4,
-      "Type": "EnergyBall"
-    },
-    {
-      "X": 14,
-      "Y": 4,
-      "Type": "EnergyBall"
-    },
-    {
-      "X": 12,
-      "Y": 4,
-      "Type": "EnergyBall"
-    }
-  ],
-  "MapNpcObjects": [
-    {
-      "Health": 100,
-      "ProjectileDamage": 36,
-      "FiringRate": 1.87,
-      "PatrolRange": 15,
-      "AttackRange": 13.5,
-      "ChaseRange": 25,
-      "CanMove": true,
-      "X": 30,
-      "Y": 11,
-      "Type": "Tri_horn"
-    },
-    {
-      "Health": 100,
-      "ProjectileDamage": 36,
-      "FiringRate": 1.87,
-      "PatrolRange": 15,
-      "AttackRange": 13.5,
-      "ChaseRange": 25,
-      "CanMove": true,
-      "X": 32,
-      "Y": 11,
-      "Type": "Tri_horn"
-    },
-    {
-      "Health": 100,
-      "ProjectileDamage": 36,
-      "FiringRate": 1.87,
-      "PatrolRange": 15,
-      "AttackRange": 13.5,
-      "ChaseRange": 25,
-      "CanMove": true,
-      "X": 31,
-      "Y": 11,
-      "Type": "Tri_horn"
-    },
-    {
-      "Health": 100,
-      "ProjectileDamage": 36,
-      "FiringRate": 1.87,
-      "PatrolRange": 15,
-      "AttackRange": 13.5,
-      "ChaseRange": 25,
-      "CanMove": true,
-      "X": 24,
-      "Y": 13,
-      "Type": "Tri_horn"
-    },
-    {
-      "Health": 100,
-      "ProjectileDamage": 36,
-      "FiringRate": 1.87,
-      "PatrolRange": 15,
-      "AttackRange": 13.5,
-      "ChaseRange": 25,
-      "CanMove": true,
-      "X": 20,
-      "Y": 13,
-      "Type": "Tri_horn"
-    },
-    {
-      "Health": 100,
-      "ProjectileDamage": 36,
-      "FiringRate": 1.87,
-      "PatrolRange": 15,
-      "AttackRange": 13.5,
-      "ChaseRange": 25,
-      "CanMove": true,
-      "X": 22,
-      "Y": 12,
-      "Type": "Tri_horn"
-    },
-    {
-      "Health": 100,
-      "ProjectileDamage": 36,
-      "FiringRate": 1.87,
-      "PatrolRange": 15,
-      "AttackRange": 13.5,
-      "ChaseRange": 25,
-      "CanMove": true,
-      "X": 26,
       "Y": 10,
-      "Type": "Tri_horn"
-    },
-    {
-      "Health": 100,
-      "ProjectileDamage": 36,
-      "FiringRate": 1.87,
-      "PatrolRange": 15,
-      "AttackRange": 13.5,
-      "ChaseRange": 25,
-      "CanMove": true,
-      "X": 26,
-      "Y": 11,
-      "Type": "Tri_horn"
-    },
-    {
-      "Health": 100,
-      "ProjectileDamage": 36,
-      "FiringRate": 1.87,
-      "PatrolRange": 15,
-      "AttackRange": 13.5,
-      "ChaseRange": 25,
-      "CanMove": true,
-      "X": 26,
-      "Y": 15,
-      "Type": "Tri_horn"
-    },
-    {
-      "Health": 50,
-      "ProjectileDamage": 16,
-      "FiringRate": 2.25,
-      "PatrolRange": 10,
-      "AttackRange": 13.5,
-      "ChaseRange": 18,
-      "CanMove": true,
-      "X": 28,
-      "Y": 12,
-      "Type": "Imp"
-    },
-    {
-      "Health": 50,
-      "ProjectileDamage": 16,
-      "FiringRate": 2.25,
-      "PatrolRange": 10,
-      "AttackRange": 13.5,
-      "ChaseRange": 18,
-      "CanMove": true,
-      "X": 29,
-      "Y": 12,
-      "Type": "Imp"
-    },
-    {
-      "Health": 50,
-      "ProjectileDamage": 16,
-      "FiringRate": 2.25,
-      "PatrolRange": 10,
-      "AttackRange": 13.5,
-      "ChaseRange": 18,
-      "CanMove": true,
-      "X": 30,
-      "Y": 13,
-      "Type": "Imp"
-    },
-    {
-      "Health": 50,
-      "ProjectileDamage": 16,
-      "FiringRate": 2.25,
-      "PatrolRange": 10,
-      "AttackRange": 13.5,
-      "ChaseRange": 18,
-      "CanMove": true,
-      "X": 29,
-      "Y": 15,
-      "Type": "Imp"
-    },
-    {
-      "Health": 50,
-      "ProjectileDamage": 16,
-      "FiringRate": 2.25,
-      "PatrolRange": 10,
-      "AttackRange": 13.5,
-      "ChaseRange": 18,
-      "CanMove": true,
-      "X": 23,
-      "Y": 17,
-      "Type": "Imp"
-    },
-    {
-      "Health": 50,
-      "ProjectileDamage": 16,
-      "FiringRate": 2.25,
-      "PatrolRange": 10,
-      "AttackRange": 13.5,
-      "ChaseRange": 18,
-      "CanMove": true,
-      "X": 18,
-      "Y": 17,
-      "Type": "Imp"
-    },
-    {
-      "Health": 50,
-      "ProjectileDamage": 16,
-      "FiringRate": 2.25,
-      "PatrolRange": 10,
-      "AttackRange": 13.5,
-      "ChaseRange": 18,
-      "CanMove": true,
-      "X": 15,
-      "Y": 17,
-      "Type": "Imp"
-    },
-    {
-      "Health": 50,
-      "ProjectileDamage": 16,
-      "FiringRate": 2.25,
-      "PatrolRange": 10,
-      "AttackRange": 13.5,
-      "ChaseRange": 18,
-      "CanMove": true,
-      "X": 15,
-      "Y": 16,
-      "Type": "Imp"
-    },
-    {
-      "Health": 50,
-      "ProjectileDamage": 16,
-      "FiringRate": 2.25,
-      "PatrolRange": 10,
-      "AttackRange": 13.5,
-      "ChaseRange": 18,
-      "CanMove": true,
-      "X": 16,
-      "Y": 15,
-      "Type": "Imp"
-    },
-    {
-      "Health": 50,
-      "ProjectileDamage": 16,
-      "FiringRate": 2.25,
-      "PatrolRange": 10,
-      "AttackRange": 13.5,
-      "ChaseRange": 18,
-      "CanMove": true,
-      "X": 20,
-      "Y": 14,
-      "Type": "Imp"
-    },
-    {
-      "Health": 50,
-      "ProjectileDamage": 16,
-      "FiringRate": 2.25,
-      "PatrolRange": 10,
-      "AttackRange": 13.5,
-      "ChaseRange": 18,
-      "CanMove": true,
-      "X": 24,
-      "Y": 15,
-      "Type": "Imp"
-    },
-    {
-      "Health": 50,
-      "ProjectileDamage": 16,
-      "FiringRate": 2.25,
-      "PatrolRange": 10,
-      "AttackRange": 13.5,
-      "ChaseRange": 18,
-      "CanMove": true,
-      "X": 29,
-      "Y": 16,
-      "Type": "Imp"
-    },
-    {
-      "Health": 50,
-      "ProjectileDamage": 16,
-      "FiringRate": 2.25,
-      "PatrolRange": 10,
-      "AttackRange": 13.5,
-      "ChaseRange": 18,
-      "CanMove": true,
-      "X": 30,
-      "Y": 17,
-      "Type": "Imp"
-    },
-    {
-      "Health": 50,
-      "ProjectileDamage": 16,
-      "FiringRate": 2.25,
-      "PatrolRange": 10,
-      "AttackRange": 13.5,
-      "ChaseRange": 18,
-      "CanMove": true,
-      "X": 27,
-      "Y": 20,
-      "Type": "Imp"
-    },
-    {
-      "Health": 50,
-      "ProjectileDamage": 16,
-      "FiringRate": 2.25,
-      "PatrolRange": 10,
-      "AttackRange": 13.5,
-      "ChaseRange": 18,
-      "CanMove": true,
-      "X": 23,
-      "Y": 21,
-      "Type": "Imp"
-    },
-    {
-      "Health": 50,
-      "ProjectileDamage": 16,
-      "FiringRate": 2.25,
-      "PatrolRange": 10,
-      "AttackRange": 13.5,
-      "ChaseRange": 18,
-      "CanMove": true,
-      "X": 17,
-      "Y": 19,
-      "Type": "Imp"
-    },
-    {
-      "Health": 50,
-      "ProjectileDamage": 16,
-      "FiringRate": 2.25,
-      "PatrolRange": 10,
-      "AttackRange": 13.5,
-      "ChaseRange": 18,
-      "CanMove": true,
-      "X": 11,
-      "Y": 17,
-      "Type": "Imp"
-    },
-    {
-      "Health": 50,
-      "ProjectileDamage": 16,
-      "FiringRate": 2.25,
-      "PatrolRange": 10,
-      "AttackRange": 13.5,
-      "ChaseRange": 18,
-      "CanMove": true,
-      "X": 11,
-      "Y": 15,
-      "Type": "Imp"
+      "Type": "wallBrick"
     }
   ],
+  "MapNpcObjects": [],
   "Pickups": [],
   "PlayerGameObject": {
-    "Health": 400,
+    "Health": 100,
     "HasRevolver": true,
-    "RevolverAmmo": 250,
+    "RevolverAmmo": 75,
     "HasShotgun": true,
-    "ShotgunAmmo": 150,
-    "X": 8,
-    "Y": 11,
+    "ShotgunAmmo": 50,
+    "X": 18,
+    "Y": 21,
     "Type": "player"
   },
-  "Name": "playerNull",
+  "Name": "Door Test",
   "StoryTextSegment": false,
   "StoryText": "",
-  "WallTexture": 2,
-  "StartX": 8,
-  "StartY": 11
+  "WallTexture": 0,
+  "StartX": 18,
+  "StartY": 21
 }

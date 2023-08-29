@@ -25,7 +25,7 @@ public class LoadGameLevel : MonoBehaviour
             string levelJson =  System.IO.File.ReadAllText(Application.streamingAssetsPath + "/Maps/" + levelToLoad);
             MapJson map = JsonUtility.FromJson<MapJson>(levelJson);
 
-            if(map.PlayerGameObject == null)
+            if(map.PlayerGameObject.Type == null)
                 throw new Exception("PlayerGameObject is null!");
 
             SceneManager.LoadScene(map.StoryTextSegment ? "End" : "Level1");

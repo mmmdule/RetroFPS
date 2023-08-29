@@ -151,7 +151,7 @@ public class LevelLayout : MonoBehaviour
         foreach(PickupJson pickup in mapJson.Pickups){
             GameObject tmp;
             switch(pickup.Type){
-                case "Health":
+                case "SmallMedkit":
                     tmp = Instantiate(HealthPickup, new Vector3(pickup.X, 1.5f, pickup.Y), Quaternion.identity);
                     tmp.GetComponent<Pickup>().HealthPickupValue = pickup.Value;
                     break;
@@ -188,8 +188,12 @@ public class LevelLayout : MonoBehaviour
                     Fireball[] fireballs = tri.projectile.GetComponentsInChildren<Fireball>();
                     foreach(Fireball fireball in fireballs) //evenly distribute damage between fireballs
                         fireball.Damage = npc.ProjectileDamage / fireballs.Length;
-                    if(!npc.CanMove)
+                    if(!npc.CanMove){
                         tri.agent.enabled = false;
+                        //add rigidbody constraints for every axis position and rotation
+                        Rigidbody rb = tmp.GetComponent<Rigidbody>();
+                        rb.constraints = RigidbodyConstraints.FreezeAll;
+                    }
                     break;
                 case "Imp":
                     tmp = Instantiate(ImpPrefab, new Vector3(npc.X, 1.79f, npc.Y), Quaternion.identity);
@@ -200,8 +204,12 @@ public class LevelLayout : MonoBehaviour
                     imp.attackRange = npc.AttackRange;
                     imp.timeBetweenAttacks = npc.FiringRate;
                     imp.projectile.GetComponent<Fireball>().Damage = npc.ProjectileDamage;
-                    if(!npc.CanMove)
+                    if(!npc.CanMove){
                         imp.agent.enabled = false;
+                        //add rigidbody constraints for position
+                        Rigidbody rb = tmp.GetComponent<Rigidbody>();
+                        rb.constraints = RigidbodyConstraints.FreezeAll;
+                    }
                     break;
             }
             //TODO: set npc properties
