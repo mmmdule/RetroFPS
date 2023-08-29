@@ -82,7 +82,8 @@ public class MainMenu : MonoBehaviour
             Heading.text = "ERROR";
             EpisodeTitle.text = lepFiles.Length == 0 ? "No .lep files found" : "Multiple .lep files found";
             buttonPrefab.GetComponentInChildren<TextMeshProUGUI>().text = "Please have only one .lep file at a time";
-            buttonPrefab.GetComponent<LevelButton>().enabled = false;
+            LevelButton lvlButtonScript = buttonPrefab.GetComponent<LevelButton>();
+            Destroy(lvlButtonScript); //disables the button's script
             return null;
         }
        
