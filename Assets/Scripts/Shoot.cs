@@ -12,10 +12,14 @@ public class Shoot : MonoBehaviour
     [SerializeField]
     Camera FpsCam;
 
+    [SerializeField]
+    GameObject EnergyBallPrefab;
+
     private Animator animator;
     public AmmoManager ammoManager;
     public AudioSource playerAudioSource;
     public AudioClip RevolverSoundClip;
+    public AudioClip UziSoundClip;
 
     public RuntimeAnimatorController newController;
     void Start(){
@@ -46,6 +50,22 @@ public class Shoot : MonoBehaviour
                 Invoke("DoDamagIfShotHits", 0.20f); //invoke after 0.25f (approx. length of the shotgun animation)
                 ammoManager.ChangeAmmoText(--ammoManager.pistolAmmo, 1);
                 playerAudioSource.PlayOneShot(RevolverSoundClip);
+                break;
+            case 4:
+                //Launch an EnergyBall in front of where the player is facing
+
+                GameObject tmp = Instantiate(EnergyBallPrefab, FpsCam.ViewportToWorldPoint(new Vector3(0.5f, 0.6f, 0.5f)) + (transform.forward * 0.5f), Quaternion.LookRotation(transform.forward));
+                
+                animator.Play("ShootingUzi");
+                //Do damage if the ball hits an enemy
+                Fireball ball = tmp.GetComponent<Fireball>();
+                ball.isPlayerProjectile = true;
+                tmp.GetComponent<AudioSource>().mute = true;
+
+                ammoManager.ChangeAmmoText(--ammoManager.uziAmmo, 1);
+                playerAudioSource.PlayOneShot(UziSoundClip);
+                //maybe set the velocity of the ball a bit higher than default
+                //and maybe set the damage of the ball to the Uzi Damage value
                 break;
         }
         ToggleLight();
@@ -94,37 +114,83 @@ public class Shoot : MonoBehaviour
                 case 3:
                     Invoke("changeCanShootBool", 0.70f);
                     break;
+                case 4:
+                    Invoke("changeCanShootBool", 0.20f);
+                    break;
             }
             
         }
 
+        WeaponSwitch(); // does weapon switching on input
+    }
+
+    public void WeaponSwitch(){
+        //REVOLVER HANDLING
+        ChangeToRevolver();
+        
+        //SHOTGUN HANDLING
+        ChangeToShotgun();
+        
+        //UZI HANDLING
+        ChangeToUzi();
+    }
+
+    public void ChangeToRevolver(){
         if(Input.GetKeyDown(KeyCode.Alpha2) && HasRevolver){
             if(currentWeapon != 2){
-                animator.Play("ShotgunToRevolver");
-                animator.SetBool("CanShoot", false);   
+                animator.SetBool("CanShoot", false);  
+                if(currentWeapon == 3)
+                    animator.Play("ShotgunToRevolver");
+                else if(currentWeapon == 4)
+                    animator.Play("UziToRevolver"); 
+                Invoke("changeCanShootBool",0.77f);//changes to true
                 animator.SetInteger("Weapon",2);
                 changeCanShootBool(false);
-                Invoke("changeCanShootBool",0.77f);//changes to true
-                //Invoke(nameof(ChangeSprite), 0.77f);
             }
             currentWeapon = 2;
             ammoManager.ChangeAmmoText(ammoManager.pistolAmmo, 1);
             ammoManager.currentWeapon = currentWeapon;
         }
+    }
+
+    public void ChangeToShotgun(){
         if(Input.GetKeyDown(KeyCode.Alpha3) && HasShotgun){
             if(currentWeapon != 3){
-                animator.Play("RevolverToShotgun");
                 animator.SetBool("CanShoot", false);   
+                if(currentWeapon == 2)
+                    animator.Play("RevolverToShotgun");
+                else if(currentWeapon == 4)
+                    animator.Play("UziToShotgun");
+                Invoke("changeCanShootBool",0.77f);//changes to true
                 animator.SetInteger("Weapon",3);
                 changeCanShootBool(false);
-                Invoke("changeCanShootBool",0.77f);//changes to true
-                //Invoke(nameof(ChangeSprite), 0.77f);
             }
             currentWeapon = 3;
             ammoManager.ChangeAmmoText(ammoManager.shotgunAmmo, 2);
             ammoManager.currentWeapon = currentWeapon;
         }
     }
+
+    public void ChangeToUzi(){
+        if(Input.GetKeyDown(KeyCode.Alpha4) /*&& HasUzi*/){
+            if(currentWeapon != 4){
+                animator.SetBool("CanShoot", false);
+                if(currentWeapon == 3){
+                    animator.Play("ShotgunToUzi"); 
+                }
+                else if (currentWeapon == 2){
+                    animator.Play("RevolverToUzi"); 
+                }  
+                Invoke("changeCanShootBool",0.77f);//changes to true
+                animator.SetInteger("Weapon",4);
+                changeCanShootBool(false);
+            }
+            currentWeapon = 4;
+            ammoManager.ChangeAmmoText(ammoManager.uziAmmo, 3);
+            ammoManager.currentWeapon = currentWeapon;
+        }
+    }
+
     public void Die(){
         animator.runtimeAnimatorController = newController; 
         canShootAgain = false;
@@ -152,7 +218,7 @@ public class Shoot : MonoBehaviour
     }
     
     //indexes match currentWeapon values
-    int[] weaponDamageVals = {0, 10, 30, 70}; //0 - skipped, 10 - melee(?), 30 - pistol, 70 - shotgun
+    int[] weaponDamageVals = {0, 10, 30, 70, 60}; //0 - skipped, 10 - melee(?), 30 - pistol, 70 - shotgun, 9 - uzi
     private GameObject target;
     private bool hitTarget = false;
     void CastRay(){
@@ -180,22 +246,22 @@ public class Shoot : MonoBehaviour
                 }
                 break;
             case 2:
-            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 64.00f)) {
-                Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
-                if(hit.transform.gameObject.tag == "Imp"){
-                    //hit.transform.gameObject.GetComponent<Imp>().TakeDamage(weaponDamageVals[currentWeapon]);
-                    target = hit.transform.gameObject;
-                    hitTarget = true;
-                    Debug.Log("Hit Imp.");
+                if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, 64.00f)) {
+                    Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hit.distance, Color.yellow);
+                    if(hit.transform.gameObject.tag == "Imp"){
+                        //hit.transform.gameObject.GetComponent<Imp>().TakeDamage(weaponDamageVals[currentWeapon]);
+                        target = hit.transform.gameObject;
+                        hitTarget = true;
+                        Debug.Log("Hit Imp.");
+                    }
+                    else if(hit.transform.gameObject.tag == "Tri-Imp"){
+                        //hit.transform.gameObject.GetComponent<TriImp>().TakeDamage(weaponDamageVals[currentWeapon]);
+                        target = hit.transform.gameObject;
+                        hitTarget = true;
+                        Debug.Log("Hit Tri-Imp.");
+                    }
                 }
-                else if(hit.transform.gameObject.tag == "Tri-Imp"){
-                    //hit.transform.gameObject.GetComponent<TriImp>().TakeDamage(weaponDamageVals[currentWeapon]);
-                    target = hit.transform.gameObject;
-                    hitTarget = true;
-                    Debug.Log("Hit Tri-Imp.");
-                }
-            }
-            break;
+                break;
         }
     }
 

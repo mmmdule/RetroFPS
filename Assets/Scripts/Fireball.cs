@@ -7,11 +7,14 @@ public class Fireball : MonoBehaviour
     Rigidbody rb;
     GameObject player;
     Transform target;
+    public bool isPlayerProjectile = false;
     public float Speed;
     public GameObject SpriteChild;
     public GameObject ownerImp;
     public AudioSource audioSource;
     // Start is called before the first frame update
+
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -30,19 +33,19 @@ public class Fireball : MonoBehaviour
     {
         if(PlayerMovement.paused)
             return;
-            
+        
         SpriteChild.transform.LookAt(player.transform);
-        if(notStatic){
+
+        if(isPlayerProjectile){
+            Speed = 2.55f;
+            audioSource = null;
+            rb.AddRelativeForce(Vector3.back * Speed, ForceMode.Impulse);
+            return;
+        }
+            
+        if(notStatic && !isPlayerProjectile){
             rb.AddRelativeForce(Vector3.forward * Speed, ForceMode.Impulse);
         }
-        
-        //transform.Translate(Vector3.forward * Time.deltaTime * Speed);
-        
-        //rb.AddForce(target.position * Speed, ForceMode.Impulse);
-        
-        
-        //transform.position = Vector3.MoveTowards(transform.position, target.position, Speed * Time.deltaTime);
-        //rb.MovePosition(player.transform.position * Time.deltaTime);
     }
     public HealthManager healthManager;
     public int Damage = 10;
@@ -53,17 +56,24 @@ public class Fireball : MonoBehaviour
                 gameObject.SetActive(false);
                 break;
             case "Player":
+                if(isPlayerProjectile)
+                    break;
                 Debug.LogWarning("Fireball Hit Player");
                 healthManager.TakeDamage(Damage);
                 gameObject.SetActive(false);
                 break;
-            /*
             case "Imp":
-                if(!GameObject.ReferenceEquals(collided.gameObject, ownerImp)) //if Imp not the one who launched it
-                    collided.gameObject.GetComponent<Imp>().TakeDamage((int)Imp.damage);
-                gameObject.SetActive(false);
+                if(isPlayerProjectile) {//if Imp not the one who launched it
+                    collided.gameObject.GetComponent<Imp>().TakeDamage(60);
+                    gameObject.SetActive(false);
+                }
                 break;
-            */
+            case "Tri-Imp":
+                if(isPlayerProjectile) { //if Imp not the one who launched it
+                    collided.gameObject.GetComponent<TriImp>().TakeDamage(60);
+                    gameObject.SetActive(false);
+                }
+                break;
         }
     }
 }

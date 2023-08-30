@@ -126,7 +126,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: e5c5f65d6159e02469cab3ed165f0f63, type: 2}
+  m_Motion: {fileID: 7400000, guid: 07a01bf1376557049bdf7b3d4e834ef8, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -546,7 +546,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 07a01bf1376557049bdf7b3d4e834ef8, type: 2}
+  m_Motion: {fileID: 7400000, guid: e5c5f65d6159e02469cab3ed165f0f63, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -732,7 +732,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: ShootingUzi
-  m_Speed: 2
+  m_Speed: 4.5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -8806792164081293067}

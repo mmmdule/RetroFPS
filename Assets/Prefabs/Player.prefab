@@ -569,9 +569,11 @@ MonoBehaviour:
   - {fileID: 8539593663757096828, guid: f044540c590018b49a7d1d955aed854e, type: 3}
   - {fileID: 8539593663757096828, guid: 77f8978143fba1f419b3d576692731c9, type: 3}
   FpsCam: {fileID: 1798474799154984806}
+  EnergyBallPrefab: {fileID: 6961421590780974241, guid: a3a0bdb871267bf4d9092edd269ce808, type: 3}
   ammoManager: {fileID: 3736320551858223543}
   playerAudioSource: {fileID: 4919194370403581707}
   RevolverSoundClip: {fileID: 8300000, guid: 5f5bb83684c34dc4a8807cc861635e1d, type: 3}
+  UziSoundClip: {fileID: 8300000, guid: 1e6f6834d77cfa149bc45775e1407e9e, type: 3}
   newController: {fileID: 0}
   HasRevolver: 1
   HasShotgun: 1
@@ -581,6 +583,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 21300000, guid: 66ee50cae7db19d4d9a2526d2925eef4, type: 3}
   - {fileID: 21300000, guid: e2c4696e48f75be47bd8628a31a98ece, type: 3}
+  - {fileID: 21300000, guid: 43d1a0aba57597647be64bacbc53460f, type: 3}
   WeaponImage: {fileID: 152985104953793642}
   gunLight: {fileID: 5362266666129216821}
   lightDelay: 0.5
@@ -619,9 +622,11 @@ MonoBehaviour:
   AmmoText: {fileID: 5576460339398433128}
   shotgunAmmo: 50
   pistolAmmo: 75
+  uziAmmo: 200
   currentWeapon: 3
   RevolverLimit: 100
   ShotgunLimit: 50
+  UziLimit: 450
 --- !u!143 &2726212441745694604
 CharacterController:
   m_ObjectHideFlags: 0

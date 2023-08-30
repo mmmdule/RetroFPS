@@ -9,6 +9,7 @@ public class AmmoManager : MonoBehaviour
 
     public int shotgunAmmo;
     public int pistolAmmo;
+    public int uziAmmo;
     public int currentWeapon;
     // Start is called before the first frame update
     void Start()
@@ -25,7 +26,7 @@ public class AmmoManager : MonoBehaviour
     public void ClearText(){
         AmmoText.text = "";
     }
-    string[] weaponMark = {"", "   I", "   III"};
+    string[] weaponMark = {"", "   I", "   III", "   o"};
     public void ChangeAmmoText(int value, int weaponNum){
 
         AmmoText.text = value.ToString() + weaponMark[weaponNum];
@@ -36,9 +37,8 @@ public class AmmoManager : MonoBehaviour
             AmmoText.text = value.ToString() + weaponMark[weaponNum];
     }
 
-    public int RevolverLimit = 100, ShotgunLimit = 50;
+    public int RevolverLimit = 100, ShotgunLimit = 50, UziLimit = 450;
     public void IncreaseAmmo(int value, int weaponNum){
-        
         switch(weaponNum){
             case 2:
                 if(pistolAmmo + value > RevolverLimit)
@@ -53,6 +53,13 @@ public class AmmoManager : MonoBehaviour
                 else
                     shotgunAmmo += value;
                 ChangeAmmoText(shotgunAmmo, weaponNum - 1, true);
+                break;
+            case 4:
+                if(uziAmmo + value > UziLimit)
+                    uziAmmo = UziLimit;
+                else
+                    uziAmmo += value;
+                ChangeAmmoText(uziAmmo, weaponNum - 1, true);
                 break;
         }
     }
