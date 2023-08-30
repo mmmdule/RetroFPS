@@ -573,6 +573,8 @@ MonoBehaviour:
   playerAudioSource: {fileID: 4919194370403581707}
   RevolverSoundClip: {fileID: 8300000, guid: 5f5bb83684c34dc4a8807cc861635e1d, type: 3}
   newController: {fileID: 0}
+  HasRevolver: 1
+  HasShotgun: 1
   charCtrl: {fileID: 2726212441745694604}
   currentWeapon: 3
   weaponSprites:
@@ -1542,8 +1544,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -126.0437, y: 59.71}
-  m_SizeDelta: {x: 252.0906, y: 119.42}
+  m_AnchoredPosition: {x: -174.91254, y: 59.70999}
+  m_SizeDelta: {x: 349.8283, y: 119.42}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9144310607264511995
 CanvasRenderer:
