@@ -13,6 +13,7 @@ TagManager:
   - Pickup
   - Column
   - SecondaryCamera
+  - Fireball
   layers:
   - Default
   - TransparentFX

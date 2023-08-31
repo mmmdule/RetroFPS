@@ -35,6 +35,7 @@ public class Pickup : MonoBehaviour
     public bool health;
     public bool shotgunAmmo;
     public bool revolverAmmo;
+    public bool uziAmmo;
 
     //Managers
     public HealthManager healthManager;
@@ -45,7 +46,8 @@ public class Pickup : MonoBehaviour
     public int HealthPickupValue = 10;
     public int ShotgunAmmoPickupValue = 7;
     public int RevolverAmmoPickupValue = 15;
-    public int RevolverLimit = 100, ShotgunLimit = 50;
+    public int UziAmmoPickupValue = 40;
+    public int RevolverLimit = 100, ShotgunLimit = 50, UziLimit = 450;
     //Limits and values
 
     void OnTriggerEnter(Collider collision){
@@ -59,6 +61,13 @@ public class Pickup : MonoBehaviour
                     delete = true;
                 }
             }
+            else if(revolverAmmo){
+                if(ammoManager.pistolAmmo < RevolverLimit){
+                    msg.MessageUpdate("+" + RevolverAmmoPickupValue + " bullets", 0.9f);
+                    ammoManager.IncreaseAmmo(RevolverAmmoPickupValue, 2);
+                    delete = true;
+                }
+            }
             else if(shotgunAmmo){
                 if(ammoManager.shotgunAmmo < ShotgunLimit){
                     ammoManager.IncreaseAmmo(ShotgunAmmoPickupValue, 3);
@@ -66,10 +75,10 @@ public class Pickup : MonoBehaviour
                     delete = true;
                 }
             }
-            else if(revolverAmmo){
-                if(ammoManager.pistolAmmo < RevolverLimit){
-                    msg.MessageUpdate("+" + RevolverAmmoPickupValue + " bullets", 0.9f);
-                    ammoManager.IncreaseAmmo(RevolverAmmoPickupValue, 2);
+            else if(uziAmmo){
+                if(ammoManager.uziAmmo < UziLimit){
+                    msg.MessageUpdate("+" + UziAmmoPickupValue + " plasma ammo", 2f);
+                    ammoManager.IncreaseAmmo(UziAmmoPickupValue, 4);
                     delete = true;
                 }
             }

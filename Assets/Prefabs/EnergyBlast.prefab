@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 5795282679670905538}
   m_Layer: 2
   m_Name: EnergyBall (2)
-  m_TagString: Untagged
+  m_TagString: Fireball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -243,6 +243,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2d5ffa35c55fd446a37920c14a5ad73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlayerProjectile: 0
   Speed: 0.47
   SpriteChild: {fileID: 3379356519518370801}
   ownerImp: {fileID: 0}
@@ -515,7 +516,7 @@ GameObject:
   - component: {fileID: 6111405279428247418}
   m_Layer: 2
   m_Name: EnergyBall (1)
-  m_TagString: Untagged
+  m_TagString: Fireball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -623,6 +624,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2d5ffa35c55fd446a37920c14a5ad73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlayerProjectile: 0
   Speed: 0.47
   SpriteChild: {fileID: 626451866300490070}
   ownerImp: {fileID: 0}
@@ -895,7 +897,7 @@ GameObject:
   - component: {fileID: 6671937347724637742}
   m_Layer: 2
   m_Name: EnergyBall
-  m_TagString: Untagged
+  m_TagString: Fireball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1003,6 +1005,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2d5ffa35c55fd446a37920c14a5ad73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlayerProjectile: 0
   Speed: 0.47
   SpriteChild: {fileID: 6617029693585337788}
   ownerImp: {fileID: 0}

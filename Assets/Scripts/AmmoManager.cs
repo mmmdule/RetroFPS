@@ -26,7 +26,7 @@ public class AmmoManager : MonoBehaviour
     public void ClearText(){
         AmmoText.text = "";
     }
-    string[] weaponMark = {"", "   I", "   III", "   o"};
+    string[] weaponMark = {"", "   I", "   III", "   O"};
     public void ChangeAmmoText(int value, int weaponNum){
 
         AmmoText.text = value.ToString() + weaponMark[weaponNum];

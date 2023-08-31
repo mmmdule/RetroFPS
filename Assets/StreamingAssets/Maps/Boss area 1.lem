@@ -2219,13 +2219,18 @@
       "X": 28,
       "Y": 33,
       "Type": "Cobweb_Wall"
+    },
+    {
+      "X": 18,
+      "Y": 21,
+      "Type": "EnergyBall"
     }
   ],
   "MapNpcObjects": [
     {
-      "Health": 700,
-      "ProjectileDamage": 30,
-      "FiringRate": 0.07,
+      "Health": 650,
+      "ProjectileDamage": 7,
+      "FiringRate": 0.12,
       "PatrolRange": 0,
       "AttackRange": 25,
       "ChaseRange": 25,
@@ -2236,8 +2241,8 @@
     },
     {
       "Health": 700,
-      "ProjectileDamage": 30,
-      "FiringRate": 0.07,
+      "ProjectileDamage": 23,
+      "FiringRate": 0.4,
       "PatrolRange": 0,
       "AttackRange": 25,
       "ChaseRange": 25,
@@ -2247,9 +2252,9 @@
       "Type": "Tri_horn"
     },
     {
-      "Health": 700,
-      "ProjectileDamage": 32,
-      "FiringRate": 0.07,
+      "Health": 600,
+      "ProjectileDamage": 11,
+      "FiringRate": 0.25,
       "PatrolRange": 0,
       "AttackRange": 13.5,
       "ChaseRange": 13.5,
@@ -2260,8 +2265,8 @@
     },
     {
       "Health": 700,
-      "ProjectileDamage": 30,
-      "FiringRate": 0.07,
+      "ProjectileDamage": 17,
+      "FiringRate": 0.28,
       "PatrolRange": 0,
       "AttackRange": 25,
       "ChaseRange": 25,
@@ -2316,11 +2321,11 @@
     }
   ],
   "PlayerGameObject": {
-    "Health": 100,
+    "Health": 125,
     "HasRevolver": true,
     "RevolverAmmo": 75,
     "HasShotgun": true,
-    "ShotgunAmmo": 50,
+    "ShotgunAmmo": 75,
     "X": 28,
     "Y": 34,
     "Type": "player"
