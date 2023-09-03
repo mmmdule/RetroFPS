@@ -37,6 +37,7 @@ public class LevelLayout : MonoBehaviour
     public GameObject HealthPickup; 
     public GameObject ShotgunAmmoPickup;
     public GameObject RevolverAmmoPickup;
+    public GameObject SmgAmmoPickup;
     
 
     [HeaderAttribute("Lights")]
@@ -125,10 +126,12 @@ public class LevelLayout : MonoBehaviour
         AmmoManager ammoManager = playerObject.GetComponent<AmmoManager>();
         ammoManager.shotgunAmmo = playerObjectJson.ShotgunAmmo;
         ammoManager.pistolAmmo = playerObjectJson.RevolverAmmo;
+        ammoManager.uziAmmo = playerObjectJson.SmgAmmo;
         
         Shoot shoot = playerObject.GetComponent<Shoot>();
         shoot.HasRevolver = playerObjectJson.HasRevolver;
         shoot.HasShotgun = playerObjectJson.HasShotgun;
+        shoot.HasSmg = playerObjectJson.HasSmg;
         if(playerObjectJson.HasShotgun) {
             shoot.currentWeapon = 3;
             shoot.ChangeSprite(3);
@@ -137,7 +140,12 @@ public class LevelLayout : MonoBehaviour
         else if(playerObjectJson.HasRevolver) {
             shoot.currentWeapon = 2;
             shoot.ChangeSprite(2);
-            ammoManager.ChangeAmmoText(ammoManager.shotgunAmmo, 1);
+            ammoManager.ChangeAmmoText(ammoManager.pistolAmmo, 1);
+        }
+        else if(playerObjectJson.HasSmg){
+            shoot.currentWeapon = 4;
+            shoot.ChangeSprite(4);
+            ammoManager.ChangeAmmoText(ammoManager.uziAmmo, 3);
         }
         else {
             shoot.currentWeapon = 1;
@@ -162,6 +170,10 @@ public class LevelLayout : MonoBehaviour
                 case "RevolverAmmo":
                     tmp = Instantiate(RevolverAmmoPickup, new Vector3(pickup.X, 1.5f, pickup.Y), Quaternion.identity);
                     tmp.GetComponent<Pickup>().RevolverAmmoPickupValue = pickup.Value;
+                    break;
+                case "smgAmmo":
+                    tmp = Instantiate(SmgAmmoPickup, new Vector3(pickup.X, 1.5f, pickup.Y), Quaternion.identity);
+                    tmp.GetComponent<Pickup>().UziAmmoPickupValue = pickup.Value;
                     break;
             }
             //TODO: set pickup properties

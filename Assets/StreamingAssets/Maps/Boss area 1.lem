@@ -2228,9 +2228,9 @@
   ],
   "MapNpcObjects": [
     {
-      "Health": 650,
+      "Health": 570,
       "ProjectileDamage": 7,
-      "FiringRate": 0.12,
+      "FiringRate": 0.7,
       "PatrolRange": 0,
       "AttackRange": 25,
       "ChaseRange": 25,
@@ -2240,9 +2240,9 @@
       "Type": "Tri_horn"
     },
     {
-      "Health": 700,
+      "Health": 475,
       "ProjectileDamage": 23,
-      "FiringRate": 0.4,
+      "FiringRate": 0.7,
       "PatrolRange": 0,
       "AttackRange": 25,
       "ChaseRange": 25,
@@ -2254,7 +2254,7 @@
     {
       "Health": 600,
       "ProjectileDamage": 11,
-      "FiringRate": 0.25,
+      "FiringRate": 0.65,
       "PatrolRange": 0,
       "AttackRange": 13.5,
       "ChaseRange": 13.5,
@@ -2264,9 +2264,9 @@
       "Type": "Tri_horn"
     },
     {
-      "Health": 700,
+      "Health": 550,
       "ProjectileDamage": 17,
-      "FiringRate": 0.28,
+      "FiringRate": 0.5,
       "PatrolRange": 0,
       "AttackRange": 25,
       "ChaseRange": 25,
@@ -2321,11 +2321,13 @@
     }
   ],
   "PlayerGameObject": {
-    "Health": 125,
+    "Health": 65,
     "HasRevolver": true,
     "RevolverAmmo": 75,
     "HasShotgun": true,
     "ShotgunAmmo": 75,
+    "HasSmg": false,
+    "SmgAmmo": 200,
     "X": 28,
     "Y": 34,
     "Type": "player"

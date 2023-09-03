@@ -54,8 +54,12 @@ public class Shoot : MonoBehaviour
             case 4:
                 //Launch an EnergyBall in front of where the player is facing
 
-                GameObject tmp = Instantiate(EnergyBallPrefab, FpsCam.ViewportToWorldPoint(new Vector3(0.5f, 0.6f, 0.5f)) + (transform.forward * 0.5f), Quaternion.LookRotation(transform.forward));
-                
+                //GameObject tmp = Instantiate(EnergyBallPrefab, FpsCam.ViewportToWorldPoint(new Vector3(0.5f, 0.6f, 0.5f)) + (transform.forward * 0.5f), Quaternion.LookRotation(transform.forward));
+                //let's try insantiating the ball at the center camera center with  Camera.ScreenToWorldPoint
+                Vector3 orbPosition = Camera.main.transform.position;
+                orbPosition.y += 0.06f;
+                GameObject tmp = Instantiate(EnergyBallPrefab, orbPosition + Camera.main.transform.forward * 1f, Camera.main.transform.rotation);
+
                 animator.Play("ShootingUzi");
                 //Do damage if the ball hits an enemy
                 Fireball ball = tmp.GetComponent<Fireball>();
@@ -93,6 +97,7 @@ public class Shoot : MonoBehaviour
     
     public bool HasRevolver = true;
     public bool HasShotgun = true;
+    public bool HasSmg = true;
 
     private bool canShootAgain = true;
     public CharacterController charCtrl;
@@ -172,7 +177,7 @@ public class Shoot : MonoBehaviour
     }
 
     public void ChangeToUzi(){
-        if(Input.GetKeyDown(KeyCode.Alpha4) /*&& HasUzi*/){
+        if(Input.GetKeyDown(KeyCode.Alpha4) && HasSmg){
             if(currentWeapon != 4){
                 animator.SetBool("CanShoot", false);
                 if(currentWeapon == 3){

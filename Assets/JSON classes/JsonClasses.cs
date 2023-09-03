@@ -27,6 +27,8 @@ public class PlayerObjectJson
     public int RevolverAmmo;
     public bool HasShotgun;
     public int ShotgunAmmo;
+    public bool HasSmg;
+    public int SmgAmmo;
     public int X;
     public int Y;
     public string Type;

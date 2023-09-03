@@ -4603,6 +4603,12 @@
       "X": 45,
       "Y": 61,
       "Type": "ShotgunAmmo"
+    },
+    {
+      "Value": 35,
+      "X": 37,
+      "Y": 42,
+      "Type": "smgAmmo"
     }
   ],
   "PlayerGameObject": {
@@ -4611,6 +4617,8 @@
     "RevolverAmmo": 75,
     "HasShotgun": true,
     "ShotgunAmmo": 50,
+    "HasSmg": true,
+    "SmgAmmo": 200,
     "X": 27,
     "Y": 29,
     "Type": "player"
@@ -4618,7 +4626,7 @@
   "Name": "Hello",
   "StoryTextSegment": false,
   "StoryText": "",
-  "WallTexture": 1,
+  "WallTexture": 0,
   "StartX": 27,
   "StartY": 29
 }

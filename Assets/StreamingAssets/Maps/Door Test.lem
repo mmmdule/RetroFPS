@@ -1261,16 +1261,6 @@
       "Type": "wallBrick"
     },
     {
-      "X": 18,
-      "Y": 14,
-      "Type": "DoorGate"
-    },
-    {
-      "X": 17,
-      "Y": 13,
-      "Type": "wallBrick"
-    },
-    {
       "X": 19,
       "Y": 13,
       "Type": "wallBrick"
@@ -1283,16 +1273,6 @@
     {
       "X": 16,
       "Y": 15,
-      "Type": "wallBrick"
-    },
-    {
-      "X": 16,
-      "Y": 16,
-      "Type": "wallBrick"
-    },
-    {
-      "X": 16,
-      "Y": 17,
       "Type": "wallBrick"
     },
     {
@@ -1338,26 +1318,6 @@
     {
       "X": 20,
       "Y": 22,
-      "Type": "wallBrick"
-    },
-    {
-      "X": 16,
-      "Y": 18,
-      "Type": "wallBrick"
-    },
-    {
-      "X": 16,
-      "Y": 19,
-      "Type": "wallBrick"
-    },
-    {
-      "X": 16,
-      "Y": 20,
-      "Type": "wallBrick"
-    },
-    {
-      "X": 16,
-      "Y": 21,
       "Type": "wallBrick"
     },
     {
@@ -1429,6 +1389,56 @@
       "X": 19,
       "Y": 10,
       "Type": "wallBrick"
+    },
+    {
+      "X": 15,
+      "Y": 13,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 18,
+      "Y": 13,
+      "Type": "DoorGate"
+    },
+    {
+      "X": 16,
+      "Y": 21,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 15,
+      "Y": 21,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 15,
+      "Y": 20,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 15,
+      "Y": 19,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 15,
+      "Y": 18,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 15,
+      "Y": 17,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 15,
+      "Y": 16,
+      "Type": "wallBrick"
+    },
+    {
+      "X": 15,
+      "Y": 15,
+      "Type": "wallBrick"
     }
   ],
   "MapNpcObjects": [],
@@ -1439,6 +1449,8 @@
     "RevolverAmmo": 75,
     "HasShotgun": true,
     "ShotgunAmmo": 50,
+    "HasSmg": true,
+    "SmgAmmo": 200,
     "X": 18,
     "Y": 21,
     "Type": "player"

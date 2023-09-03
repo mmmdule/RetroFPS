@@ -171,13 +171,14 @@ MonoBehaviour:
   HealthPickup: {fileID: 7452410133261940078, guid: 4446ec69a3d37854b80e8149aaaa39b2, type: 3}
   ShotgunAmmoPickup: {fileID: 7452410133261940078, guid: d87c4dbe1a9b3074e968011b15d889e3, type: 3}
   RevolverAmmoPickup: {fileID: 7452410133261940078, guid: 11f131ce070e1d447b3f4b3925d50284, type: 3}
-  spawnedDoor: 0
+  SmgAmmoPickup: {fileID: 7452410133261940078, guid: 524b265a5add2f146a8ca73a43541816, type: 3}
   LightPrefab: {fileID: 2077886325596256415, guid: e0c7b9efda856ac4bba925a1c23bf7ed, type: 3}
   KeyPrefab: {fileID: 7452410133261940078, guid: 702b1b707e2e4a847ad54a774bb50844, type: 3}
   KeyColor: {r: 1, g: 1, b: 0, a: 1}
-  spawnedKey: 0
   surface: {fileID: 679709144}
   nextLevel: 
+  spawnedDoor: 0
+  spawnedKey: 0
 --- !u!4 &609089124
 Transform:
   m_ObjectHideFlags: 0
