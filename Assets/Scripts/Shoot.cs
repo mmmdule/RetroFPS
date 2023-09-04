@@ -53,7 +53,7 @@ public class Shoot : MonoBehaviour
                 break;
             case 4:
                 //Launch an EnergyBall in front of where the player is facing
-                if(uzi.pistolAmmo == 0)
+                if(ammoManager.uziAmmo == 0)
                     return;
                 Vector3 orbPosition = Camera.main.transform.position;
                 orbPosition.y += 0.06f;
