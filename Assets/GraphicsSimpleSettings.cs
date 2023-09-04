@@ -19,16 +19,22 @@ public class GraphicsSimpleSettings : MonoBehaviour
     public CRTPostProcess crtEffect;
     void Start()
     {
+        setResolutionAndFps();
+        setPostProcessing();
+    }
+
+    void setPostProcessing(){
+        crtEffect.enabled = OptionsScript.GetCRT() == 1 ? true : false;
+        dither.enabled = OptionsScript.GetDither() == 1 ? true : false;
+    }
+
+    void setResolutionAndFps(){
         string settingsFilePath = Application.streamingAssetsPath + "/" + ConfigFilePath;
         if(File.Exists(settingsFilePath)){
             StreamReader sr = new StreamReader(settingsFilePath);
             resX = int.Parse(sr.ReadLine());
             resY = int.Parse(sr.ReadLine());
             Application.targetFrameRate = int.Parse(sr.ReadLine());
-            if(int.Parse(sr.ReadLine()) == 0)
-                dither.enabled = false;
-            if(int.Parse(sr.ReadLine()) == 0)
-                crtEffect.enabled = false;
             sr.Close();
         }
         Screen.SetResolution(resX, resY, true);//Screen.SetResolution(1280, 720, true);
