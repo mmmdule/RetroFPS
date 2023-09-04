@@ -36,7 +36,7 @@ public class Shoot : MonoBehaviour
                 animator.Play("ShootingShotgun");
                 //Invoke("CastRaySphere", 0.25f); //shoots sphere out after 0.25f (approx. length of the shotgun animation)
                 //Invoke("CastRay", 0.25f); //ray = slim, sphere = thick
-                Invoke("DoDamagIfShotHits", 0.20f); //invoke after 0.25f (approx. length of the shotgun animation)
+                Invoke("DoDamagIfShotHits", 0.07f); //invoke after 0.25f (approx. length of the shotgun animation)
                 ammoManager.ChangeAmmoText(--ammoManager.shotgunAmmo, 2);
                 playerAudioSource.Play();
                 break;
@@ -47,7 +47,7 @@ public class Shoot : MonoBehaviour
                 animator.Play("ShootingRevolver");
                 //Invoke("CastRaySphere", 0.25f); //shoots sphere out after 0.25f (approx. length of the shotgun animation)
                 //Invoke("CastRay", 0.25f); //ray = slim, sphere = thick
-                Invoke("DoDamagIfShotHits", 0.20f); //invoke after 0.25f (approx. length of the shotgun animation)
+                Invoke("DoDamagIfShotHits", 0.1f); //invoke after 0.25f (approx. length of the shotgun animation)
                 ammoManager.ChangeAmmoText(--ammoManager.pistolAmmo, 1);
                 playerAudioSource.PlayOneShot(RevolverSoundClip);
                 break;
