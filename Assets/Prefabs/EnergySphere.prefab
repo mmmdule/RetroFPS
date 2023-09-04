@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5941561069672846103}
   - component: {fileID: 8789471503033334233}
-  - component: {fileID: 1939213142616025909}
   - component: {fileID: 539300814068595900}
   - component: {fileID: 8708792095196313705}
   - component: {fileID: 2350147201317730334}
@@ -51,68 +50,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.52
   m_Center: {x: 0, y: 0, z: 0}
---- !u!108 &1939213142616025909
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 629121133074557420}
-  m_Enabled: 1
-  serializedVersion: 10
-  m_Type: 2
-  m_Shape: 0
-  m_Color: {r: 0.105882354, g: 0.11372549, b: 0.7921569, a: 1}
-  m_Intensity: 5
-  m_Range: 2.81
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: 0
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 2
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 4
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
 --- !u!114 &539300814068595900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,6 +62,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2d5ffa35c55fd446a37920c14a5ad73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlayerProjectile: 0
   Speed: 0
   SpriteChild: {fileID: 4238494082964820901}
   ownerImp: {fileID: 0}
@@ -441,7 +379,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2163260607027263465}
   - component: {fileID: 6701596480013452687}
-  - component: {fileID: 5086047138438015016}
   - component: {fileID: 4500668090516846132}
   - component: {fileID: 1148326207459015015}
   - component: {fileID: 1410954075121300369}
@@ -482,68 +419,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.52
   m_Center: {x: 0, y: 0, z: 0}
---- !u!108 &5086047138438015016
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2575797338079590221}
-  m_Enabled: 1
-  serializedVersion: 10
-  m_Type: 2
-  m_Shape: 0
-  m_Color: {r: 0.105882354, g: 0.11372549, b: 0.7921569, a: 1}
-  m_Intensity: 5
-  m_Range: 2.81
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: 0
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 2
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 4
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
 --- !u!114 &4500668090516846132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -556,6 +431,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2d5ffa35c55fd446a37920c14a5ad73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlayerProjectile: 0
   Speed: 0
   SpriteChild: {fileID: 5901211738288362329}
   ownerImp: {fileID: 0}
@@ -989,7 +865,6 @@ GameObject:
   m_Component:
   - component: {fileID: 960632682560733259}
   - component: {fileID: 4018506033306397455}
-  - component: {fileID: 7624619970835397022}
   - component: {fileID: 9216114138368839578}
   - component: {fileID: 4318056074457595189}
   - component: {fileID: 7520042578216799919}
@@ -1030,68 +905,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.52
   m_Center: {x: 0, y: 0, z: 0}
---- !u!108 &7624619970835397022
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3844166554120736829}
-  m_Enabled: 1
-  serializedVersion: 10
-  m_Type: 2
-  m_Shape: 0
-  m_Color: {r: 0.105882354, g: 0.11372549, b: 0.7921569, a: 1}
-  m_Intensity: 5
-  m_Range: 2.81
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: 0
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 2
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 4
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
 --- !u!114 &9216114138368839578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1104,6 +917,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2d5ffa35c55fd446a37920c14a5ad73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlayerProjectile: 0
   Speed: 0
   SpriteChild: {fileID: 2659111564167263332}
   ownerImp: {fileID: 0}
@@ -1369,7 +1183,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6196605621352050938}
   - component: {fileID: 5662658647984113088}
-  - component: {fileID: 7935877507944475858}
   - component: {fileID: 4796205083083131784}
   - component: {fileID: 8530743897552995330}
   - component: {fileID: 4437145258755702699}
@@ -1410,68 +1223,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.52
   m_Center: {x: 0, y: 0, z: 0}
---- !u!108 &7935877507944475858
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4708747925928068924}
-  m_Enabled: 1
-  serializedVersion: 10
-  m_Type: 2
-  m_Shape: 0
-  m_Color: {r: 0.105882354, g: 0.11372549, b: 0.7921569, a: 1}
-  m_Intensity: 5
-  m_Range: 2.81
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: 0
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 2
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 4
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
 --- !u!114 &4796205083083131784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1484,6 +1235,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2d5ffa35c55fd446a37920c14a5ad73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlayerProjectile: 0
   Speed: 0
   SpriteChild: {fileID: 853353282759217916}
   ownerImp: {fileID: 0}
@@ -1749,7 +1501,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4597658011515901342}
   - component: {fileID: 1172307468493737473}
-  - component: {fileID: 4420066437735122832}
   - component: {fileID: 494552958652853463}
   - component: {fileID: 3140281104144858979}
   - component: {fileID: 6148933136747758069}
@@ -1790,68 +1541,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.52
   m_Center: {x: 0, y: 0, z: 0}
---- !u!108 &4420066437735122832
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6479202621936041816}
-  m_Enabled: 1
-  serializedVersion: 10
-  m_Type: 2
-  m_Shape: 0
-  m_Color: {r: 0.105882354, g: 0.11372549, b: 0.7921569, a: 1}
-  m_Intensity: 5
-  m_Range: 2.81
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: 0
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 2
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 4
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
 --- !u!114 &494552958652853463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1864,6 +1553,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2d5ffa35c55fd446a37920c14a5ad73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlayerProjectile: 0
   Speed: 0
   SpriteChild: {fileID: 3321687020396042657}
   ownerImp: {fileID: 0}
@@ -2177,7 +1867,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4225271445448150928}
   - component: {fileID: 7513926485970064193}
-  - component: {fileID: 4308257602874158288}
   - component: {fileID: 7640966405592253293}
   - component: {fileID: 3544184380333757491}
   - component: {fileID: 4263439722573374901}
@@ -2218,68 +1907,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.52
   m_Center: {x: 0, y: 0, z: 0}
---- !u!108 &4308257602874158288
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8848013610998131156}
-  m_Enabled: 1
-  serializedVersion: 10
-  m_Type: 2
-  m_Shape: 0
-  m_Color: {r: 0.105882354, g: 0.11372549, b: 0.7921569, a: 1}
-  m_Intensity: 5
-  m_Range: 2.81
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 0
-    m_Resolution: 0
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.2
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 2
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 4
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 6570
-  m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
 --- !u!114 &7640966405592253293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2292,6 +1919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2d5ffa35c55fd446a37920c14a5ad73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlayerProjectile: 0
   Speed: 0
   SpriteChild: {fileID: 3365422869275410730}
   ownerImp: {fileID: 0}

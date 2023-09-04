@@ -36,7 +36,7 @@ public class Shoot : MonoBehaviour
                 animator.Play("ShootingShotgun");
                 //Invoke("CastRaySphere", 0.25f); //shoots sphere out after 0.25f (approx. length of the shotgun animation)
                 //Invoke("CastRay", 0.25f); //ray = slim, sphere = thick
-                Invoke("DoDamagIfShotHits", 0.25f); //invoke after 0.25f (approx. length of the shotgun animation)
+                Invoke("DoDamagIfShotHits", 0.20f); //invoke after 0.25f (approx. length of the shotgun animation)
                 ammoManager.ChangeAmmoText(--ammoManager.shotgunAmmo, 2);
                 playerAudioSource.Play();
                 break;
@@ -53,9 +53,8 @@ public class Shoot : MonoBehaviour
                 break;
             case 4:
                 //Launch an EnergyBall in front of where the player is facing
-
-                //GameObject tmp = Instantiate(EnergyBallPrefab, FpsCam.ViewportToWorldPoint(new Vector3(0.5f, 0.6f, 0.5f)) + (transform.forward * 0.5f), Quaternion.LookRotation(transform.forward));
-                //let's try insantiating the ball at the center camera center with  Camera.ScreenToWorldPoint
+                if(uzi.pistolAmmo == 0)
+                    return;
                 Vector3 orbPosition = Camera.main.transform.position;
                 orbPosition.y += 0.06f;
                 GameObject tmp = Instantiate(EnergyBallPrefab, orbPosition + Camera.main.transform.forward * 1f, Camera.main.transform.rotation);
@@ -66,7 +65,7 @@ public class Shoot : MonoBehaviour
                 ball.isPlayerProjectile = true;
                 tmp.GetComponent<AudioSource>().mute = true;
 
-                ammoManager.ChangeAmmoText(--ammoManager.uziAmmo, 1);
+                ammoManager.ChangeAmmoText(--ammoManager.uziAmmo, 3);
                 playerAudioSource.PlayOneShot(UziSoundClip);
                 //maybe set the velocity of the ball a bit higher than default
                 //and maybe set the damage of the ball to the Uzi Damage value
@@ -281,11 +280,13 @@ public class Shoot : MonoBehaviour
                 {
                     if(hit.transform.gameObject.tag == "Imp"){
                         //hit.transform.gameObject.GetComponent<Imp>().TakeDamage(weaponDamageVals[currentWeapon]);
+                        target = hit.transform.gameObject;
                         hitTarget = true;
                         Debug.Log("Hit Imp.");
                     }
                     else if(hit.transform.gameObject.tag == "Tri-Imp"){
                         //hit.transform.gameObject.GetComponent<TriImp>().TakeDamage(weaponDamageVals[currentWeapon]);
+                        target = hit.transform.gameObject;
                         hitTarget = true;
                         Debug.Log("Hit Tri-Imp.");
                     }
@@ -298,11 +299,13 @@ public class Shoot : MonoBehaviour
                 {
                     if(hit.transform.gameObject.tag == "Imp"){
                         //hit.transform.gameObject.GetComponent<Imp>().TakeDamage(weaponDamageVals[currentWeapon]);
+                        target = hit.transform.gameObject;
                         hitTarget = true;
                         Debug.Log("Hit Imp.");
                     }
                     else if(hit.transform.gameObject.tag == "Tri-Imp"){
                         //hit.transform.gameObject.GetComponent<TriImp>().TakeDamage(weaponDamageVals[currentWeapon]);
+                        target = hit.transform.gameObject;
                         hitTarget = true;
                         Debug.Log("Hit Tri-Imp.");
                     }
@@ -327,11 +330,13 @@ public class Shoot : MonoBehaviour
                     GameObject tmp = Instantiate(WeaponSmokePrefab[currentWeapon-1], hit.point, Quaternion.LookRotation(rayOrigin));
                     if(hit.transform.gameObject.tag == "Imp"){
                         //hit.transform.gameObject.GetComponent<Imp>().TakeDamage(weaponDamageVals[currentWeapon]);
+                        target = hit.transform.gameObject;
                         hitTarget = true;
                         Debug.Log("Hit Imp.");
                     }
                     else if(hit.transform.gameObject.tag == "Tri-Imp"){
                         //hit.transform.gameObject.GetComponent<TriImp>().TakeDamage(weaponDamageVals[currentWeapon]);
+                        target = hit.transform.gameObject;
                         hitTarget = true;
                         Debug.Log("Hit Tri-Imp.");
                     }
@@ -345,11 +350,13 @@ public class Shoot : MonoBehaviour
                     GameObject tmp = Instantiate(WeaponSmokePrefab[currentWeapon-1], hit.point, Quaternion.LookRotation(rayOrigin));
                     if(hit.transform.gameObject.tag == "Imp"){
                         //hit.transform.gameObject.GetComponent<Imp>().TakeDamage(weaponDamageVals[currentWeapon]);
+                        target = hit.transform.gameObject;
                         hitTarget = true;
                         Debug.Log("Hit Imp.");
                     }
                     else if(hit.transform.gameObject.tag == "Tri-Imp"){
                         //hit.transform.gameObject.GetComponent<TriImp>().TakeDamage(weaponDamageVals[currentWeapon]);
+                        target = hit.transform.gameObject;
                         hitTarget = true;
                         Debug.Log("Hit Tri-Imp.");
                     }

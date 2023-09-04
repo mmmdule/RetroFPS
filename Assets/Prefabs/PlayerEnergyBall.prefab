@@ -210,7 +210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayerProjectile: 0
-  Speed: 0.4
+  Speed: 4
   SpriteChild: {fileID: 2258689061459155521}
   ownerImp: {fileID: 0}
   audioSource: {fileID: 7576933786673954125}

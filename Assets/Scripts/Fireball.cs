@@ -37,7 +37,7 @@ public class Fireball : MonoBehaviour
         SpriteChild.transform.LookAt(player.transform);
 
         if(isPlayerProjectile){
-            Speed = 2.55f;
+            //Speed = 2.55f;
             audioSource = null;
             rb.AddRelativeForce(Vector3.back * Speed, ForceMode.Impulse);
             return;

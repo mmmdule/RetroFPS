@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 1234464940151881636}
   - component: {fileID: 6495557828838071157}
   - component: {fileID: 7440839106917718588}
-  - component: {fileID: 7881335147851722235}
   - component: {fileID: 905630461199075031}
   - component: {fileID: 8042457806382862244}
   - component: {fileID: 2330890799700691584}
+  - component: {fileID: 2106208867605949757}
   m_Layer: 7
   m_Name: Imp
   m_TagString: Imp
@@ -150,20 +150,6 @@ NavMeshAgent:
   m_BaseOffset: 8.35
   m_WalkableMask: 1
   m_ObstacleAvoidanceType: 2
---- !u!136 &7881335147851722235
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1234464940151881635}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 1.3882529
-  m_Height: 11.320618
-  m_Direction: 1
-  m_Center: {x: 0.027739434, y: -2.690716, z: 0}
 --- !u!54 &905630461199075031
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -296,6 +282,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!135 &2106208867605949757
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234464940151881635}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 2.41
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2664885188092112410
 GameObject:
   m_ObjectHideFlags: 0
