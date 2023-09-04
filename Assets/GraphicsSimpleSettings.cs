@@ -37,12 +37,8 @@ public class GraphicsSimpleSettings : MonoBehaviour
             Application.targetFrameRate = int.Parse(sr.ReadLine());
             sr.Close();
         }
-        Screen.SetResolution(resX, resY, true);//Screen.SetResolution(1280, 720, true);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        resX = OptionsScript.GetResolutionX();
+        resY = OptionsScript.GetResolutionY();
+        Screen.SetResolution(resX, resY, true);
     }
 }
