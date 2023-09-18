@@ -134,6 +134,63 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &966471371
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1234464940151881635, guid: 658e287186b50f149887244254b97a4f, type: 3}
+      propertyPath: m_Name
+      value: PlasmaEater
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234464940151881637, guid: 658e287186b50f149887244254b97a4f, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234464940151881637, guid: 658e287186b50f149887244254b97a4f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -38.635174
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234464940151881637, guid: 658e287186b50f149887244254b97a4f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234464940151881637, guid: 658e287186b50f149887244254b97a4f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 40.751534
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234464940151881637, guid: 658e287186b50f149887244254b97a4f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234464940151881637, guid: 658e287186b50f149887244254b97a4f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234464940151881637, guid: 658e287186b50f149887244254b97a4f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234464940151881637, guid: 658e287186b50f149887244254b97a4f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234464940151881637, guid: 658e287186b50f149887244254b97a4f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234464940151881637, guid: 658e287186b50f149887244254b97a4f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 1234464940151881637, guid: 658e287186b50f149887244254b97a4f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 658e287186b50f149887244254b97a4f, type: 3}
 --- !u!1 &971833486
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,7 +256,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &971892400
 PrefabInstance:
@@ -214,7 +271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8601133650475687871, guid: e75a37711f14a8549a68eb83b5798e03, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8601133650475687871, guid: e75a37711f14a8549a68eb83b5798e03, type: 3}
       propertyPath: m_LocalPosition.x
@@ -275,7 +332,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9141114579197831873, guid: 38260699676fcb444bd39a8167395b50, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 9141114579197831873, guid: 38260699676fcb444bd39a8167395b50, type: 3}
       propertyPath: m_LocalPosition.x
@@ -464,6 +521,7 @@ MonoBehaviour:
   HealthPickup: {fileID: 0}
   ShotgunAmmoPickup: {fileID: 0}
   RevolverAmmoPickup: {fileID: 0}
+  SmgAmmoPickup: {fileID: 0}
   LightPrefab: {fileID: 0}
   KeyPrefab: {fileID: 0}
   KeyColor: {r: 0, g: 0, b: 0, a: 0}
@@ -484,7 +542,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2099963425
 MonoBehaviour:

@@ -14,6 +14,7 @@ TagManager:
   - Column
   - SecondaryCamera
   - Fireball
+  - PlasmaEater
   layers:
   - Default
   - TransparentFX

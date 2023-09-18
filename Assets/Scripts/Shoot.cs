@@ -15,6 +15,9 @@ public class Shoot : MonoBehaviour
     [SerializeField]
     GameObject EnergyBallPrefab;
 
+    [SerializeField]
+    HitMarker hitMarker;
+
     private Animator animator;
     public AmmoManager ammoManager;
     public AudioSource playerAudioSource;
@@ -85,6 +88,8 @@ public class Shoot : MonoBehaviour
 
         if(!hitTarget || target == null)
             return;
+
+        hitMarker.Show();
 
         if(target.tag == "Imp"){
            target.GetComponent<Imp>().TakeDamage(weaponDamageVals[currentWeapon]);

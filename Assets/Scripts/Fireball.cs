@@ -15,10 +15,14 @@ public class Fireball : MonoBehaviour
     // Start is called before the first frame update
 
 
+    [SerializeField]
+    HitMarker hitMarker;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         player = GameObject.FindGameObjectWithTag("Player");
+        hitMarker = isPlayerProjectile ? player.GetComponentInChildren<HitMarker>() : null;
         target = player.transform;
         healthManager = player.GetComponent<HealthManager>();
         // rb.AddForce(target.position * (Speed), ForceMode.Impulse);
@@ -64,12 +68,14 @@ public class Fireball : MonoBehaviour
                 break;
             case "Imp":
                 if(isPlayerProjectile) {//if Imp not the one who launched it
+                    hitMarker.Show();
                     collided.gameObject.GetComponent<Imp>().TakeDamage(60);
                     gameObject.SetActive(false);
                 }
                 break;
             case "Tri-Imp":
                 if(isPlayerProjectile) { //if Imp not the one who launched it
+                    hitMarker.Show();
                     collided.gameObject.GetComponent<TriImp>().TakeDamage(60);
                     gameObject.SetActive(false);
                 }
