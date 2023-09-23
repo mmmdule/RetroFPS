@@ -8,19 +8,24 @@ public class PlasmaEater : Imp
 {
     [SerializeField]
     private AudioClip MoreSound;
+    [SerializeField]
+    float sizeIncrease = 0.02f;
+    [SerializeField]
+    SphereCollider collider;
+
+    
+
     public override void TakeDamage(int damage)
     {
-
-
         if (damage == 60) //if it's an uzi plasma shot
         {
+            Debug.Log("healed. " + health + " health left");
             audioSource.PlayOneShot(MoreSound); //play MORE sound
-            damage = -60; //heal the enemy
-            disableAttack = true;
-            attackSprite.sprite = null;
-            thisSprite.sprite = null;
-            attackSprite.enabled = false;
-            thisSprite.enabled = false;
+            Vector3 newScale = new Vector3(sizeIncrease + transform.localScale.x, sizeIncrease + transform.localScale.y, sizeIncrease + transform.localScale.z);
+            transform.localScale = Vector3.Lerp (transform.localScale, newScale, 2 * Time.deltaTime);
+            //transform.localScale += new Vector3(sizeIncrease, sizeIncrease, sizeIncrease) * Time.deltaTime;
+            collider.radius += sizeIncrease * Time.deltaTime;
+            health += damage; //heal the enemy
             return;
         }
 
@@ -67,7 +72,7 @@ public class PlasmaEater : Imp
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks); //poziva nakon timeBetweenAttacks(float) sekundi
-            Invoke(nameof(ResetSprite), 0.5f);
+            Invoke(nameof(ResetSprite), 0.3f);
         }
     }
 

@@ -10,8 +10,9 @@ public class GraphicsSimpleSettings : MonoBehaviour
     public int resX = 1280;
     public int resY = 720;
     
-    [HeaderAttribute("Targer Framerate")]
+    [HeaderAttribute("Target Framerate")]
     public int framerate = 60;
+
     private string ConfigFilePath = "settings.ini";
     
     [HeaderAttribute("Post-processing Settings")]
@@ -21,6 +22,7 @@ public class GraphicsSimpleSettings : MonoBehaviour
     {
         setResolutionAndFps();
         setPostProcessing();
+        setFov();
     }
 
     void setPostProcessing(){
@@ -40,5 +42,9 @@ public class GraphicsSimpleSettings : MonoBehaviour
         resX = OptionsScript.GetResolutionX();
         resY = OptionsScript.GetResolutionY();
         Screen.SetResolution(resX, resY, true);
+    }
+
+    void setFov(){
+        Camera.main.fieldOfView = OptionsScript.GetFov();
     }
 }

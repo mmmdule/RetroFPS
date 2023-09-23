@@ -24,6 +24,7 @@ public class LevelLayout : MonoBehaviour
     [HeaderAttribute("Enemies")]
     public GameObject ImpPrefab;
     public GameObject TriImpPrefab;
+    public GameObject PlasmaEaterPrefab;
     public GameObject EmptyBlockPrefab;
     [HeaderAttribute("Traps")]
     public GameObject EnergySphereTrapPrefab;
@@ -66,8 +67,6 @@ public class LevelLayout : MonoBehaviour
     void Awake()//Start()
     {
         levelName = PlayerPrefs.GetString("LevelToLoad", "level1.lem");
-
-        AudioListener.pause = false;
         
         //TODO: ReadNextLevel(because of the exit door, so we know what to load next)
 
@@ -152,6 +151,8 @@ public class LevelLayout : MonoBehaviour
             shoot.NoWeaponSprite();
             ammoManager.ClearText();
         }
+
+        AudioListener.pause = PlayerPrefs.GetInt("Sound", 1) == 0;
     }
 
     private void AddPickups(){
@@ -219,6 +220,24 @@ public class LevelLayout : MonoBehaviour
                     if(!npc.CanMove){
                         imp.agent.enabled = false;
                         //add rigidbody constraints for position
+                        Rigidbody rb = tmp.GetComponent<Rigidbody>();
+                        rb.constraints = RigidbodyConstraints.FreezeAll;
+                    }
+                    break;
+                case "PlasmaEater":
+                    tmp = Instantiate(PlasmaEaterPrefab, new Vector3(npc.X, 1.79f, npc.Y), Quaternion.identity);
+                    PlasmaEater plasmaEater = tmp.GetComponent<PlasmaEater>();
+                    plasmaEater.health = npc.Health;
+                    plasmaEater.walkRange = npc.PatrolRange;
+                    plasmaEater.sightRange = npc.ChaseRange;
+                    plasmaEater.attackRange = npc.AttackRange;
+                    plasmaEater.timeBetweenAttacks = npc.FiringRate;
+                    Fireball[] plasmaEaterfireballs = plasmaEater.projectile.GetComponentsInChildren<Fireball>();
+                    foreach(Fireball fireball in plasmaEaterfireballs) //evenly distribute damage between fireballs
+                        fireball.Damage = npc.ProjectileDamage / plasmaEaterfireballs.Length;
+                    if(!npc.CanMove){
+                        plasmaEater.agent.enabled = false;
+                        //add rigidbody constraints for every axis position and rotation
                         Rigidbody rb = tmp.GetComponent<Rigidbody>();
                         rb.constraints = RigidbodyConstraints.FreezeAll;
                     }

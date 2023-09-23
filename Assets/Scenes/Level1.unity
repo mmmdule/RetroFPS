@@ -161,6 +161,7 @@ MonoBehaviour:
   ExitPrefab: {fileID: 7452410133261940078, guid: e280d0c5039e63048be280f1b40bd264, type: 3}
   ImpPrefab: {fileID: 1234464940151881635, guid: 6979a8d4d4013754eb975ad576b5ca36, type: 3}
   TriImpPrefab: {fileID: 1234464940151881635, guid: 2f50501d9a5b3f94b824540fbd5e8b03, type: 3}
+  PlasmaEaterPrefab: {fileID: 1234464940151881635, guid: 658e287186b50f149887244254b97a4f, type: 3}
   EmptyBlockPrefab: {fileID: 7452410133261940078, guid: 21749673c689d6443b93d94f519594aa, type: 3}
   EnergySphereTrapPrefab: {fileID: 7452410133261940078, guid: e75a37711f14a8549a68eb83b5798e03, type: 3}
   Archway: {fileID: 7452410133261940078, guid: 2434c8d67ab047b4f92eb8a91da55a8d, type: 3}
@@ -397,7 +398,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 679709139}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 0
@@ -5321,7 +5322,7 @@ GameObject:
   - component: {fileID: 1928364430}
   - component: {fileID: 1928364429}
   - component: {fileID: 1928364428}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Roof
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5349,7 +5350,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1928364427}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1

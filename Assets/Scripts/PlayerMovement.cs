@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
         paused = false;
         Time.timeScale = 1;
         ShootScript.enabled = true;
-        AudioListener.pause = false;
+        AudioListener.pause = PlayerPrefs.GetInt("Sound", 1) == 0;
         canvasPause.enabled = false;
         canvasPlay.enabled = true;
         //un-pause at start
@@ -59,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
             paused = false;
             Time.timeScale = 1;
             ShootScript.enabled = true;
-            AudioListener.pause = false;
+            AudioListener.pause = PlayerPrefs.GetInt("Sound", 1) == 0;
             canvasPause.enabled = false;
             canvasPlay.enabled = true;
         }

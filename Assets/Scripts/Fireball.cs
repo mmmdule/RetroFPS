@@ -80,6 +80,13 @@ public class Fireball : MonoBehaviour
                     gameObject.SetActive(false);
                 }
                 break;
+            case "PlasmaEater":
+                if(isPlayerProjectile) { //if Imp not the one who launched it
+                    hitMarker.Show();
+                    collided.gameObject.GetComponent<PlasmaEater>().TakeDamage(60);
+                    gameObject.SetActive(false);
+                }
+                break;
         }
     }
 }

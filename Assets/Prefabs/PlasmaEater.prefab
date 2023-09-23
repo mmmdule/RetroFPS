@@ -141,10 +141,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 68df501bad6f9574b9f1634040523f29, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 4874752cba55c7d4a8584f2022d48a0c, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 0.85
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -187,7 +187,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.173
+      value: 0
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -258,8 +258,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 2.25
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 4.23
+  m_Center: {x: -0.44, y: -0.68, z: 0}
 --- !u!114 &9010046973426142209
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -319,7 +319,7 @@ MonoBehaviour:
   health: 630
   walkPoint: {x: 0, y: 0, z: 0}
   walkRange: 0
-  timeBetweenAttacks: 1.25
+  timeBetweenAttacks: 1.1
   projectile: {fileID: 408866643489954233, guid: 3bc6056baaf50be4db363b57795ec6d1, type: 3}
   sightRange: 25
   attackRange: 20
@@ -333,6 +333,8 @@ MonoBehaviour:
   DeathScream: {fileID: 8300000, guid: 5795df520e246b6499ec93b7dc5da4f9, type: 3}
   animator: {fileID: 4328384308381624667}
   MoreSound: {fileID: 8300000, guid: 3370efb70e12bd0478c78824158ff83b, type: 3}
+  sizeIncrease: 0.05
+  collider: {fileID: 1290763472670854955}
 --- !u!1 &2664885188092112410
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,7 +345,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6482971873011386442}
   - component: {fileID: 226589503363604851}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: ImpAttackSprite
   m_TagString: Imp
   m_Icon: {fileID: 0}
@@ -358,8 +360,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2664885188092112410}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0.029, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1.16}
+  m_LocalPosition: {x: 0, y: -1, z: 0.1}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.9000003}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1234464940151881637}
@@ -427,7 +429,7 @@ GameObject:
   m_Component:
   - component: {fileID: 954070168054297610}
   - component: {fileID: 2463759178599113764}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: ImpSprite
   m_TagString: Imp
   m_Icon: {fileID: 0}
@@ -442,8 +444,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6310826498083189347}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0.029, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1.16}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.9000003}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1234464940151881637}
@@ -489,7 +491,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 2249e24214413c142b56be9336a35ea9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1

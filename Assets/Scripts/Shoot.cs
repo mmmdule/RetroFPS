@@ -97,6 +97,9 @@ public class Shoot : MonoBehaviour
         else if(target.tag  == "Tri-Imp"){
             target.GetComponent<TriImp>().TakeDamage(weaponDamageVals[currentWeapon]);
         }
+        else if(target.tag  == "PlasmaEater"){
+            target.GetComponent<PlasmaEater>().TakeDamage(weaponDamageVals[currentWeapon]);
+        }
     }
     
     public bool HasRevolver = true;
@@ -227,7 +230,7 @@ public class Shoot : MonoBehaviour
     }
     
     //indexes match currentWeapon values
-    int[] weaponDamageVals = {0, 10, 30, 70, 60}; //0 - skipped, 10 - melee(?), 30 - pistol, 70 - shotgun, 9 - uzi
+    int[] weaponDamageVals = {0, 10, 30, 70, 60}; //0 - skipped, 10 - melee(?), 30 - pistol, 70 - shotgun, 60 - uzi
     private GameObject target;
     private bool hitTarget = false;
     void CastRay(){
@@ -252,6 +255,12 @@ public class Shoot : MonoBehaviour
                         hitTarget = true;
                         Debug.Log("Hit Tri-Imp.");
                     }
+                    else if(hit.transform.gameObject.tag == "PlasmaEater"){
+                        //hit.transform.gameObject.GetComponent<TriImp>().TakeDamage(weaponDamageVals[currentWeapon]);
+                        target = hit.transform.gameObject;
+                        hitTarget = true;
+                        Debug.Log("Hit PlasmaEater.");
+                    }
                 }
                 break;
             case 2:
@@ -268,6 +277,12 @@ public class Shoot : MonoBehaviour
                         target = hit.transform.gameObject;
                         hitTarget = true;
                         Debug.Log("Hit Tri-Imp.");
+                    }
+                    else if(hit.transform.gameObject.tag == "PlasmaEater"){
+                        //hit.transform.gameObject.GetComponent<TriImp>().TakeDamage(weaponDamageVals[currentWeapon]);
+                        target = hit.transform.gameObject;
+                        hitTarget = true;
+                        Debug.Log("Hit PlasmaEater.");
                     }
                 }
                 break;
@@ -295,6 +310,12 @@ public class Shoot : MonoBehaviour
                         hitTarget = true;
                         Debug.Log("Hit Tri-Imp.");
                     }
+                    else if(hit.transform.gameObject.tag == "PlasmaEater"){
+                        //hit.transform.gameObject.GetComponent<TriImp>().TakeDamage(weaponDamageVals[currentWeapon]);
+                        target = hit.transform.gameObject;
+                        hitTarget = true;
+                        Debug.Log("Hit PlasmaEater.");
+                    }
                 }
                 break;
             case 2:
@@ -313,6 +334,12 @@ public class Shoot : MonoBehaviour
                         target = hit.transform.gameObject;
                         hitTarget = true;
                         Debug.Log("Hit Tri-Imp.");
+                    }
+                    else if(hit.transform.gameObject.tag == "PlasmaEater"){
+                        //hit.transform.gameObject.GetComponent<TriImp>().TakeDamage(weaponDamageVals[currentWeapon]);
+                        target = hit.transform.gameObject;
+                        hitTarget = true;
+                        Debug.Log("Hit PlasmaEater.");
                     }
                 }
                 break;
@@ -345,6 +372,12 @@ public class Shoot : MonoBehaviour
                         hitTarget = true;
                         Debug.Log("Hit Tri-Imp.");
                     }
+                    else if(hit.transform.gameObject.tag == "PlasmaEater"){
+                        //hit.transform.gameObject.GetComponent<TriImp>().TakeDamage(weaponDamageVals[currentWeapon]);
+                        target = hit.transform.gameObject;
+                        hitTarget = true;
+                        Debug.Log("Hit PlasmaEater.");
+                    }
                 }
                 break;
             case 2:
@@ -364,6 +397,12 @@ public class Shoot : MonoBehaviour
                         target = hit.transform.gameObject;
                         hitTarget = true;
                         Debug.Log("Hit Tri-Imp.");
+                    }
+                    else if(hit.transform.gameObject.tag == "PlasmaEater"){
+                        //hit.transform.gameObject.GetComponent<TriImp>().TakeDamage(weaponDamageVals[currentWeapon]);
+                        target = hit.transform.gameObject;
+                        hitTarget = true;
+                        Debug.Log("Hit PlasmaEater.");
                     }
                 }
                 break;

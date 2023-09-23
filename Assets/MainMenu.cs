@@ -24,7 +24,7 @@ public class MainMenu : MonoBehaviour
             canExit = true;
         #endif
         
-        AudioListener.pause = false;
+        AudioListener.pause = PlayerPrefs.GetInt("Sound", 1) == 0;
 
         PlayerPrefs.SetString("LevelToLoad", "primera.lem"); //sets the default just in case
 
