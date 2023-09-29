@@ -1,0 +1,21 @@
+{
+  "MapNameList": [
+    "Overture",
+    "Captured",
+    "Run",
+    "Armed",
+    "Eliminate them",
+    "Boss area 1",
+    "Hallway Hellway",
+    "Plazma",
+    "Lunch break",
+    "Cheeky Breeky"
+  ],
+  "Name": "pathTestProject",
+  "GameTitle": "PAN-DEMONIUM",
+  "GameSubtitle": "darkness games 2024",
+  "Path": "C:\\Unity Projects\\FPS Builds\\Editor phase\\Take 9\\Procedural FPS_Data\\StreamingAssets",
+  "Author": "a",
+  "DateCreated": "2023-09-05T18:49:23.1903165+02:00",
+  "LastOpened": "2023-09-28T01:10:07.9351931+02:00"
+}

@@ -1,0 +1,12 @@
+{
+  "MapObjects": [],
+  "MapNpcObjects": [],
+  "Pickups": [],
+  "PlayerGameObject": null,
+  "Name": "Plazma",
+  "StoryTextSegment": true,
+  "StoryText": "A mysterious red box lies at\r\nthe next entrance.\r\n\r\nThe strange text on it reads:\r\n\"PUSTI KORAK\".\r\n\r\nThere's a note next to it saying:\r\n\"MY FAVORITE. NEED MORE\"",
+  "WallTexture": 0,
+  "StartX": 0,
+  "StartY": 0
+}

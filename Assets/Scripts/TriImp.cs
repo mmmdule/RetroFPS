@@ -36,8 +36,9 @@ public class TriImp : Imp
             if(!CastRay()) //prevents shooting at the player through the walls and other obstacles
                 return;
 
-            attackSprite.enabled = true;
-            thisSprite.enabled = false;
+            //SET SPRITE TO IDLE SPRITE
+            spriteRenderer.sprite = attackSprite;
+
             ///Attack code here
             GameObject Fireball = Instantiate(projectile, new Vector3(transform.position.x, 1.55f, transform.position.z - 0.3f),  Quaternion.identity);
             

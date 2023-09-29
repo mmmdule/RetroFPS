@@ -6,6 +6,8 @@ using UnityEngine.AI;
 
 public class Imp : MonoBehaviour
 {
+    public Rigidbody rb;
+    public SpriteRenderer spriteRenderer;
     public NavMeshAgent agent;
 
     public Transform player;
@@ -33,6 +35,7 @@ public class Imp : MonoBehaviour
     {
         //      player = GameObject.FindGameObjectWithTag("Player").transform;
         agent = GetComponent<NavMeshAgent>();
+        //animator.enabled = false;
     }
     protected bool cameraIsSet = false;
     Camera mainCamera;
@@ -55,8 +58,7 @@ public class Imp : MonoBehaviour
             SearchWalkPoint();
 
         //transform.rotation = Quaternion.Euler(new Vector3(transform.rotation.x, 0.00f, transform.rotation.y));
-        thisSprite.gameObject.transform.LookAt(player);
-        attackSprite.gameObject.transform.LookAt(player);
+        gameObject.transform.LookAt(player);
 
         //Check for sight and attack range
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
@@ -118,8 +120,6 @@ public class Imp : MonoBehaviour
         transform.rotation = originalRotation;
         return targetFound;
     }
-
-    public SpriteRenderer thisSprite;
     protected virtual void AttackPlayer()
     {
         //Make sure enemy doesn't move
@@ -131,8 +131,9 @@ public class Imp : MonoBehaviour
             if (!CastRay()) //prevents shooting at the player through the walls and other obstacles
                 return;
 
-            attackSprite.enabled = true;
-            thisSprite.enabled = false;
+            //SPRITE RENDERER SET TO ATTACK SPRITE
+            spriteRenderer.sprite = attackSprite;
+
             ///Attack code here
             GameObject Fireball = Instantiate(projectile, new Vector3(transform.position.x, 1.55f, transform.position.z - 0.3f), Quaternion.identity);
             Fireball.GetComponent<Fireball>().ownerImp = gameObject;
@@ -147,11 +148,12 @@ public class Imp : MonoBehaviour
         }
     }
 
-    public SpriteRenderer attackSprite;
+    public Sprite attackSprite;
+    public Sprite idleSprite;
     protected void ResetSprite()
     {
-        attackSprite.enabled = false;
-        thisSprite.enabled = true;
+        //SET SPRITE TO IDLE SPRITE
+        spriteRenderer.sprite = idleSprite;
     }
 
     protected void ResetAttack()
@@ -169,12 +171,12 @@ public class Imp : MonoBehaviour
         {
             audioSource.PlayOneShot(DeathScream);    //play Death sound
             disableAttack = true;
-            attackSprite.sprite = null;
-            thisSprite.sprite = null;
-            attackSprite.enabled = false;
-            thisSprite.enabled = false;
+            spriteRenderer.sprite = null;
+
+            animator.enabled = true;
             animator.Play("ImpDeath");
-            Invoke(nameof(DestroyEnemy), audioSource.clip.length - 0.065f);
+            
+            //Invoke(nameof(DestroyEnemy), audioSource.clip.length - 0.065f);
         }
         else
             audioSource.Play();  //play Pain sound
@@ -186,13 +188,17 @@ public class Imp : MonoBehaviour
         Destroy(gameObject);
     }
 
-    protected void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, attackRange);
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, sightRange);
+    protected void FreezeConstraints(){
+        rb.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotation;
     }
+
+    // protected void OnDrawGizmosSelected()
+    // {
+    //     Gizmos.color = Color.red;
+    //     Gizmos.DrawWireSphere(transform.position, attackRange);
+    //     Gizmos.color = Color.yellow;
+    //     Gizmos.DrawWireSphere(transform.position, sightRange);
+    // }
 
     void OnCollisionEnter2D(Collision2D collision)
     {

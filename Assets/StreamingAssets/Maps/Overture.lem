@@ -4623,10 +4623,10 @@
     "Y": 29,
     "Type": "player"
   },
-  "Name": "Hello",
+  "Name": "Overture",
   "StoryTextSegment": false,
-  "StoryText": "",
+  "StoryText": null,
   "WallTexture": 0,
-  "StartX": 27,
-  "StartY": 29
+  "StartX": 0,
+  "StartY": 0
 }

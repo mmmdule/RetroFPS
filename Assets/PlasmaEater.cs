@@ -34,12 +34,11 @@ public class PlasmaEater : Imp
         if (health <= 0) {
             audioSource.PlayOneShot(DeathScream); //play Death sound
             disableAttack = true;
-            attackSprite.sprite = null;
-            thisSprite.sprite = null;
-            attackSprite.enabled = false;
-            thisSprite.enabled = false;
+            spriteRenderer.sprite = null;
+
+            animator.enabled = true;
             animator.Play("ImpDeath");
-            Invoke(nameof(DestroyEnemy), audioSource.clip.length - 0.065f);
+            //Invoke(nameof(DestroyEnemy), audioSource.clip.length - 0.065f);
         }
         else
             audioSource.Play();  //play Pain sound
@@ -56,8 +55,9 @@ public class PlasmaEater : Imp
             if(!CastRay()) //prevents shooting at the player through the walls and other obstacles
                 return;
 
-            attackSprite.enabled = true;
-            thisSprite.enabled = false;
+            //SPRITE RENDERER SET TO ATTACK SPRITE
+            spriteRenderer.sprite = attackSprite;
+            
             ///Attack code here
             GameObject Fireball = Instantiate(projectile, new Vector3(transform.position.x, 1.55f, transform.position.z - 0.3f),  Quaternion.identity);
 

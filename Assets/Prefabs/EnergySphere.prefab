@@ -67,6 +67,7 @@ MonoBehaviour:
   SpriteChild: {fileID: 4238494082964820901}
   ownerImp: {fileID: 0}
   audioSource: {fileID: 2350147201317730334}
+  hitMarker: {fileID: 0}
   notStatic: 0
   healthManager: {fileID: 0}
   Damage: 8
@@ -134,13 +135,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9222dad91d7eb9d4fbc508e1a2d64ffc, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.07
+  m_Volume: 0.034
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 90
+  Priority: 240
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -436,6 +437,7 @@ MonoBehaviour:
   SpriteChild: {fileID: 5901211738288362329}
   ownerImp: {fileID: 0}
   audioSource: {fileID: 1410954075121300369}
+  hitMarker: {fileID: 0}
   notStatic: 0
   healthManager: {fileID: 0}
   Damage: 8
@@ -503,13 +505,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9222dad91d7eb9d4fbc508e1a2d64ffc, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.07
+  m_Volume: 0.034
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 90
+  Priority: 240
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -922,6 +924,7 @@ MonoBehaviour:
   SpriteChild: {fileID: 2659111564167263332}
   ownerImp: {fileID: 0}
   audioSource: {fileID: 7520042578216799919}
+  hitMarker: {fileID: 0}
   notStatic: 0
   healthManager: {fileID: 0}
   Damage: 8
@@ -989,13 +992,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9222dad91d7eb9d4fbc508e1a2d64ffc, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.07
+  m_Volume: 0.034
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 90
+  Priority: 240
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -1240,6 +1243,7 @@ MonoBehaviour:
   SpriteChild: {fileID: 853353282759217916}
   ownerImp: {fileID: 0}
   audioSource: {fileID: 4437145258755702699}
+  hitMarker: {fileID: 0}
   notStatic: 0
   healthManager: {fileID: 0}
   Damage: 8
@@ -1307,13 +1311,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9222dad91d7eb9d4fbc508e1a2d64ffc, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.07
+  m_Volume: 0.034
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 90
+  Priority: 240
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -1558,6 +1562,7 @@ MonoBehaviour:
   SpriteChild: {fileID: 3321687020396042657}
   ownerImp: {fileID: 0}
   audioSource: {fileID: 6148933136747758069}
+  hitMarker: {fileID: 0}
   notStatic: 0
   healthManager: {fileID: 0}
   Damage: 8
@@ -1625,13 +1630,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9222dad91d7eb9d4fbc508e1a2d64ffc, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.07
+  m_Volume: 0.034
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 90
+  Priority: 240
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -1778,7 +1783,7 @@ MeshRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7452410133261940078}
   m_Enabled: 1
-  m_CastShadows: 1
+  m_CastShadows: 0
   m_ReceiveShadows: 1
   m_DynamicOccludee: 0
   m_StaticShadowCaster: 0
@@ -1924,6 +1929,7 @@ MonoBehaviour:
   SpriteChild: {fileID: 3365422869275410730}
   ownerImp: {fileID: 0}
   audioSource: {fileID: 4263439722573374901}
+  hitMarker: {fileID: 0}
   notStatic: 0
   healthManager: {fileID: 0}
   Damage: 8
@@ -1991,13 +1997,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9222dad91d7eb9d4fbc508e1a2d64ffc, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.07
+  m_Volume: 0.034
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 90
+  Priority: 240
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
