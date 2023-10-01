@@ -296,5 +296,5 @@ MonoBehaviour:
   DeathScream: {fileID: 8300000, guid: 5795df520e246b6499ec93b7dc5da4f9, type: 3}
   animator: {fileID: 4328384308381624667}
   MoreSound: {fileID: 8300000, guid: 3370efb70e12bd0478c78824158ff83b, type: 3}
-  sizeIncrease: 0.05
+  sizeIncrease: 0.3
   collider: {fileID: 1290763472670854955}

@@ -82,9 +82,13 @@ public class LevelLayout : MonoBehaviour
 
         if(levelBeforeChange == nextLevel)
             PlayerPrefs.SetString("LevelToLoad", null); //this way exit door will load main menu
+
+        //check audio after 15 seconds
+        Invoke("CheckAudio", 15f);
     }
 
     private void AudioLoad(int SongCount){
+        UnityEngine.Random.InitState((int)System.DateTime.Now.Ticks); //random seed
         int randomInt = UnityEngine.Random.Range(1, SongCount + 1);
         AudioClip musicTrack = Resources.Load("Music/" + randomInt) as AudioClip;
         GetComponent<AudioSource>().clip = musicTrack;
@@ -111,6 +115,8 @@ public class LevelLayout : MonoBehaviour
         AddPickups();
         AddNpcs();
         surface.BuildNavMesh();
+        GetComponent<AudioSource>().enabled = false;
+        GetComponent<AudioSource>().enabled = true;
     }
 
     private void AddPlayer(PlayerObjectJson playerObjectJson){
@@ -202,6 +208,11 @@ public class LevelLayout : MonoBehaviour
                     foreach(Fireball fireball in fireballs) //evenly distribute damage between fireballs
                         fireball.Damage = npc.ProjectileDamage / fireballs.Length;
                     //tri.canMove = npc.CanMove;
+                    if(!npc.CanMove){
+                        tri.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+                        tri.agent.speed = 0f;
+                        tri.agent.isStopped = true;
+                    }
                     tri.agent.enabled = npc.CanMove;
                     break;
                 case "Imp":
@@ -214,10 +225,15 @@ public class LevelLayout : MonoBehaviour
                     imp.timeBetweenAttacks = npc.FiringRate;
                     imp.projectile.GetComponent<Fireball>().Damage = npc.ProjectileDamage;
                     //imp.canMove = npc.CanMove;
+                    if(!npc.CanMove){
+                        imp.agent.speed = 0f;
+                        imp.agent.isStopped = true;
+                        imp.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+                    }
                     imp.agent.enabled = npc.CanMove;
                     break;
                 case "PlasmaEater":
-                    tmp = Instantiate(PlasmaEaterPrefab, new Vector3(npc.X, 1.79f, npc.Y), Quaternion.identity);
+                    tmp = Instantiate(PlasmaEaterPrefab, new Vector3(npc.X, 1.3f, npc.Y), Quaternion.identity);
                     PlasmaEater plasmaEater = tmp.GetComponent<PlasmaEater>();
                     plasmaEater.health = npc.Health;
                     plasmaEater.walkRange = npc.PatrolRange;
@@ -228,6 +244,11 @@ public class LevelLayout : MonoBehaviour
                     foreach(Fireball fireball in plasmaEaterfireballs) //evenly distribute damage between fireballs
                         fireball.Damage = npc.ProjectileDamage / plasmaEaterfireballs.Length;
                     //plasmaEater.canMove = npc.CanMove;
+                    if(!npc.CanMove){
+                        plasmaEater.agent.speed = 0f;
+                        plasmaEater.agent.isStopped = true;
+                        plasmaEater.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+                    }
                     plasmaEater.agent.enabled = npc.CanMove;
                     break;
             }
@@ -355,6 +376,14 @@ public class LevelLayout : MonoBehaviour
                 PlayerPrefs.SetString("LevelToLoad", mapNames[11]);
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
+        }
+    }
+
+    private void CheckAudio(){
+        AudioSource audioSource = GetComponent<AudioSource>();
+        if(!audioSource.isPlaying){
+            audioSource.enabled = false;
+            audioSource.enabled = true;
         }
     }
 }
