@@ -1,0 +1,12 @@
+{
+  "MapObjects": [],
+  "MapNpcObjects": [],
+  "Pickups": [],
+  "PlayerGameObject": null,
+  "Name": "Coordinates",
+  "StoryTextSegment": true,
+  "StoryText": "Remember this or write it down.\r\n\r\nYou need rooms 1-7 and 5-4.\r\n\r\nGot it?\r\nYou better.",
+  "WallTexture": 0,
+  "StartX": 0,
+  "StartY": 0
+}

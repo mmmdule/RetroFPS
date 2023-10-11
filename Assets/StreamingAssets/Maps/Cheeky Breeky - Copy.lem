@@ -1381,6 +1381,41 @@
       "Type": "ExitDoor"
     },
     {
+      "X": 34,
+      "Y": 31,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 28,
+      "Y": 31,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 31,
+      "Y": 31,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 26,
+      "Y": 27,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 38,
+      "Y": 27,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 26,
+      "Y": 33,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 37,
+      "Y": 33,
+      "Type": "EnergyBall"
+    },
+    {
       "X": 7,
       "Y": 9,
       "Type": "wallStone"
@@ -1916,6 +1951,66 @@
       "Type": "tileWall"
     },
     {
+      "X": 23,
+      "Y": 28,
+      "Type": "tileWall"
+    },
+    {
+      "X": 23,
+      "Y": 29,
+      "Type": "tileWall"
+    },
+    {
+      "X": 23,
+      "Y": 30,
+      "Type": "tileWall"
+    },
+    {
+      "X": 23,
+      "Y": 31,
+      "Type": "tileWall"
+    },
+    {
+      "X": 23,
+      "Y": 32,
+      "Type": "tileWall"
+    },
+    {
+      "X": 23,
+      "Y": 33,
+      "Type": "tileWall"
+    },
+    {
+      "X": 23,
+      "Y": 34,
+      "Type": "tileWall"
+    },
+    {
+      "X": 25,
+      "Y": 36,
+      "Type": "tileWall"
+    },
+    {
+      "X": 26,
+      "Y": 36,
+      "Type": "tileWall"
+    },
+    {
+      "X": 27,
+      "Y": 36,
+      "Type": "tileWall"
+    },
+    {
+      "X": 28,
+      "Y": 36,
+      "Type": "tileWall"
+    },
+    {
+      "X": 29,
+      "Y": 36,
+      "Type": "tileWall"
+    },
+    {
       "X": 26,
       "Y": 25,
       "Type": "tileWall"
@@ -2026,6 +2121,61 @@
       "Type": "tileWall"
     },
     {
+      "X": 35,
+      "Y": 36,
+      "Type": "tileWall"
+    },
+    {
+      "X": 36,
+      "Y": 36,
+      "Type": "tileWall"
+    },
+    {
+      "X": 37,
+      "Y": 36,
+      "Type": "tileWall"
+    },
+    {
+      "X": 38,
+      "Y": 36,
+      "Type": "tileWall"
+    },
+    {
+      "X": 40,
+      "Y": 34,
+      "Type": "tileWall"
+    },
+    {
+      "X": 40,
+      "Y": 29,
+      "Type": "tileWall"
+    },
+    {
+      "X": 40,
+      "Y": 28,
+      "Type": "tileWall"
+    },
+    {
+      "X": 40,
+      "Y": 30,
+      "Type": "tileWall"
+    },
+    {
+      "X": 40,
+      "Y": 31,
+      "Type": "tileWall"
+    },
+    {
+      "X": 40,
+      "Y": 32,
+      "Type": "tileWall"
+    },
+    {
+      "X": 40,
+      "Y": 33,
+      "Type": "tileWall"
+    },
+    {
       "X": 15,
       "Y": 23,
       "Type": "wallStone"
@@ -2119,6 +2269,21 @@
       "X": 13,
       "Y": 37,
       "Type": "wallStone"
+    },
+    {
+      "X": 13,
+      "Y": 29,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 14,
+      "Y": 28,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 13,
+      "Y": 27,
+      "Type": "EnergyBall"
     },
     {
       "X": 8,
@@ -2916,6 +3081,21 @@
       "Type": "wallMoss"
     },
     {
+      "X": 5,
+      "Y": 35,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 4,
+      "Y": 36,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 3,
+      "Y": 35,
+      "Type": "EnergyBall"
+    },
+    {
       "X": 3,
       "Y": 48,
       "Type": "EnergyBall"
@@ -3164,6 +3344,16 @@
       "X": 30,
       "Y": 47,
       "Type": "wallMoss"
+    },
+    {
+      "X": 20,
+      "Y": 57,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 20,
+      "Y": 58,
+      "Type": "EnergyBall"
     },
     {
       "X": 28,
@@ -5241,6 +5431,11 @@
       "Type": "EnergyBall"
     },
     {
+      "X": 47,
+      "Y": 29,
+      "Type": "EnergyBall"
+    },
+    {
       "X": 49,
       "Y": 33,
       "Type": "wallMoss"
@@ -5411,6 +5606,11 @@
       "Type": "Torch"
     },
     {
+      "X": 9,
+      "Y": 43,
+      "Type": "Torch"
+    },
+    {
       "X": 11,
       "Y": 43,
       "Type": "Torch"
@@ -5566,6 +5766,36 @@
       "Type": "Torch"
     },
     {
+      "X": 20,
+      "Y": 39,
+      "Type": "Torch"
+    },
+    {
+      "X": 43,
+      "Y": 39,
+      "Type": "Torch"
+    },
+    {
+      "X": 43,
+      "Y": 22,
+      "Type": "Torch"
+    },
+    {
+      "X": 20,
+      "Y": 22,
+      "Type": "Torch"
+    },
+    {
+      "X": 24,
+      "Y": 30,
+      "Type": "Torch"
+    },
+    {
+      "X": 39,
+      "Y": 30,
+      "Type": "Torch"
+    },
+    {
       "X": 51,
       "Y": 12,
       "Type": "Cobweb_Wall"
@@ -5621,6 +5851,16 @@
       "Type": "Torch"
     },
     {
+      "X": 27,
+      "Y": 6,
+      "Type": "Torch"
+    },
+    {
+      "X": 32,
+      "Y": 5,
+      "Type": "Torch"
+    },
+    {
       "X": 17,
       "Y": 6,
       "Type": "ArchwaySmall"
@@ -5667,12 +5907,27 @@
     },
     {
       "X": 8,
+      "Y": 2,
+      "Type": "ArchwaySmall"
+    },
+    {
+      "X": 8,
       "Y": 3,
       "Type": "ArchwaySmall"
     },
     {
       "X": 8,
+      "Y": 4,
+      "Type": "ArchwaySmall"
+    },
+    {
+      "X": 8,
       "Y": 5,
+      "Type": "ArchwaySmall"
+    },
+    {
+      "X": 8,
+      "Y": 6,
       "Type": "ArchwaySmall"
     },
     {
@@ -5869,6 +6124,41 @@
       "X": 20,
       "Y": 37,
       "Type": "Stone"
+    },
+    {
+      "X": 22,
+      "Y": 34,
+      "Type": "ArchwaySmall"
+    },
+    {
+      "X": 25,
+      "Y": 37,
+      "Type": "ArchwaySmall"
+    },
+    {
+      "X": 38,
+      "Y": 37,
+      "Type": "ArchwaySmall"
+    },
+    {
+      "X": 41,
+      "Y": 34,
+      "Type": "ArchwaySmall"
+    },
+    {
+      "X": 28,
+      "Y": 24,
+      "Type": "ArchwaySmall"
+    },
+    {
+      "X": 34,
+      "Y": 24,
+      "Type": "ArchwaySmall"
+    },
+    {
+      "X": 31,
+      "Y": 24,
+      "Type": "ArchwaySmall"
     },
     {
       "X": 33,
@@ -6179,39 +6469,45 @@
       "X": 30,
       "Y": 44,
       "Type": "wallMoss"
-    },
-    {
-      "X": 13,
-      "Y": 27,
-      "Type": "wallStone"
-    },
-    {
-      "X": 14,
-      "Y": 28,
-      "Type": "wallStone"
-    },
-    {
-      "X": 13,
-      "Y": 29,
-      "Type": "wallStone"
-    },
-    {
-      "X": 4,
-      "Y": 36,
-      "Type": "wallStone"
-    },
-    {
-      "X": 3,
-      "Y": 35,
-      "Type": "wallStone"
-    },
-    {
-      "X": 5,
-      "Y": 35,
-      "Type": "wallStone"
     }
   ],
   "MapNpcObjects": [
+    {
+      "Health": 770,
+      "ProjectileDamage": 60,
+      "FiringRate": 1.1,
+      "PatrolRange": 15,
+      "AttackRange": 13.5,
+      "ChaseRange": 13.5,
+      "CanMove": false,
+      "X": 23,
+      "Y": 25,
+      "Type": "PlasmaEater"
+    },
+    {
+      "Health": 770,
+      "ProjectileDamage": 60,
+      "FiringRate": 1.2,
+      "PatrolRange": 15,
+      "AttackRange": 25,
+      "ChaseRange": 25,
+      "CanMove": false,
+      "X": 40,
+      "Y": 25,
+      "Type": "PlasmaEater"
+    },
+    {
+      "Health": 770,
+      "ProjectileDamage": 60,
+      "FiringRate": 1.1,
+      "PatrolRange": 15,
+      "AttackRange": 13.5,
+      "ChaseRange": 25,
+      "CanMove": false,
+      "X": 32,
+      "Y": 36,
+      "Type": "PlasmaEater"
+    },
     {
       "Health": 100,
       "ProjectileDamage": 16,
@@ -6807,6 +7103,12 @@
       "X": 8,
       "Y": 9,
       "Type": "Bullets"
+    },
+    {
+      "Value": 15,
+      "X": 32,
+      "Y": 24,
+      "Type": "Bullets"
     }
   ],
   "PlayerGameObject": {
@@ -6824,7 +7126,7 @@
   "Name": "Cheeky Breeky",
   "StoryTextSegment": false,
   "StoryText": "",
-  "WallTexture": 1,
+  "WallTexture": 2,
   "StartX": 5,
   "StartY": 5
 }
