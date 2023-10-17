@@ -1,0 +1,12 @@
+{
+  "MapObjects": [],
+  "MapNpcObjects": [],
+  "Pickups": [],
+  "PlayerGameObject": null,
+  "Name": "Captured",
+  "StoryTextSegment": true,
+  "StoryText": "As you entered the next area,\r\nan ambush struck!\r\n\r\n\"TAKE HIM TO THE CELLS!\",\r\na demonic voice roars.\r\n\r\nA message on your cell wall:\r\n\"MANY PILLARS, BROWN MAZE,\r\n GRAY EXIT...\"",
+  "WallTexture": 0,
+  "StartX": 0,
+  "StartY": 0
+}

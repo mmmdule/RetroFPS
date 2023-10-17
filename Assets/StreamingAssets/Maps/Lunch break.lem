@@ -1,0 +1,2964 @@
+{
+  "MapObjects": [
+    {
+      "X": 0,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 1,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 2,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 3,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 4,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 5,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 6,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 8,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 9,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 10,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 11,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 12,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 13,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 14,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 15,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 16,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 17,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 18,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 19,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 20,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 21,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 22,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 23,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 24,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 25,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 26,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 27,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 28,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 29,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 30,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 31,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 32,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 33,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 34,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 35,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 36,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 37,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 38,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 39,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 40,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 41,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 42,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 43,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 44,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 45,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 46,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 47,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 48,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 49,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 50,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 51,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 52,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 53,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 54,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 55,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 56,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 57,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 58,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 59,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 60,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 61,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 62,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 0,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 1,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 2,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 3,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 4,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 5,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 6,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 8,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 9,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 10,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 11,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 12,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 13,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 14,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 15,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 16,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 17,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 18,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 19,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 20,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 21,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 22,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 23,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 24,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 25,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 26,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 27,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 28,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 29,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 30,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 31,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 32,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 33,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 34,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 35,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 36,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 37,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 38,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 39,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 40,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 41,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 42,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 43,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 44,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 45,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 46,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 47,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 48,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 49,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 50,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 51,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 52,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 53,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 54,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 55,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 56,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 57,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 58,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 59,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 60,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 61,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 62,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 63,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 1,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 1,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 2,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 2,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 3,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 3,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 5,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 5,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 6,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 6,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 7,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 7,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 9,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 9,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 10,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 10,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 11,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 11,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 12,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 12,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 13,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 13,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 14,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 14,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 15,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 15,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 16,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 16,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 17,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 17,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 18,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 18,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 19,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 19,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 20,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 20,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 21,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 21,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 22,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 22,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 23,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 23,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 24,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 24,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 25,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 25,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 26,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 26,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 27,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 27,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 28,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 28,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 29,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 29,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 30,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 30,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 31,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 31,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 32,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 32,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 33,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 33,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 34,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 34,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 35,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 35,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 36,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 36,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 37,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 37,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 38,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 38,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 39,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 39,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 40,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 40,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 41,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 41,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 42,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 42,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 43,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 43,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 44,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 44,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 45,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 45,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 46,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 46,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 47,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 47,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 48,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 48,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 49,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 49,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 50,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 50,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 51,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 51,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 52,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 52,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 53,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 53,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 54,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 54,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 55,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 55,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 56,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 56,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 57,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 57,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 58,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 58,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 59,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 59,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 60,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 60,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 61,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 61,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 0,
+      "Y": 62,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 63,
+      "Y": 62,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 1,
+      "Y": 1,
+      "Type": "Torch"
+    },
+    {
+      "X": 20,
+      "Y": 13,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 20,
+      "Y": 12,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 20,
+      "Y": 11,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 20,
+      "Y": 10,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 20,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 20,
+      "Y": 2,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 20,
+      "Y": 1,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 20,
+      "Y": 3,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 20,
+      "Y": 9,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 20,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 20,
+      "Y": 17,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 20,
+      "Y": 18,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 20,
+      "Y": 19,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 1,
+      "Y": 19,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 8,
+      "Y": 19,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 9,
+      "Y": 19,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 10,
+      "Y": 19,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 11,
+      "Y": 19,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 12,
+      "Y": 19,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 13,
+      "Y": 19,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 15,
+      "Y": 19,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 16,
+      "Y": 19,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 17,
+      "Y": 19,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 18,
+      "Y": 19,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 19,
+      "Y": 19,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 14,
+      "Y": 19,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 19,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 20,
+      "Y": 7,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 21,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 23,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 22,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 24,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 25,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 27,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 28,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 34,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 35,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 36,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 29,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 37,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 38,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 40,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 41,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 42,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 43,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 44,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 45,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 47,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 48,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 49,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 50,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 57,
+      "Y": 5,
+      "Type": "DoorGate"
+    },
+    {
+      "X": 51,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 52,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 53,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 54,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 55,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 56,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 57,
+      "Y": 7,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 58,
+      "Y": 6,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 58,
+      "Y": 7,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 59,
+      "Y": 7,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 60,
+      "Y": 7,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 61,
+      "Y": 7,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 62,
+      "Y": 7,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 56,
+      "Y": 3,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 56,
+      "Y": 2,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 56,
+      "Y": 1,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 19,
+      "Y": 17,
+      "Type": "Torch"
+    },
+    {
+      "X": 19,
+      "Y": 13,
+      "Type": "Torch"
+    },
+    {
+      "X": 19,
+      "Y": 8,
+      "Type": "Torch"
+    },
+    {
+      "X": 19,
+      "Y": 3,
+      "Type": "Torch"
+    },
+    {
+      "X": 21,
+      "Y": 17,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 22,
+      "Y": 17,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 23,
+      "Y": 17,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 24,
+      "Y": 17,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 25,
+      "Y": 17,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 21,
+      "Y": 13,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 22,
+      "Y": 13,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 23,
+      "Y": 13,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 24,
+      "Y": 13,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 25,
+      "Y": 13,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 26,
+      "Y": 17,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 27,
+      "Y": 17,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 27,
+      "Y": 18,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 28,
+      "Y": 18,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 29,
+      "Y": 18,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 30,
+      "Y": 18,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 31,
+      "Y": 18,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 26,
+      "Y": 13,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 26,
+      "Y": 12,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 27,
+      "Y": 12,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 28,
+      "Y": 12,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 29,
+      "Y": 12,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 30,
+      "Y": 12,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 31,
+      "Y": 12,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 32,
+      "Y": 12,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 33,
+      "Y": 14,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 36,
+      "Y": 16,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 32,
+      "Y": 18,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 33,
+      "Y": 18,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 34,
+      "Y": 18,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 35,
+      "Y": 18,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 36,
+      "Y": 18,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 37,
+      "Y": 18,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 38,
+      "Y": 18,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 38,
+      "Y": 17,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 38,
+      "Y": 16,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 33,
+      "Y": 12,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 34,
+      "Y": 12,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 35,
+      "Y": 12,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 36,
+      "Y": 12,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 37,
+      "Y": 12,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 38,
+      "Y": 12,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 38,
+      "Y": 13,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 38,
+      "Y": 14,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 38,
+      "Y": 15,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 29,
+      "Y": 15,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 31,
+      "Y": 16,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 36,
+      "Y": 14,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 19,
+      "Y": 18,
+      "Type": "ArchwaySmall"
+    },
+    {
+      "X": 19,
+      "Y": 12,
+      "Type": "ArchwaySmall"
+    },
+    {
+      "X": 2,
+      "Y": 19,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 1,
+      "Y": 20,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 1,
+      "Y": 21,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 1,
+      "Y": 22,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 1,
+      "Y": 23,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 1,
+      "Y": 24,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 1,
+      "Y": 25,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 1,
+      "Y": 26,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 1,
+      "Y": 27,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 1,
+      "Y": 28,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 1,
+      "Y": 29,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 1,
+      "Y": 30,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 1,
+      "Y": 31,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 1,
+      "Y": 32,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 1,
+      "Y": 34,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 1,
+      "Y": 33,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 1,
+      "Y": 35,
+      "Type": "Torch"
+    },
+    {
+      "X": 6,
+      "Y": 19,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 37,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 36,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 35,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 34,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 33,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 32,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 31,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 30,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 29,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 28,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 27,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 26,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 25,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 24,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 23,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 22,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 21,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 20,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 6,
+      "Y": 20,
+      "Type": "ArchwaySmall"
+    },
+    {
+      "X": 2,
+      "Y": 20,
+      "Type": "ArchwaySmall"
+    },
+    {
+      "X": 2,
+      "Y": 23,
+      "Type": "ArchwaySmall"
+    },
+    {
+      "X": 6,
+      "Y": 23,
+      "Type": "ArchwaySmall"
+    },
+    {
+      "X": 6,
+      "Y": 26,
+      "Type": "ArchwaySmall"
+    },
+    {
+      "X": 2,
+      "Y": 26,
+      "Type": "ArchwaySmall"
+    },
+    {
+      "X": 2,
+      "Y": 29,
+      "Type": "ArchwaySmall"
+    },
+    {
+      "X": 6,
+      "Y": 29,
+      "Type": "ArchwaySmall"
+    },
+    {
+      "X": 2,
+      "Y": 32,
+      "Type": "ArchwaySmall"
+    },
+    {
+      "X": 6,
+      "Y": 32,
+      "Type": "ArchwaySmall"
+    },
+    {
+      "X": 6,
+      "Y": 35,
+      "Type": "ArchwaySmall"
+    },
+    {
+      "X": 6,
+      "Y": 30,
+      "Type": "Torch"
+    },
+    {
+      "X": 2,
+      "Y": 27,
+      "Type": "Torch"
+    },
+    {
+      "X": 6,
+      "Y": 24,
+      "Type": "Torch"
+    },
+    {
+      "X": 3,
+      "Y": 34,
+      "Type": "Stone"
+    },
+    {
+      "X": 4,
+      "Y": 22,
+      "Type": "Stone"
+    },
+    {
+      "X": 39,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 26,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 2,
+      "Y": 6,
+      "Type": "wallStone"
+    },
+    {
+      "X": 3,
+      "Y": 6,
+      "Type": "wallStone"
+    },
+    {
+      "X": 5,
+      "Y": 6,
+      "Type": "wallStone"
+    },
+    {
+      "X": 6,
+      "Y": 3,
+      "Type": "wallStone"
+    },
+    {
+      "X": 6,
+      "Y": 2,
+      "Type": "wallStone"
+    },
+    {
+      "X": 6,
+      "Y": 4,
+      "Type": "wallStone"
+    },
+    {
+      "X": 6,
+      "Y": 5,
+      "Type": "wallStone"
+    },
+    {
+      "X": 6,
+      "Y": 6,
+      "Type": "wallStone"
+    },
+    {
+      "X": 4,
+      "Y": 6,
+      "Type": "wallStone"
+    },
+    {
+      "X": 4,
+      "Y": 5,
+      "Type": "wallStone"
+    },
+    {
+      "X": 5,
+      "Y": 5,
+      "Type": "wallStone"
+    },
+    {
+      "X": 5,
+      "Y": 4,
+      "Type": "wallStone"
+    },
+    {
+      "X": 2,
+      "Y": 4,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 4,
+      "Y": 2,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 4,
+      "Y": 4,
+      "Type": "Key"
+    },
+    {
+      "X": 21,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 22,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 27,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 28,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 29,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 30,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 31,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 32,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 33,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 34,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 35,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 36,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 37,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 38,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 39,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 40,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 41,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 48,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 49,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 50,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 51,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 52,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 53,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 54,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 55,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 56,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 57,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 26,
+      "Y": 9,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 24,
+      "Y": 6,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 32,
+      "Y": 6,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 37,
+      "Y": 6,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 45,
+      "Y": 6,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 25,
+      "Y": 9,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 24,
+      "Y": 9,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 23,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 31,
+      "Y": 3,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 32,
+      "Y": 3,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 33,
+      "Y": 3,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 30,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 46,
+      "Y": 4,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 42,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 43,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 46,
+      "Y": 9,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 45,
+      "Y": 9,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 44,
+      "Y": 9,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 47,
+      "Y": 8,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 62,
+      "Y": 6,
+      "Type": "Torch"
+    },
+    {
+      "X": 49,
+      "Y": 6,
+      "Type": "Stone"
+    },
+    {
+      "X": 52,
+      "Y": 5,
+      "Type": "Stone"
+    },
+    {
+      "X": 40,
+      "Y": 7,
+      "Type": "Stone"
+    },
+    {
+      "X": 35,
+      "Y": 5,
+      "Type": "Stone"
+    },
+    {
+      "X": 28,
+      "Y": 7,
+      "Type": "Stone"
+    },
+    {
+      "X": 7,
+      "Y": 38,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 39,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 40,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 41,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 42,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 43,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 44,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 45,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 46,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 47,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 48,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 49,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 50,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 51,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 52,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 53,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 54,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 55,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 7,
+      "Y": 56,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 8,
+      "Y": 56,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 9,
+      "Y": 56,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 10,
+      "Y": 56,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 11,
+      "Y": 56,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 12,
+      "Y": 56,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 13,
+      "Y": 56,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 14,
+      "Y": 56,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 15,
+      "Y": 56,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 16,
+      "Y": 56,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 17,
+      "Y": 56,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 18,
+      "Y": 56,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 19,
+      "Y": 56,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 20,
+      "Y": 56,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 21,
+      "Y": 56,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 22,
+      "Y": 56,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 22,
+      "Y": 57,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 22,
+      "Y": 58,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 22,
+      "Y": 59,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 22,
+      "Y": 60,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 22,
+      "Y": 61,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 22,
+      "Y": 62,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 6,
+      "Y": 39,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 1,
+      "Y": 39,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 1,
+      "Y": 43,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 6,
+      "Y": 43,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 6,
+      "Y": 47,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 1,
+      "Y": 47,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 1,
+      "Y": 51,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 6,
+      "Y": 51,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 6,
+      "Y": 54,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 1,
+      "Y": 54,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 8,
+      "Y": 57,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 8,
+      "Y": 62,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 12,
+      "Y": 57,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 12,
+      "Y": 62,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 1,
+      "Y": 57,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 1,
+      "Y": 62,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 17,
+      "Y": 57,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 17,
+      "Y": 62,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 21,
+      "Y": 59,
+      "Type": "Torch"
+    },
+    {
+      "X": 21,
+      "Y": 60,
+      "Type": "Torch"
+    },
+    {
+      "X": 1,
+      "Y": 59,
+      "Type": "Torch"
+    },
+    {
+      "X": 1,
+      "Y": 60,
+      "Type": "Torch"
+    },
+    {
+      "X": 6,
+      "Y": 52,
+      "Type": "Torch"
+    },
+    {
+      "X": 1,
+      "Y": 49,
+      "Type": "Torch"
+    },
+    {
+      "X": 6,
+      "Y": 45,
+      "Type": "Torch"
+    },
+    {
+      "X": 1,
+      "Y": 41,
+      "Type": "Torch"
+    },
+    {
+      "X": 11,
+      "Y": 59,
+      "Type": "Stone"
+    },
+    {
+      "X": 7,
+      "Y": 60,
+      "Type": "Stone"
+    },
+    {
+      "X": 1,
+      "Y": 56,
+      "Type": "Stone"
+    },
+    {
+      "X": 1,
+      "Y": 55,
+      "Type": "Stone"
+    },
+    {
+      "X": 6,
+      "Y": 46,
+      "Type": "Stone"
+    },
+    {
+      "X": 2,
+      "Y": 44,
+      "Type": "Stone"
+    },
+    {
+      "X": 4,
+      "Y": 40,
+      "Type": "Stone"
+    },
+    {
+      "X": 3,
+      "Y": 28,
+      "Type": "Stone"
+    },
+    {
+      "X": 20,
+      "Y": 62,
+      "Type": "Stone"
+    },
+    {
+      "X": 4,
+      "Y": 62,
+      "Type": "Stone"
+    },
+    {
+      "X": 57,
+      "Y": 2,
+      "Type": "Torch"
+    },
+    {
+      "X": 62,
+      "Y": 4,
+      "Type": "Torch"
+    },
+    {
+      "X": 57,
+      "Y": 1,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 58,
+      "Y": 1,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 59,
+      "Y": 1,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 60,
+      "Y": 1,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 61,
+      "Y": 1,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 62,
+      "Y": 1,
+      "Type": "wallMoss"
+    },
+    {
+      "X": 58,
+      "Y": 2,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 62,
+      "Y": 2,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 60,
+      "Y": 2,
+      "Type": "ExitDoor"
+    },
+    {
+      "X": 60,
+      "Y": 4,
+      "Type": "Stone"
+    }
+  ],
+  "MapNpcObjects": [
+    {
+      "Health": 1000,
+      "ProjectileDamage": 60,
+      "FiringRate": 0.2,
+      "PatrolRange": 15,
+      "AttackRange": 64,
+      "ChaseRange": 64,
+      "CanMove": false,
+      "X": 11,
+      "Y": 6,
+      "Type": "PlasmaEater"
+    }
+  ],
+  "Pickups": [
+    {
+      "Value": 25,
+      "X": 37,
+      "Y": 15,
+      "Type": "ShotgunAmmo"
+    }
+  ],
+  "PlayerGameObject": {
+    "Health": 100,
+    "HasRevolver": false,
+    "RevolverAmmo": 0,
+    "HasShotgun": true,
+    "ShotgunAmmo": 0,
+    "HasSmg": true,
+    "SmgAmmo": 125,
+    "X": 18,
+    "Y": 59,
+    "Type": "player"
+  },
+  "Name": "Lunch break",
+  "StoryTextSegment": false,
+  "StoryText": "",
+  "WallTexture": 2,
+  "StartX": 18,
+  "StartY": 59
+}

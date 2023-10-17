@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2789770795181627853}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: EnergyBlast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,7 +44,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7757786583727844459}
   - component: {fileID: 1874475608223500709}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: FireballSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -133,9 +133,9 @@ GameObject:
   - component: {fileID: 1669300676529367625}
   - component: {fileID: 8553981981592248058}
   - component: {fileID: 5795282679670905538}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: EnergyBall (2)
-  m_TagString: Untagged
+  m_TagString: Fireball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -176,7 +176,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2822472492531051319}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
@@ -243,10 +243,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2d5ffa35c55fd446a37920c14a5ad73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlayerProjectile: 0
   Speed: 0.47
   SpriteChild: {fileID: 3379356519518370801}
   ownerImp: {fileID: 0}
   audioSource: {fileID: 8553981981592248058}
+  notStatic: 1
   healthManager: {fileID: 0}
   Damage: 12
 --- !u!212 &1669300676529367625
@@ -423,7 +425,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2649955680566674166}
   - component: {fileID: 4847636072791260601}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: FireballSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -512,9 +514,9 @@ GameObject:
   - component: {fileID: 6330807237679753529}
   - component: {fileID: 3804799314524179571}
   - component: {fileID: 6111405279428247418}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: EnergyBall (1)
-  m_TagString: Untagged
+  m_TagString: Fireball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -555,7 +557,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6137824167804732955}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
@@ -622,10 +624,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2d5ffa35c55fd446a37920c14a5ad73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlayerProjectile: 0
   Speed: 0.47
   SpriteChild: {fileID: 626451866300490070}
   ownerImp: {fileID: 0}
   audioSource: {fileID: 3804799314524179571}
+  notStatic: 1
   healthManager: {fileID: 0}
   Damage: 12
 --- !u!212 &6330807237679753529
@@ -802,7 +806,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5003728432510613113}
   - component: {fileID: 7257062035111354911}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: FireballSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -891,9 +895,9 @@ GameObject:
   - component: {fileID: 1543307986859239957}
   - component: {fileID: 4449008635041609627}
   - component: {fileID: 6671937347724637742}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: EnergyBall
-  m_TagString: Untagged
+  m_TagString: Fireball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -934,7 +938,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8078042156236496063}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
@@ -1001,10 +1005,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2d5ffa35c55fd446a37920c14a5ad73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlayerProjectile: 0
   Speed: 0.47
   SpriteChild: {fileID: 6617029693585337788}
   ownerImp: {fileID: 0}
   audioSource: {fileID: 4449008635041609627}
+  notStatic: 1
   healthManager: {fileID: 0}
   Damage: 12
 --- !u!212 &1543307986859239957

@@ -1,0 +1,5 @@
+Resolution X
+Resolution Y
+Target Framerate
+Dither (1 - On, 0 - Off)
+CRT Effect (1 - On, 0 - Off)

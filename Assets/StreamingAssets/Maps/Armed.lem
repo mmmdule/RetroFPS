@@ -1,0 +1,12 @@
+{
+  "MapObjects": [],
+  "MapNpcObjects": [],
+  "Pickups": [],
+  "PlayerGameObject": null,
+  "Name": "Armed",
+  "StoryTextSegment": true,
+  "StoryText": "There they are! \r\nYour trusted weapons.\r\n\r\nThere's still some ammo\r\nin them.\r\n\r\nSlaughter the demons\r\nresponsible for your capture!",
+  "WallTexture": 0,
+  "StartX": 0,
+  "StartY": 0
+}

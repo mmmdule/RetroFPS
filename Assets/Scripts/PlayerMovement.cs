@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -23,13 +24,55 @@ public class PlayerMovement : MonoBehaviour
     {
         characterController = gameObject.GetComponent<CharacterController>();
 
+        //un-pause at start
+        paused = false;
+        Time.timeScale = 1;
+        ShootScript.enabled = true;
+        AudioListener.pause = PlayerPrefs.GetInt("Sound", 1) == 0;
+        canvasPause.enabled = false;
+        canvasPlay.enabled = true;
+        //un-pause at start
+
+        //Cursor.lockState = CursorLockMode.None;
         // Lock cursor
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
-
+    public static bool paused = false;
+    [SerializeField]
+    Canvas canvasPause;
+    [SerializeField]
+    Canvas canvasPlay;
+    [SerializeField]
+    Shoot ShootScript;
     void Update()
     {
+        if(!paused && (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))){
+            paused = true;
+            Time.timeScale = 0;
+            ShootScript.enabled = false;
+            AudioListener.pause = true;
+            canvasPause.enabled = true;
+            canvasPlay.enabled = false;
+        }
+        else if(paused && (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P))){
+            paused = false;
+            Time.timeScale = 1;
+            ShootScript.enabled = true;
+            AudioListener.pause = PlayerPrefs.GetInt("Sound", 1) == 0;
+            canvasPause.enabled = false;
+            canvasPlay.enabled = true;
+        }
+        else if (paused && (Input.GetKeyDown(KeyCode.R))){
+            PlayerPrefs.SetString("LevelToLoad", PlayerPrefs.GetString("GameOverLevel"));
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        else if (paused && (Input.GetKeyDown(KeyCode.Q))){
+            SceneManager.LoadScene(0);
+        }
+        else if(paused)
+            return;
+        
         // We are grounded, so recalculate move direction based on axes
         Vector3 forward = transform.TransformDirection(Vector3.forward);
         Vector3 right = transform.TransformDirection(Vector3.right);

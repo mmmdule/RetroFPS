@@ -10,6 +10,11 @@ TagManager:
   - Imp
   - Floor
   - Tri-Imp
+  - Pickup
+  - Column
+  - SecondaryCamera
+  - Fireball
+  - PlasmaEater
   layers:
   - Default
   - TransparentFX
@@ -19,8 +24,8 @@ TagManager:
   - UI
   - Player
   - Enemy
-  - 
-  - 
+  - EnergyTrap
+  - Pickups
   - 
   - 
   - 

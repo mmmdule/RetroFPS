@@ -11,18 +11,24 @@ Like the Yellow for Keys is right now.
 
 -64x64 Grid
 
--Green		(Player)
--Blue		(Wall)
--Black		(Door) (always one pixel)
--White		(Spot light/Point light) (pozicija Y je 4)
--Purple[R+B] 	(Win)
--Yellow[R+G] 	(Key)
--Gray 		(Statue) (for cover and decoration)[R,G,B = 192]
--Red		(Cornodemon)
--<add color>	(Tri-Demon) [R 185, G 0, B 30] (Dark Red)
--<add color>	(Orb ring)
--Purple(Custom)	(KnightArmor)(for decoration) [R 255, G 153, B 255]
--Orange(Custom)	(Pebbles)(for decoration) [R 255, G 128, B 64]
+-Green			(Player)
+-Blue			(Wall) [R 0, G 217, B 234]
+-Dark Blue (Custom)	(Cobweb Wall) [R 15, G 10, B 120]
+-Black			(Door) (always one pixel)
+-White			(Spot light/Point light) (pozicija Y je 4)
+-Purple[R+B] 		(Win)
+-Yellow[R+G] 		(Key)
+-Gray 			(Torches)[R,G,B = 192]
+-Red			(Demon)
+-Dark Red		(Tri-Demon) [R 185, G 0, B 30]
+-Blue(Custom)		(Orb ring) [R 0, G 162, B 232]
+-Purple(Custom)		(KnightArmor)(for decoration) [R 255, G 153, B 255]
+-Orange(Custom)		(Pebbles)(for decoration) [R 255, G 128, B 64]
+-Dark Green  		(Health Pickup) [R 0, G 64, B 0]
+-Medium Brown  		(Shotgun Ammo Pickup) [R 128, G 64, B 64]
+-Purple-ish  		(Revolver Ammo Pickup) [R 128, G 0, B 64]
+-LightBlue1(Custom)	(Column 1) [R 0, G 217, B 234]
+-DarkPink1 (Custom)	(Column 2) [R 155, G 17, B 124]
 
 0.21y
 
@@ -48,6 +54,36 @@ Explosion ring - A brick with a few light sources around it. It's surrounded by 
 
 
 --------------------------------------------------------------------
+
+Config file reference:
+
+Color codes (Red = 0 and so on): Red, Blue, White, Yellow, Magenta, Green
+
+--------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Klasa LevelLayout{
 	//Key je X, Value je Z

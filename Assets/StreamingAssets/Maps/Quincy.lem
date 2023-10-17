@@ -1,0 +1,3980 @@
+{
+  "MapObjects": [
+    {
+      "X": 0,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 1,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 2,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 3,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 4,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 5,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 6,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 7,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 8,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 9,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 10,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 11,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 12,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 13,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 14,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 15,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 16,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 17,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 18,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 19,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 20,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 21,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 22,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 23,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 24,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 25,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 26,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 27,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 28,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 29,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 30,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 31,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 32,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 33,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 34,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 35,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 36,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 37,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 38,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 39,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 40,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 41,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 42,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 43,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 44,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 45,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 46,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 47,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 48,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 49,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 50,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 51,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 52,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 53,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 54,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 55,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 56,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 57,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 58,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 59,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 60,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 61,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 62,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 0,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 1,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 2,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 3,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 4,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 5,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 6,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 7,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 8,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 9,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 10,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 11,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 12,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 13,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 14,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 15,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 16,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 17,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 18,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 19,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 20,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 21,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 22,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 23,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 24,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 25,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 26,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 27,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 28,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 29,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 30,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 31,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 32,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 33,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 34,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 35,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 36,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 37,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 38,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 39,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 40,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 41,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 42,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 43,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 44,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 45,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 46,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 47,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 48,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 49,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 50,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 51,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 52,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 53,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 54,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 55,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 56,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 57,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 58,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 59,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 60,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 61,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 62,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 63,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 1,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 1,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 2,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 2,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 3,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 3,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 4,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 4,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 5,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 5,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 6,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 6,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 7,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 7,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 8,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 8,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 9,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 9,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 10,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 10,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 11,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 11,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 12,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 12,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 13,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 13,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 15,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 15,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 16,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 16,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 17,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 17,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 18,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 18,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 19,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 19,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 20,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 20,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 21,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 21,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 22,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 22,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 23,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 23,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 24,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 24,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 25,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 25,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 26,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 26,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 27,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 27,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 28,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 28,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 29,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 29,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 30,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 30,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 31,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 31,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 32,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 32,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 33,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 33,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 34,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 34,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 35,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 35,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 36,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 36,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 37,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 37,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 38,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 38,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 39,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 39,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 40,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 40,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 41,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 41,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 42,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 42,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 43,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 43,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 44,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 44,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 45,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 45,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 46,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 46,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 47,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 47,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 48,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 48,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 49,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 49,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 50,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 50,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 51,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 51,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 52,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 52,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 53,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 53,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 54,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 54,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 55,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 55,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 56,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 56,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 57,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 57,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 58,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 58,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 59,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 59,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 60,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 60,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 61,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 61,
+      "Type": "wallStone"
+    },
+    {
+      "X": 0,
+      "Y": 62,
+      "Type": "wallStone"
+    },
+    {
+      "X": 63,
+      "Y": 62,
+      "Type": "wallStone"
+    },
+    {
+      "X": 19,
+      "Y": 1,
+      "Type": "wallStone"
+    },
+    {
+      "X": 19,
+      "Y": 5,
+      "Type": "wallStone"
+    },
+    {
+      "X": 19,
+      "Y": 6,
+      "Type": "wallStone"
+    },
+    {
+      "X": 19,
+      "Y": 7,
+      "Type": "wallStone"
+    },
+    {
+      "X": 19,
+      "Y": 8,
+      "Type": "wallStone"
+    },
+    {
+      "X": 19,
+      "Y": 9,
+      "Type": "wallStone"
+    },
+    {
+      "X": 19,
+      "Y": 10,
+      "Type": "wallStone"
+    },
+    {
+      "X": 19,
+      "Y": 11,
+      "Type": "wallStone"
+    },
+    {
+      "X": 19,
+      "Y": 12,
+      "Type": "wallStone"
+    },
+    {
+      "X": 19,
+      "Y": 13,
+      "Type": "wallStone"
+    },
+    {
+      "X": 19,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 20,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 21,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 22,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 23,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 24,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 25,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 26,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 27,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 28,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 29,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 34,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 35,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 36,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 37,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 38,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 39,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 40,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 40,
+      "Y": 13,
+      "Type": "wallStone"
+    },
+    {
+      "X": 40,
+      "Y": 12,
+      "Type": "wallStone"
+    },
+    {
+      "X": 40,
+      "Y": 9,
+      "Type": "wallStone"
+    },
+    {
+      "X": 40,
+      "Y": 11,
+      "Type": "wallStone"
+    },
+    {
+      "X": 40,
+      "Y": 10,
+      "Type": "wallStone"
+    },
+    {
+      "X": 40,
+      "Y": 1,
+      "Type": "wallStone"
+    },
+    {
+      "X": 40,
+      "Y": 2,
+      "Type": "wallStone"
+    },
+    {
+      "X": 40,
+      "Y": 3,
+      "Type": "wallStone"
+    },
+    {
+      "X": 40,
+      "Y": 4,
+      "Type": "wallStone"
+    },
+    {
+      "X": 40,
+      "Y": 5,
+      "Type": "wallStone"
+    },
+    {
+      "X": 40,
+      "Y": 6,
+      "Type": "wallStone"
+    },
+    {
+      "X": 40,
+      "Y": 7,
+      "Type": "wallStone"
+    },
+    {
+      "X": 40,
+      "Y": 8,
+      "Type": "wallStone"
+    },
+    {
+      "X": 27,
+      "Y": 15,
+      "Type": "wallStone"
+    },
+    {
+      "X": 27,
+      "Y": 16,
+      "Type": "wallStone"
+    },
+    {
+      "X": 27,
+      "Y": 17,
+      "Type": "wallStone"
+    },
+    {
+      "X": 27,
+      "Y": 18,
+      "Type": "wallStone"
+    },
+    {
+      "X": 27,
+      "Y": 19,
+      "Type": "wallStone"
+    },
+    {
+      "X": 27,
+      "Y": 20,
+      "Type": "wallStone"
+    },
+    {
+      "X": 27,
+      "Y": 21,
+      "Type": "wallStone"
+    },
+    {
+      "X": 27,
+      "Y": 22,
+      "Type": "wallStone"
+    },
+    {
+      "X": 27,
+      "Y": 23,
+      "Type": "wallStone"
+    },
+    {
+      "X": 27,
+      "Y": 24,
+      "Type": "wallStone"
+    },
+    {
+      "X": 27,
+      "Y": 25,
+      "Type": "wallStone"
+    },
+    {
+      "X": 27,
+      "Y": 26,
+      "Type": "wallStone"
+    },
+    {
+      "X": 27,
+      "Y": 27,
+      "Type": "wallStone"
+    },
+    {
+      "X": 36,
+      "Y": 15,
+      "Type": "wallStone"
+    },
+    {
+      "X": 36,
+      "Y": 16,
+      "Type": "wallStone"
+    },
+    {
+      "X": 36,
+      "Y": 17,
+      "Type": "wallStone"
+    },
+    {
+      "X": 36,
+      "Y": 18,
+      "Type": "wallStone"
+    },
+    {
+      "X": 36,
+      "Y": 19,
+      "Type": "wallStone"
+    },
+    {
+      "X": 36,
+      "Y": 20,
+      "Type": "wallStone"
+    },
+    {
+      "X": 36,
+      "Y": 21,
+      "Type": "wallStone"
+    },
+    {
+      "X": 36,
+      "Y": 22,
+      "Type": "wallStone"
+    },
+    {
+      "X": 36,
+      "Y": 23,
+      "Type": "wallStone"
+    },
+    {
+      "X": 36,
+      "Y": 24,
+      "Type": "wallStone"
+    },
+    {
+      "X": 36,
+      "Y": 25,
+      "Type": "wallStone"
+    },
+    {
+      "X": 36,
+      "Y": 26,
+      "Type": "wallStone"
+    },
+    {
+      "X": 36,
+      "Y": 27,
+      "Type": "wallStone"
+    },
+    {
+      "X": 36,
+      "Y": 28,
+      "Type": "wallStone"
+    },
+    {
+      "X": 36,
+      "Y": 29,
+      "Type": "wallStone"
+    },
+    {
+      "X": 36,
+      "Y": 30,
+      "Type": "wallStone"
+    },
+    {
+      "X": 36,
+      "Y": 31,
+      "Type": "wallStone"
+    },
+    {
+      "X": 36,
+      "Y": 32,
+      "Type": "wallStone"
+    },
+    {
+      "X": 27,
+      "Y": 28,
+      "Type": "wallStone"
+    },
+    {
+      "X": 27,
+      "Y": 29,
+      "Type": "wallStone"
+    },
+    {
+      "X": 27,
+      "Y": 30,
+      "Type": "wallStone"
+    },
+    {
+      "X": 27,
+      "Y": 31,
+      "Type": "wallStone"
+    },
+    {
+      "X": 36,
+      "Y": 33,
+      "Type": "wallStone"
+    },
+    {
+      "X": 37,
+      "Y": 33,
+      "Type": "wallStone"
+    },
+    {
+      "X": 37,
+      "Y": 32,
+      "Type": "wallStone"
+    },
+    {
+      "X": 38,
+      "Y": 32,
+      "Type": "wallStone"
+    },
+    {
+      "X": 38,
+      "Y": 31,
+      "Type": "wallStone"
+    },
+    {
+      "X": 39,
+      "Y": 31,
+      "Type": "wallStone"
+    },
+    {
+      "X": 40,
+      "Y": 30,
+      "Type": "wallStone"
+    },
+    {
+      "X": 41,
+      "Y": 30,
+      "Type": "wallStone"
+    },
+    {
+      "X": 41,
+      "Y": 29,
+      "Type": "wallStone"
+    },
+    {
+      "X": 42,
+      "Y": 29,
+      "Type": "wallStone"
+    },
+    {
+      "X": 42,
+      "Y": 28,
+      "Type": "wallStone"
+    },
+    {
+      "X": 43,
+      "Y": 28,
+      "Type": "wallStone"
+    },
+    {
+      "X": 43,
+      "Y": 27,
+      "Type": "wallStone"
+    },
+    {
+      "X": 43,
+      "Y": 26,
+      "Type": "wallStone"
+    },
+    {
+      "X": 44,
+      "Y": 26,
+      "Type": "wallStone"
+    },
+    {
+      "X": 44,
+      "Y": 25,
+      "Type": "wallStone"
+    },
+    {
+      "X": 45,
+      "Y": 25,
+      "Type": "wallStone"
+    },
+    {
+      "X": 39,
+      "Y": 39,
+      "Type": "wallStone"
+    },
+    {
+      "X": 40,
+      "Y": 39,
+      "Type": "wallStone"
+    },
+    {
+      "X": 40,
+      "Y": 38,
+      "Type": "wallStone"
+    },
+    {
+      "X": 41,
+      "Y": 38,
+      "Type": "wallStone"
+    },
+    {
+      "X": 42,
+      "Y": 37,
+      "Type": "wallStone"
+    },
+    {
+      "X": 42,
+      "Y": 36,
+      "Type": "wallStone"
+    },
+    {
+      "X": 43,
+      "Y": 36,
+      "Type": "wallStone"
+    },
+    {
+      "X": 44,
+      "Y": 35,
+      "Type": "wallStone"
+    },
+    {
+      "X": 45,
+      "Y": 35,
+      "Type": "wallStone"
+    },
+    {
+      "X": 45,
+      "Y": 34,
+      "Type": "wallStone"
+    },
+    {
+      "X": 46,
+      "Y": 34,
+      "Type": "wallStone"
+    },
+    {
+      "X": 46,
+      "Y": 33,
+      "Type": "wallStone"
+    },
+    {
+      "X": 47,
+      "Y": 32,
+      "Type": "wallStone"
+    },
+    {
+      "X": 47,
+      "Y": 31,
+      "Type": "wallStone"
+    },
+    {
+      "X": 48,
+      "Y": 31,
+      "Type": "wallStone"
+    },
+    {
+      "X": 48,
+      "Y": 30,
+      "Type": "wallStone"
+    },
+    {
+      "X": 45,
+      "Y": 24,
+      "Type": "wallStone"
+    },
+    {
+      "X": 46,
+      "Y": 23,
+      "Type": "wallStone"
+    },
+    {
+      "X": 46,
+      "Y": 22,
+      "Type": "wallStone"
+    },
+    {
+      "X": 46,
+      "Y": 21,
+      "Type": "wallStone"
+    },
+    {
+      "X": 46,
+      "Y": 20,
+      "Type": "wallStone"
+    },
+    {
+      "X": 46,
+      "Y": 19,
+      "Type": "wallStone"
+    },
+    {
+      "X": 46,
+      "Y": 18,
+      "Type": "wallStone"
+    },
+    {
+      "X": 46,
+      "Y": 17,
+      "Type": "wallStone"
+    },
+    {
+      "X": 62,
+      "Y": 15,
+      "Type": "wallStone"
+    },
+    {
+      "X": 61,
+      "Y": 15,
+      "Type": "wallStone"
+    },
+    {
+      "X": 60,
+      "Y": 15,
+      "Type": "wallStone"
+    },
+    {
+      "X": 59,
+      "Y": 15,
+      "Type": "wallStone"
+    },
+    {
+      "X": 58,
+      "Y": 15,
+      "Type": "wallStone"
+    },
+    {
+      "X": 57,
+      "Y": 15,
+      "Type": "wallStone"
+    },
+    {
+      "X": 56,
+      "Y": 15,
+      "Type": "wallStone"
+    },
+    {
+      "X": 55,
+      "Y": 15,
+      "Type": "wallStone"
+    },
+    {
+      "X": 54,
+      "Y": 15,
+      "Type": "wallStone"
+    },
+    {
+      "X": 53,
+      "Y": 15,
+      "Type": "wallStone"
+    },
+    {
+      "X": 52,
+      "Y": 15,
+      "Type": "wallStone"
+    },
+    {
+      "X": 51,
+      "Y": 15,
+      "Type": "wallStone"
+    },
+    {
+      "X": 50,
+      "Y": 15,
+      "Type": "wallStone"
+    },
+    {
+      "X": 49,
+      "Y": 15,
+      "Type": "wallStone"
+    },
+    {
+      "X": 48,
+      "Y": 15,
+      "Type": "wallStone"
+    },
+    {
+      "X": 47,
+      "Y": 15,
+      "Type": "wallStone"
+    },
+    {
+      "X": 46,
+      "Y": 15,
+      "Type": "wallStone"
+    },
+    {
+      "X": 46,
+      "Y": 16,
+      "Type": "wallStone"
+    },
+    {
+      "X": 49,
+      "Y": 30,
+      "Type": "wallStone"
+    },
+    {
+      "X": 49,
+      "Y": 31,
+      "Type": "wallStone"
+    },
+    {
+      "X": 49,
+      "Y": 32,
+      "Type": "wallStone"
+    },
+    {
+      "X": 49,
+      "Y": 33,
+      "Type": "wallStone"
+    },
+    {
+      "X": 49,
+      "Y": 34,
+      "Type": "wallStone"
+    },
+    {
+      "X": 62,
+      "Y": 34,
+      "Type": "wallStone"
+    },
+    {
+      "X": 61,
+      "Y": 34,
+      "Type": "wallStone"
+    },
+    {
+      "X": 60,
+      "Y": 34,
+      "Type": "wallStone"
+    },
+    {
+      "X": 59,
+      "Y": 34,
+      "Type": "wallStone"
+    },
+    {
+      "X": 58,
+      "Y": 34,
+      "Type": "wallStone"
+    },
+    {
+      "X": 56,
+      "Y": 34,
+      "Type": "wallStone"
+    },
+    {
+      "X": 55,
+      "Y": 34,
+      "Type": "wallStone"
+    },
+    {
+      "X": 54,
+      "Y": 34,
+      "Type": "wallStone"
+    },
+    {
+      "X": 53,
+      "Y": 34,
+      "Type": "wallStone"
+    },
+    {
+      "X": 52,
+      "Y": 34,
+      "Type": "wallStone"
+    },
+    {
+      "X": 51,
+      "Y": 34,
+      "Type": "wallStone"
+    },
+    {
+      "X": 50,
+      "Y": 34,
+      "Type": "wallStone"
+    },
+    {
+      "X": 57,
+      "Y": 34,
+      "Type": "wallStone"
+    },
+    {
+      "X": 27,
+      "Y": 32,
+      "Type": "wallStone"
+    },
+    {
+      "X": 26,
+      "Y": 32,
+      "Type": "wallStone"
+    },
+    {
+      "X": 25,
+      "Y": 31,
+      "Type": "wallStone"
+    },
+    {
+      "X": 24,
+      "Y": 31,
+      "Type": "wallStone"
+    },
+    {
+      "X": 24,
+      "Y": 30,
+      "Type": "wallStone"
+    },
+    {
+      "X": 23,
+      "Y": 30,
+      "Type": "wallStone"
+    },
+    {
+      "X": 22,
+      "Y": 29,
+      "Type": "wallStone"
+    },
+    {
+      "X": 21,
+      "Y": 28,
+      "Type": "wallStone"
+    },
+    {
+      "X": 20,
+      "Y": 28,
+      "Type": "wallStone"
+    },
+    {
+      "X": 20,
+      "Y": 27,
+      "Type": "wallStone"
+    },
+    {
+      "X": 19,
+      "Y": 27,
+      "Type": "wallStone"
+    },
+    {
+      "X": 18,
+      "Y": 26,
+      "Type": "wallStone"
+    },
+    {
+      "X": 17,
+      "Y": 25,
+      "Type": "wallStone"
+    },
+    {
+      "X": 16,
+      "Y": 25,
+      "Type": "wallStone"
+    },
+    {
+      "X": 16,
+      "Y": 24,
+      "Type": "wallStone"
+    },
+    {
+      "X": 15,
+      "Y": 24,
+      "Type": "wallStone"
+    },
+    {
+      "X": 15,
+      "Y": 23,
+      "Type": "wallStone"
+    },
+    {
+      "X": 15,
+      "Y": 22,
+      "Type": "wallStone"
+    },
+    {
+      "X": 15,
+      "Y": 21,
+      "Type": "wallStone"
+    },
+    {
+      "X": 15,
+      "Y": 20,
+      "Type": "wallStone"
+    },
+    {
+      "X": 15,
+      "Y": 19,
+      "Type": "wallStone"
+    },
+    {
+      "X": 15,
+      "Y": 18,
+      "Type": "wallStone"
+    },
+    {
+      "X": 15,
+      "Y": 17,
+      "Type": "wallStone"
+    },
+    {
+      "X": 15,
+      "Y": 16,
+      "Type": "wallStone"
+    },
+    {
+      "X": 15,
+      "Y": 15,
+      "Type": "wallStone"
+    },
+    {
+      "X": 15,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 6,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 5,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 4,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 3,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 2,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 1,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 8,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 9,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 10,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 11,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 12,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 13,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 14,
+      "Y": 14,
+      "Type": "wallStone"
+    },
+    {
+      "X": 25,
+      "Y": 39,
+      "Type": "wallStone"
+    },
+    {
+      "X": 24,
+      "Y": 38,
+      "Type": "wallStone"
+    },
+    {
+      "X": 23,
+      "Y": 38,
+      "Type": "wallStone"
+    },
+    {
+      "X": 23,
+      "Y": 37,
+      "Type": "wallStone"
+    },
+    {
+      "X": 22,
+      "Y": 37,
+      "Type": "wallStone"
+    },
+    {
+      "X": 21,
+      "Y": 36,
+      "Type": "wallStone"
+    },
+    {
+      "X": 19,
+      "Y": 35,
+      "Type": "wallStone"
+    },
+    {
+      "X": 18,
+      "Y": 35,
+      "Type": "wallStone"
+    },
+    {
+      "X": 17,
+      "Y": 34,
+      "Type": "wallStone"
+    },
+    {
+      "X": 17,
+      "Y": 33,
+      "Type": "wallStone"
+    },
+    {
+      "X": 16,
+      "Y": 33,
+      "Type": "wallStone"
+    },
+    {
+      "X": 15,
+      "Y": 32,
+      "Type": "wallStone"
+    },
+    {
+      "X": 15,
+      "Y": 31,
+      "Type": "wallStone"
+    },
+    {
+      "X": 9,
+      "Y": 31,
+      "Type": "wallStone"
+    },
+    {
+      "X": 8,
+      "Y": 31,
+      "Type": "wallStone"
+    },
+    {
+      "X": 7,
+      "Y": 31,
+      "Type": "wallStone"
+    },
+    {
+      "X": 6,
+      "Y": 31,
+      "Type": "wallStone"
+    },
+    {
+      "X": 5,
+      "Y": 31,
+      "Type": "wallStone"
+    },
+    {
+      "X": 4,
+      "Y": 31,
+      "Type": "wallStone"
+    },
+    {
+      "X": 3,
+      "Y": 31,
+      "Type": "wallStone"
+    },
+    {
+      "X": 10,
+      "Y": 31,
+      "Type": "wallStone"
+    },
+    {
+      "X": 11,
+      "Y": 31,
+      "Type": "wallStone"
+    },
+    {
+      "X": 12,
+      "Y": 31,
+      "Type": "wallStone"
+    },
+    {
+      "X": 13,
+      "Y": 31,
+      "Type": "wallStone"
+    },
+    {
+      "X": 14,
+      "Y": 31,
+      "Type": "wallStone"
+    },
+    {
+      "X": 1,
+      "Y": 31,
+      "Type": "wallStone"
+    },
+    {
+      "X": 2,
+      "Y": 31,
+      "Type": "wallStone"
+    },
+    {
+      "X": 26,
+      "Y": 40,
+      "Type": "wallStone"
+    },
+    {
+      "X": 26,
+      "Y": 41,
+      "Type": "wallStone"
+    },
+    {
+      "X": 26,
+      "Y": 42,
+      "Type": "wallStone"
+    },
+    {
+      "X": 39,
+      "Y": 40,
+      "Type": "wallStone"
+    },
+    {
+      "X": 39,
+      "Y": 41,
+      "Type": "wallStone"
+    },
+    {
+      "X": 39,
+      "Y": 45,
+      "Type": "wallStone"
+    },
+    {
+      "X": 40,
+      "Y": 45,
+      "Type": "wallStone"
+    },
+    {
+      "X": 41,
+      "Y": 45,
+      "Type": "wallStone"
+    },
+    {
+      "X": 42,
+      "Y": 46,
+      "Type": "wallStone"
+    },
+    {
+      "X": 43,
+      "Y": 46,
+      "Type": "wallStone"
+    },
+    {
+      "X": 45,
+      "Y": 47,
+      "Type": "wallStone"
+    },
+    {
+      "X": 47,
+      "Y": 48,
+      "Type": "wallStone"
+    },
+    {
+      "X": 48,
+      "Y": 49,
+      "Type": "wallStone"
+    },
+    {
+      "X": 49,
+      "Y": 49,
+      "Type": "wallStone"
+    },
+    {
+      "X": 50,
+      "Y": 49,
+      "Type": "wallStone"
+    },
+    {
+      "X": 51,
+      "Y": 49,
+      "Type": "wallStone"
+    },
+    {
+      "X": 51,
+      "Y": 48,
+      "Type": "wallStone"
+    },
+    {
+      "X": 51,
+      "Y": 47,
+      "Type": "wallStone"
+    },
+    {
+      "X": 51,
+      "Y": 46,
+      "Type": "wallStone"
+    },
+    {
+      "X": 60,
+      "Y": 41,
+      "Type": "wallStone"
+    },
+    {
+      "X": 61,
+      "Y": 41,
+      "Type": "wallStone"
+    },
+    {
+      "X": 62,
+      "Y": 41,
+      "Type": "wallStone"
+    },
+    {
+      "X": 51,
+      "Y": 44,
+      "Type": "wallStone"
+    },
+    {
+      "X": 51,
+      "Y": 45,
+      "Type": "wallStone"
+    },
+    {
+      "X": 51,
+      "Y": 43,
+      "Type": "wallStone"
+    },
+    {
+      "X": 51,
+      "Y": 42,
+      "Type": "wallStone"
+    },
+    {
+      "X": 51,
+      "Y": 41,
+      "Type": "wallStone"
+    },
+    {
+      "X": 52,
+      "Y": 41,
+      "Type": "wallStone"
+    },
+    {
+      "X": 53,
+      "Y": 41,
+      "Type": "wallStone"
+    },
+    {
+      "X": 54,
+      "Y": 41,
+      "Type": "wallStone"
+    },
+    {
+      "X": 55,
+      "Y": 41,
+      "Type": "wallStone"
+    },
+    {
+      "X": 56,
+      "Y": 41,
+      "Type": "wallStone"
+    },
+    {
+      "X": 57,
+      "Y": 41,
+      "Type": "wallStone"
+    },
+    {
+      "X": 59,
+      "Y": 41,
+      "Type": "wallStone"
+    },
+    {
+      "X": 58,
+      "Y": 41,
+      "Type": "wallStone"
+    },
+    {
+      "X": 48,
+      "Y": 58,
+      "Type": "wallStone"
+    },
+    {
+      "X": 47,
+      "Y": 58,
+      "Type": "wallStone"
+    },
+    {
+      "X": 47,
+      "Y": 57,
+      "Type": "wallStone"
+    },
+    {
+      "X": 46,
+      "Y": 57,
+      "Type": "wallStone"
+    },
+    {
+      "X": 45,
+      "Y": 56,
+      "Type": "wallStone"
+    },
+    {
+      "X": 44,
+      "Y": 56,
+      "Type": "wallStone"
+    },
+    {
+      "X": 44,
+      "Y": 55,
+      "Type": "wallStone"
+    },
+    {
+      "X": 43,
+      "Y": 55,
+      "Type": "wallStone"
+    },
+    {
+      "X": 43,
+      "Y": 54,
+      "Type": "wallStone"
+    },
+    {
+      "X": 42,
+      "Y": 54,
+      "Type": "wallStone"
+    },
+    {
+      "X": 42,
+      "Y": 53,
+      "Type": "wallStone"
+    },
+    {
+      "X": 41,
+      "Y": 53,
+      "Type": "wallStone"
+    },
+    {
+      "X": 41,
+      "Y": 52,
+      "Type": "wallStone"
+    },
+    {
+      "X": 40,
+      "Y": 51,
+      "Type": "wallStone"
+    },
+    {
+      "X": 39,
+      "Y": 50,
+      "Type": "wallStone"
+    },
+    {
+      "X": 48,
+      "Y": 59,
+      "Type": "wallStone"
+    },
+    {
+      "X": 48,
+      "Y": 60,
+      "Type": "wallStone"
+    },
+    {
+      "X": 48,
+      "Y": 61,
+      "Type": "wallStone"
+    },
+    {
+      "X": 48,
+      "Y": 62,
+      "Type": "wallStone"
+    },
+    {
+      "X": 38,
+      "Y": 50,
+      "Type": "wallStone"
+    },
+    {
+      "X": 37,
+      "Y": 50,
+      "Type": "wallStone"
+    },
+    {
+      "X": 37,
+      "Y": 49,
+      "Type": "wallStone"
+    },
+    {
+      "X": 36,
+      "Y": 49,
+      "Type": "wallStone"
+    },
+    {
+      "X": 35,
+      "Y": 49,
+      "Type": "wallStone"
+    },
+    {
+      "X": 34,
+      "Y": 49,
+      "Type": "wallStone"
+    },
+    {
+      "X": 33,
+      "Y": 49,
+      "Type": "wallStone"
+    },
+    {
+      "X": 32,
+      "Y": 49,
+      "Type": "wallStone"
+    },
+    {
+      "X": 31,
+      "Y": 49,
+      "Type": "wallStone"
+    },
+    {
+      "X": 30,
+      "Y": 49,
+      "Type": "wallStone"
+    },
+    {
+      "X": 29,
+      "Y": 49,
+      "Type": "wallStone"
+    },
+    {
+      "X": 28,
+      "Y": 49,
+      "Type": "wallStone"
+    },
+    {
+      "X": 28,
+      "Y": 50,
+      "Type": "wallStone"
+    },
+    {
+      "X": 25,
+      "Y": 51,
+      "Type": "wallStone"
+    },
+    {
+      "X": 24,
+      "Y": 51,
+      "Type": "wallStone"
+    },
+    {
+      "X": 24,
+      "Y": 52,
+      "Type": "wallStone"
+    },
+    {
+      "X": 23,
+      "Y": 52,
+      "Type": "wallStone"
+    },
+    {
+      "X": 22,
+      "Y": 53,
+      "Type": "wallStone"
+    },
+    {
+      "X": 21,
+      "Y": 53,
+      "Type": "wallStone"
+    },
+    {
+      "X": 21,
+      "Y": 54,
+      "Type": "wallStone"
+    },
+    {
+      "X": 20,
+      "Y": 54,
+      "Type": "wallStone"
+    },
+    {
+      "X": 19,
+      "Y": 55,
+      "Type": "wallStone"
+    },
+    {
+      "X": 18,
+      "Y": 56,
+      "Type": "wallStone"
+    },
+    {
+      "X": 17,
+      "Y": 60,
+      "Type": "wallStone"
+    },
+    {
+      "X": 17,
+      "Y": 62,
+      "Type": "wallStone"
+    },
+    {
+      "X": 17,
+      "Y": 61,
+      "Type": "wallStone"
+    },
+    {
+      "X": 17,
+      "Y": 59,
+      "Type": "wallStone"
+    },
+    {
+      "X": 17,
+      "Y": 58,
+      "Type": "wallStone"
+    },
+    {
+      "X": 17,
+      "Y": 57,
+      "Type": "wallStone"
+    },
+    {
+      "X": 17,
+      "Y": 56,
+      "Type": "wallStone"
+    },
+    {
+      "X": 26,
+      "Y": 50,
+      "Type": "wallStone"
+    },
+    {
+      "X": 27,
+      "Y": 50,
+      "Type": "wallStone"
+    },
+    {
+      "X": 26,
+      "Y": 43,
+      "Type": "wallStone"
+    },
+    {
+      "X": 25,
+      "Y": 43,
+      "Type": "wallStone"
+    },
+    {
+      "X": 24,
+      "Y": 43,
+      "Type": "wallStone"
+    },
+    {
+      "X": 23,
+      "Y": 43,
+      "Type": "wallStone"
+    },
+    {
+      "X": 22,
+      "Y": 43,
+      "Type": "wallStone"
+    },
+    {
+      "X": 21,
+      "Y": 43,
+      "Type": "wallStone"
+    },
+    {
+      "X": 20,
+      "Y": 43,
+      "Type": "wallStone"
+    },
+    {
+      "X": 19,
+      "Y": 43,
+      "Type": "wallStone"
+    },
+    {
+      "X": 18,
+      "Y": 43,
+      "Type": "wallStone"
+    },
+    {
+      "X": 17,
+      "Y": 43,
+      "Type": "wallStone"
+    },
+    {
+      "X": 15,
+      "Y": 43,
+      "Type": "wallStone"
+    },
+    {
+      "X": 14,
+      "Y": 43,
+      "Type": "wallStone"
+    },
+    {
+      "X": 13,
+      "Y": 43,
+      "Type": "wallStone"
+    },
+    {
+      "X": 12,
+      "Y": 43,
+      "Type": "wallStone"
+    },
+    {
+      "X": 11,
+      "Y": 43,
+      "Type": "wallStone"
+    },
+    {
+      "X": 10,
+      "Y": 43,
+      "Type": "wallStone"
+    },
+    {
+      "X": 9,
+      "Y": 43,
+      "Type": "wallStone"
+    },
+    {
+      "X": 8,
+      "Y": 43,
+      "Type": "wallStone"
+    },
+    {
+      "X": 7,
+      "Y": 43,
+      "Type": "wallStone"
+    },
+    {
+      "X": 6,
+      "Y": 43,
+      "Type": "wallStone"
+    },
+    {
+      "X": 5,
+      "Y": 43,
+      "Type": "wallStone"
+    },
+    {
+      "X": 4,
+      "Y": 43,
+      "Type": "wallStone"
+    },
+    {
+      "X": 3,
+      "Y": 43,
+      "Type": "wallStone"
+    },
+    {
+      "X": 2,
+      "Y": 43,
+      "Type": "wallStone"
+    },
+    {
+      "X": 1,
+      "Y": 43,
+      "Type": "wallStone"
+    },
+    {
+      "X": 19,
+      "Y": 4,
+      "Type": "wallStone"
+    },
+    {
+      "X": 18,
+      "Y": 4,
+      "Type": "wallStone"
+    },
+    {
+      "X": 17,
+      "Y": 4,
+      "Type": "wallStone"
+    },
+    {
+      "X": 16,
+      "Y": 4,
+      "Type": "wallStone"
+    },
+    {
+      "X": 15,
+      "Y": 4,
+      "Type": "wallStone"
+    },
+    {
+      "X": 14,
+      "Y": 4,
+      "Type": "wallStone"
+    },
+    {
+      "X": 13,
+      "Y": 4,
+      "Type": "wallStone"
+    },
+    {
+      "X": 13,
+      "Y": 5,
+      "Type": "wallStone"
+    },
+    {
+      "X": 13,
+      "Y": 6,
+      "Type": "wallStone"
+    },
+    {
+      "X": 12,
+      "Y": 6,
+      "Type": "wallStone"
+    },
+    {
+      "X": 11,
+      "Y": 6,
+      "Type": "wallStone"
+    },
+    {
+      "X": 10,
+      "Y": 6,
+      "Type": "wallStone"
+    },
+    {
+      "X": 9,
+      "Y": 6,
+      "Type": "wallStone"
+    },
+    {
+      "X": 8,
+      "Y": 6,
+      "Type": "wallStone"
+    },
+    {
+      "X": 7,
+      "Y": 6,
+      "Type": "wallStone"
+    },
+    {
+      "X": 6,
+      "Y": 6,
+      "Type": "wallStone"
+    },
+    {
+      "X": 6,
+      "Y": 5,
+      "Type": "wallStone"
+    },
+    {
+      "X": 6,
+      "Y": 4,
+      "Type": "wallStone"
+    },
+    {
+      "X": 6,
+      "Y": 3,
+      "Type": "wallStone"
+    },
+    {
+      "X": 6,
+      "Y": 2,
+      "Type": "wallStone"
+    },
+    {
+      "X": 6,
+      "Y": 1,
+      "Type": "wallStone"
+    },
+    {
+      "X": 57,
+      "Y": 44,
+      "Type": "Key"
+    },
+    {
+      "X": 3,
+      "Y": 15,
+      "Type": "wallStone"
+    },
+    {
+      "X": 3,
+      "Y": 16,
+      "Type": "wallStone"
+    },
+    {
+      "X": 3,
+      "Y": 17,
+      "Type": "wallStone"
+    },
+    {
+      "X": 3,
+      "Y": 18,
+      "Type": "wallStone"
+    },
+    {
+      "X": 3,
+      "Y": 19,
+      "Type": "wallStone"
+    },
+    {
+      "X": 4,
+      "Y": 19,
+      "Type": "wallStone"
+    },
+    {
+      "X": 5,
+      "Y": 19,
+      "Type": "wallStone"
+    },
+    {
+      "X": 6,
+      "Y": 19,
+      "Type": "wallStone"
+    },
+    {
+      "X": 8,
+      "Y": 19,
+      "Type": "wallStone"
+    },
+    {
+      "X": 9,
+      "Y": 19,
+      "Type": "wallStone"
+    },
+    {
+      "X": 10,
+      "Y": 19,
+      "Type": "wallStone"
+    },
+    {
+      "X": 11,
+      "Y": 19,
+      "Type": "wallStone"
+    },
+    {
+      "X": 11,
+      "Y": 18,
+      "Type": "wallStone"
+    },
+    {
+      "X": 11,
+      "Y": 17,
+      "Type": "wallStone"
+    },
+    {
+      "X": 11,
+      "Y": 16,
+      "Type": "wallStone"
+    },
+    {
+      "X": 11,
+      "Y": 15,
+      "Type": "wallStone"
+    },
+    {
+      "X": 7,
+      "Y": 14,
+      "Type": "ExitDoor"
+    },
+    {
+      "X": 7,
+      "Y": 20,
+      "Type": "DoorGate"
+    },
+    {
+      "X": 6,
+      "Y": 20,
+      "Type": "Torch"
+    },
+    {
+      "X": 4,
+      "Y": 20,
+      "Type": "Torch"
+    },
+    {
+      "X": 8,
+      "Y": 20,
+      "Type": "Torch"
+    },
+    {
+      "X": 10,
+      "Y": 20,
+      "Type": "Torch"
+    },
+    {
+      "X": 27,
+      "Y": 40,
+      "Type": "ArchwaySmall"
+    },
+    {
+      "X": 27,
+      "Y": 43,
+      "Type": "ArchwaySmall"
+    },
+    {
+      "X": 38,
+      "Y": 40,
+      "Type": "ArchwaySmall"
+    },
+    {
+      "X": 38,
+      "Y": 43,
+      "Type": "ArchwaySmall"
+    },
+    {
+      "X": 39,
+      "Y": 42,
+      "Type": "wallStone"
+    },
+    {
+      "X": 39,
+      "Y": 43,
+      "Type": "wallStone"
+    },
+    {
+      "X": 39,
+      "Y": 44,
+      "Type": "wallStone"
+    },
+    {
+      "X": 28,
+      "Y": 15,
+      "Type": "Torch"
+    },
+    {
+      "X": 35,
+      "Y": 15,
+      "Type": "Torch"
+    },
+    {
+      "X": 28,
+      "Y": 31,
+      "Type": "Torch"
+    },
+    {
+      "X": 35,
+      "Y": 31,
+      "Type": "Torch"
+    },
+    {
+      "X": 44,
+      "Y": 50,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 46,
+      "Y": 53,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 50,
+      "Y": 52,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 55,
+      "Y": 46,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 59,
+      "Y": 46,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 53,
+      "Y": 44,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 61,
+      "Y": 44,
+      "Type": "EnergyBall"
+    },
+    {
+      "X": 52,
+      "Y": 42,
+      "Type": "Torch"
+    },
+    {
+      "X": 62,
+      "Y": 42,
+      "Type": "Torch"
+    },
+    {
+      "X": 21,
+      "Y": 47,
+      "Type": "Stone"
+    },
+    {
+      "X": 17,
+      "Y": 49,
+      "Type": "Stone"
+    },
+    {
+      "X": 15,
+      "Y": 54,
+      "Type": "Stone"
+    },
+    {
+      "X": 25,
+      "Y": 45,
+      "Type": "Stone"
+    },
+    {
+      "X": 36,
+      "Y": 35,
+      "Type": "Stone"
+    },
+    {
+      "X": 42,
+      "Y": 34,
+      "Type": "Stone"
+    },
+    {
+      "X": 34,
+      "Y": 47,
+      "Type": "Stone"
+    },
+    {
+      "X": 28,
+      "Y": 27,
+      "Type": "Stone"
+    },
+    {
+      "X": 35,
+      "Y": 25,
+      "Type": "Stone"
+    },
+    {
+      "X": 38,
+      "Y": 13,
+      "Type": "Stone"
+    },
+    {
+      "X": 22,
+      "Y": 13,
+      "Type": "Stone"
+    },
+    {
+      "X": 39,
+      "Y": 1,
+      "Type": "Stone"
+    },
+    {
+      "X": 27,
+      "Y": 1,
+      "Type": "Stone"
+    },
+    {
+      "X": 35,
+      "Y": 33,
+      "Type": "ArchwaySmall"
+    },
+    {
+      "X": 62,
+      "Y": 21,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 62,
+      "Y": 26,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 62,
+      "Y": 31,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 54,
+      "Y": 16,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 48,
+      "Y": 16,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 1,
+      "Y": 54,
+      "Type": "ArmorBlink"
+    },
+    {
+      "X": 9,
+      "Y": 47,
+      "Type": "Torch"
+    },
+    {
+      "X": 13,
+      "Y": 52,
+      "Type": "Torch"
+    },
+    {
+      "X": 7,
+      "Y": 53,
+      "Type": "Torch"
+    },
+    {
+      "X": 8,
+      "Y": 59,
+      "Type": "Torch"
+    },
+    {
+      "X": 16,
+      "Y": 43,
+      "Type": "wallStone"
+    },
+    {
+      "X": 3,
+      "Y": 44,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 9,
+      "Y": 44,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 6,
+      "Y": 44,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 12,
+      "Y": 44,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 15,
+      "Y": 44,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 18,
+      "Y": 44,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 21,
+      "Y": 44,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 1,
+      "Y": 46,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 1,
+      "Y": 48,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 1,
+      "Y": 50,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 1,
+      "Y": 56,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 1,
+      "Y": 59,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 3,
+      "Y": 62,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 7,
+      "Y": 62,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 13,
+      "Y": 62,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 52,
+      "Y": 62,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 57,
+      "Y": 62,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 62,
+      "Y": 58,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 62,
+      "Y": 52,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 62,
+      "Y": 47,
+      "Type": "ArchwaySingle"
+    },
+    {
+      "X": 62,
+      "Y": 62,
+      "Type": "Torch"
+    },
+    {
+      "X": 49,
+      "Y": 62,
+      "Type": "Torch"
+    },
+    {
+      "X": 14,
+      "Y": 21,
+      "Type": "Torch"
+    },
+    {
+      "X": 14,
+      "Y": 22,
+      "Type": "Torch"
+    },
+    {
+      "X": 54,
+      "Y": 33,
+      "Type": "Torch"
+    },
+    {
+      "X": 61,
+      "Y": 33,
+      "Type": "Torch"
+    },
+    {
+      "X": 56,
+      "Y": 24,
+      "Type": "Torch"
+    },
+    {
+      "X": 62,
+      "Y": 16,
+      "Type": "Torch"
+    },
+    {
+      "X": 57,
+      "Y": 16,
+      "Type": "Torch"
+    },
+    {
+      "X": 20,
+      "Y": 13,
+      "Type": "Torch"
+    },
+    {
+      "X": 39,
+      "Y": 3,
+      "Type": "Torch"
+    },
+    {
+      "X": 29,
+      "Y": 1,
+      "Type": "Torch"
+    },
+    {
+      "X": 39,
+      "Y": 13,
+      "Type": "Torch"
+    },
+    {
+      "X": 7,
+      "Y": 5,
+      "Type": "Torch"
+    },
+    {
+      "X": 11,
+      "Y": 4,
+      "Type": "Stone"
+    },
+    {
+      "X": 14,
+      "Y": 2,
+      "Type": "Stone"
+    },
+    {
+      "X": 19,
+      "Y": 2,
+      "Type": "Stone"
+    }
+  ],
+  "MapNpcObjects": [
+    {
+      "Health": 50,
+      "ProjectileDamage": 16,
+      "FiringRate": 2.25,
+      "PatrolRange": 10,
+      "AttackRange": 13.5,
+      "ChaseRange": 18,
+      "CanMove": true,
+      "X": 2,
+      "Y": 25,
+      "Type": "Imp"
+    },
+    {
+      "Health": 50,
+      "ProjectileDamage": 16,
+      "FiringRate": 2.25,
+      "PatrolRange": 10,
+      "AttackRange": 13.5,
+      "ChaseRange": 18,
+      "CanMove": true,
+      "X": 10,
+      "Y": 29,
+      "Type": "Imp"
+    },
+    {
+      "Health": 50,
+      "ProjectileDamage": 16,
+      "FiringRate": 2.25,
+      "PatrolRange": 10,
+      "AttackRange": 13.5,
+      "ChaseRange": 18,
+      "CanMove": true,
+      "X": 11,
+      "Y": 23,
+      "Type": "Imp"
+    },
+    {
+      "Health": 100,
+      "ProjectileDamage": 36,
+      "FiringRate": 1.87,
+      "PatrolRange": 15,
+      "AttackRange": 13.5,
+      "ChaseRange": 25,
+      "CanMove": true,
+      "X": 5,
+      "Y": 49,
+      "Type": "Tri_horn"
+    },
+    {
+      "Health": 100,
+      "ProjectileDamage": 36,
+      "FiringRate": 1.87,
+      "PatrolRange": 15,
+      "AttackRange": 13.5,
+      "ChaseRange": 25,
+      "CanMove": true,
+      "X": 11,
+      "Y": 51,
+      "Type": "Tri_horn"
+    },
+    {
+      "Health": 100,
+      "ProjectileDamage": 36,
+      "FiringRate": 1.87,
+      "PatrolRange": 15,
+      "AttackRange": 13.5,
+      "ChaseRange": 25,
+      "CanMove": true,
+      "X": 5,
+      "Y": 59,
+      "Type": "Tri_horn"
+    },
+    {
+      "Health": 100,
+      "ProjectileDamage": 36,
+      "FiringRate": 1.87,
+      "PatrolRange": 15,
+      "AttackRange": 13.5,
+      "ChaseRange": 25,
+      "CanMove": true,
+      "X": 11,
+      "Y": 61,
+      "Type": "Tri_horn"
+    },
+    {
+      "Health": 100,
+      "ProjectileDamage": 36,
+      "FiringRate": 1.87,
+      "PatrolRange": 15,
+      "AttackRange": 13.5,
+      "ChaseRange": 25,
+      "CanMove": true,
+      "X": 8,
+      "Y": 55,
+      "Type": "Tri_horn"
+    },
+    {
+      "Health": 50,
+      "ProjectileDamage": 16,
+      "FiringRate": 2.25,
+      "PatrolRange": 10,
+      "AttackRange": 13.5,
+      "ChaseRange": 18,
+      "CanMove": true,
+      "X": 56,
+      "Y": 57,
+      "Type": "Imp"
+    },
+    {
+      "Health": 50,
+      "ProjectileDamage": 16,
+      "FiringRate": 2.25,
+      "PatrolRange": 10,
+      "AttackRange": 13.5,
+      "ChaseRange": 18,
+      "CanMove": true,
+      "X": 59,
+      "Y": 50,
+      "Type": "Imp"
+    },
+    {
+      "Health": 50,
+      "ProjectileDamage": 16,
+      "FiringRate": 2.25,
+      "PatrolRange": 10,
+      "AttackRange": 13.5,
+      "ChaseRange": 18,
+      "CanMove": true,
+      "X": 53,
+      "Y": 49,
+      "Type": "Imp"
+    },
+    {
+      "Health": 100,
+      "ProjectileDamage": 36,
+      "FiringRate": 1.87,
+      "PatrolRange": 15,
+      "AttackRange": 13.5,
+      "ChaseRange": 25,
+      "CanMove": true,
+      "X": 52,
+      "Y": 58,
+      "Type": "Tri_horn"
+    },
+    {
+      "Health": 100,
+      "ProjectileDamage": 36,
+      "FiringRate": 1.87,
+      "PatrolRange": 15,
+      "AttackRange": 13.5,
+      "ChaseRange": 25,
+      "CanMove": true,
+      "X": 52,
+      "Y": 29,
+      "Type": "Tri_horn"
+    },
+    {
+      "Health": 100,
+      "ProjectileDamage": 36,
+      "FiringRate": 1.87,
+      "PatrolRange": 15,
+      "AttackRange": 13.5,
+      "ChaseRange": 25,
+      "CanMove": true,
+      "X": 60,
+      "Y": 22,
+      "Type": "Tri_horn"
+    },
+    {
+      "Health": 100,
+      "ProjectileDamage": 36,
+      "FiringRate": 1.87,
+      "PatrolRange": 15,
+      "AttackRange": 13.5,
+      "ChaseRange": 25,
+      "CanMove": true,
+      "X": 50,
+      "Y": 20,
+      "Type": "Tri_horn"
+    },
+    {
+      "Health": 50,
+      "ProjectileDamage": 16,
+      "FiringRate": 2.25,
+      "PatrolRange": 10,
+      "AttackRange": 13.5,
+      "ChaseRange": 18,
+      "CanMove": true,
+      "X": 54,
+      "Y": 23,
+      "Type": "Imp"
+    },
+    {
+      "Health": 50,
+      "ProjectileDamage": 16,
+      "FiringRate": 2.25,
+      "PatrolRange": 10,
+      "AttackRange": 13.5,
+      "ChaseRange": 18,
+      "CanMove": true,
+      "X": 57,
+      "Y": 30,
+      "Type": "Imp"
+    },
+    {
+      "Health": 50,
+      "ProjectileDamage": 16,
+      "FiringRate": 2.25,
+      "PatrolRange": 10,
+      "AttackRange": 13.5,
+      "ChaseRange": 18,
+      "CanMove": true,
+      "X": 30,
+      "Y": 23,
+      "Type": "Imp"
+    },
+    {
+      "Health": 50,
+      "ProjectileDamage": 16,
+      "FiringRate": 2.25,
+      "PatrolRange": 10,
+      "AttackRange": 13.5,
+      "ChaseRange": 18,
+      "CanMove": true,
+      "X": 33,
+      "Y": 30,
+      "Type": "Imp"
+    },
+    {
+      "Health": 50,
+      "ProjectileDamage": 16,
+      "FiringRate": 2.25,
+      "PatrolRange": 10,
+      "AttackRange": 13.5,
+      "ChaseRange": 18,
+      "CanMove": true,
+      "X": 29,
+      "Y": 47,
+      "Type": "Imp"
+    },
+    {
+      "Health": 50,
+      "ProjectileDamage": 16,
+      "FiringRate": 2.25,
+      "PatrolRange": 10,
+      "AttackRange": 13.5,
+      "ChaseRange": 18,
+      "CanMove": true,
+      "X": 35,
+      "Y": 42,
+      "Type": "Imp"
+    },
+    {
+      "Health": 50,
+      "ProjectileDamage": 16,
+      "FiringRate": 2.25,
+      "PatrolRange": 10,
+      "AttackRange": 13.5,
+      "ChaseRange": 18,
+      "CanMove": true,
+      "X": 28,
+      "Y": 38,
+      "Type": "Imp"
+    },
+    {
+      "Health": 50,
+      "ProjectileDamage": 16,
+      "FiringRate": 2.25,
+      "PatrolRange": 10,
+      "AttackRange": 13.5,
+      "ChaseRange": 18,
+      "CanMove": true,
+      "X": 38,
+      "Y": 10,
+      "Type": "Imp"
+    },
+    {
+      "Health": 50,
+      "ProjectileDamage": 16,
+      "FiringRate": 2.25,
+      "PatrolRange": 10,
+      "AttackRange": 13.5,
+      "ChaseRange": 18,
+      "CanMove": true,
+      "X": 24,
+      "Y": 11,
+      "Type": "Imp"
+    },
+    {
+      "Health": 50,
+      "ProjectileDamage": 16,
+      "FiringRate": 2.25,
+      "PatrolRange": 10,
+      "AttackRange": 13.5,
+      "ChaseRange": 18,
+      "CanMove": true,
+      "X": 60,
+      "Y": 61,
+      "Type": "Imp"
+    },
+    {
+      "Health": 50,
+      "ProjectileDamage": 16,
+      "FiringRate": 2.25,
+      "PatrolRange": 10,
+      "AttackRange": 13.5,
+      "ChaseRange": 18,
+      "CanMove": true,
+      "X": 14,
+      "Y": 46,
+      "Type": "Imp"
+    },
+    {
+      "Health": 50,
+      "ProjectileDamage": 16,
+      "FiringRate": 2.25,
+      "PatrolRange": 10,
+      "AttackRange": 13.5,
+      "ChaseRange": 18,
+      "CanMove": true,
+      "X": 10,
+      "Y": 46,
+      "Type": "Imp"
+    },
+    {
+      "Health": 50,
+      "ProjectileDamage": 16,
+      "FiringRate": 2.25,
+      "PatrolRange": 10,
+      "AttackRange": 13.5,
+      "ChaseRange": 18,
+      "CanMove": true,
+      "X": 61,
+      "Y": 54,
+      "Type": "Imp"
+    },
+    {
+      "Health": 320,
+      "ProjectileDamage": 35,
+      "FiringRate": 1.1,
+      "PatrolRange": 15,
+      "AttackRange": 13.5,
+      "ChaseRange": 13.5,
+      "CanMove": true,
+      "X": 3,
+      "Y": 54,
+      "Type": "PlasmaEater"
+    },
+    {
+      "Health": 50,
+      "ProjectileDamage": 16,
+      "FiringRate": 2.25,
+      "PatrolRange": 10,
+      "AttackRange": 13.5,
+      "ChaseRange": 18,
+      "CanMove": true,
+      "X": 58,
+      "Y": 18,
+      "Type": "Imp"
+    },
+    {
+      "Health": 50,
+      "ProjectileDamage": 16,
+      "FiringRate": 2.25,
+      "PatrolRange": 10,
+      "AttackRange": 13.5,
+      "ChaseRange": 18,
+      "CanMove": true,
+      "X": 33,
+      "Y": 7,
+      "Type": "Imp"
+    }
+  ],
+  "Pickups": [
+    {
+      "Value": 10,
+      "X": 16,
+      "Y": 61,
+      "Type": "SmallMedkit"
+    },
+    {
+      "Value": 40,
+      "X": 40,
+      "Y": 31,
+      "Type": "smgAmmo"
+    },
+    {
+      "Value": 15,
+      "X": 14,
+      "Y": 23,
+      "Type": "Bullets"
+    },
+    {
+      "Value": 7,
+      "X": 52,
+      "Y": 33,
+      "Type": "ShotgunAmmo"
+    },
+    {
+      "Value": 7,
+      "X": 56,
+      "Y": 33,
+      "Type": "ShotgunAmmo"
+    },
+    {
+      "Value": 15,
+      "X": 47,
+      "Y": 19,
+      "Type": "Bullets"
+    },
+    {
+      "Value": 10,
+      "X": 14,
+      "Y": 20,
+      "Type": "SmallMedkit"
+    }
+  ],
+  "PlayerGameObject": {
+    "Health": 100,
+    "HasRevolver": true,
+    "RevolverAmmo": 25,
+    "HasShotgun": true,
+    "ShotgunAmmo": 15,
+    "HasSmg": true,
+    "SmgAmmo": 45,
+    "X": 9,
+    "Y": 2,
+    "Type": "player"
+  },
+  "Name": "Quincy",
+  "StoryTextSegment": false,
+  "StoryText": "",
+  "WallTexture": 1,
+  "StartX": 9,
+  "StartY": 2
+}

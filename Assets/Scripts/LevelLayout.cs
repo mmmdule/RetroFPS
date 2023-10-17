@@ -1,127 +1,389 @@
 using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
+using System.IO;
+using UnityEngine.Networking;
 
 public class LevelLayout : MonoBehaviour
 {
-    private Dictionary<int, int> enemy = new Dictionary<int, int>();
-	private Dictionary<int, int> player = new Dictionary<int, int>();
-	private Dictionary<int, int> wall = new Dictionary<int, int>();
-	private Dictionary<int, int> door = new Dictionary<int, int>();
-	private Dictionary<int, int> ground = new Dictionary<int, int>();
-	private Dictionary<int, int> win = new Dictionary<int, int>();
-	private Dictionary<int, int> key = new Dictionary<int, int>();
-
-    public Texture2D LevelMap;
-
-    public GameObject WallPrefab;
-    
+    [HeaderAttribute("Player")]
     public GameObject PlayerPrefab;
     
+
+    [HeaderAttribute("Walls and Doors")]
+    public GameObject WallPrefab;
+    public GameObject CobwebWallPrefab;
+    
     public GameObject DoorPrefab;
+    
+    public GameObject ExitPrefab;
+    
+    [HeaderAttribute("Enemies")]
     public GameObject ImpPrefab;
     public GameObject TriImpPrefab;
+    public GameObject PlasmaEaterPrefab;
     public GameObject EmptyBlockPrefab;
+    [HeaderAttribute("Traps")]
+    public GameObject EnergySphereTrapPrefab;
+    [HeaderAttribute("Decorations")]
+    public GameObject Archway;
+    public GameObject ArchwaySmall;
     public GameObject TorchPrefab;
     public GameObject KnightPrefab;
     public GameObject PebblePrefab;
-    public bool spawnedDoor = false;
+    [HeaderAttribute("Pickups")]
+    public GameObject HealthPickup; 
+    public GameObject ShotgunAmmoPickup;
+    public GameObject RevolverAmmoPickup;
+    public GameObject SmgAmmoPickup;
+    
 
+    [HeaderAttribute("Lights")]
     public GameObject LightPrefab;
-    public Color LightColor;
 
+    [HeaderAttribute("Ceilling Light")]
+    //[SerializeField]
+    /*public*/private Color LightColor;
+
+    [HeaderAttribute("Keys")]
     public GameObject KeyPrefab;
     public Color KeyColor;
-    public bool spawnedKey = false;
+    
 
     public NavMeshSurface surface;
 
     // Start is called before the first frame update
-    void Start()
+    
+    private string[] mapNames, lightColors;
+    private string levelName;
+    public string nextLevel;
+    private string LightColorString;
+
+    private MapJson mapJson;
+
+    void Awake()//Start()
     {
-        ReadColor("Maps/" + PlayerPrefs.GetString("LevelToLoad", "level1 19"));
-        AudioLoad(PlayerPrefs.GetString("LevelToLoad", "level1 19"));
-        Application.targetFrameRate = 60;
-        Screen.SetResolution(1280, 720, true);//Screen.SetResolution(1280, 720, true);
+        levelName = PlayerPrefs.GetString("LevelToLoad", "level1.lem");
+        
+        //TODO: ReadNextLevel(because of the exit door, so we know what to load next)
+
+        //has to be done before adding objects to the scene
+
+        AudioLoad(9); //Loads random track from Resources/Music 
+        ReadMap();
+        string levelBeforeChange = PlayerPrefs.GetString("LevelToLoad");
+        NextLevelManager.SetGameOverPref();
+        NextLevelManager.NextSegment(); //sets the next level to load
+        nextLevel = PlayerPrefs.GetString("LevelToLoad");
+        AddObjectsToScene(mapJson);
+
+        if(levelBeforeChange == nextLevel)
+            PlayerPrefs.SetString("LevelToLoad", null); //this way exit door will load main menu
+
+        //check audio after 15 seconds
+        Invoke("CheckAudio", 15f);
     }
 
-    private void AudioLoad(string levelName){
-        AudioClip musicTrack = Resources.Load("Music/" + levelName) as AudioClip;
+    private void AudioLoad(int SongCount){
+        UnityEngine.Random.InitState((int)System.DateTime.Now.Ticks); //random seed
+        int randomInt = UnityEngine.Random.Range(1, SongCount + 1);
+        AudioClip musicTrack = Resources.Load("Music/" + randomInt) as AudioClip;
         GetComponent<AudioSource>().clip = musicTrack;
         GetComponent<AudioSource>().Play();
     }
 
+    public bool spawnedDoor = false;
+    public bool spawnedKey = false;
     private GameObject Door;
     private GameObject Key;
 
-    private void ReadColor(string levelName){
-        Color32 currentColor = new Color();
+    private void ReadMap(){
+        string levelToLoad = PlayerPrefs.GetString("LevelToLoad");
+        string path = Application.streamingAssetsPath + "/Maps/" + levelToLoad;
+        string levelJsonData = System.IO.File.ReadAllText(path);
+        mapJson = JsonUtility.FromJson<MapJson>(levelJsonData);
+    }
 
-        //konvertuje sliku u teksturu za citanje
-        LevelMap = Resources.Load(levelName) as Texture2D;
+    private void AddObjectsToScene(MapJson map){
+        //add all members of the mapJson to the scene
+        //to see which prefab to instantiate, check the string value "type" of the object
+        AddMapObjects();
+        AddPlayer(map.PlayerGameObject);
+        AddPickups();
+        AddNpcs();
+        surface.BuildNavMesh();
+        GetComponent<AudioSource>().enabled = false;
+        GetComponent<AudioSource>().enabled = true;
+    }
 
-        for(int i = 0; i < 64; i++){
-            for(int j = 0; j < 64; j++){
-                currentColor = LevelMap.GetPixel(i, j);
-                
-                if(currentColor == Color.green){
-                    GameObject tmpObject = Instantiate(PlayerPrefab, new Vector3(i, 1.00f/*1.8f*/, j), Quaternion.identity);
-                    GameObject.Find("GameManager").GetComponent<MessageManager>().player = tmpObject;
-                }
-                else if (currentColor == Color.blue)
-                    Instantiate(WallPrefab, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
-                else if (currentColor == Color.black && !spawnedDoor){
-                    Door = Instantiate(DoorPrefab, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
-                    spawnedDoor = true;
-                    if(spawnedKey)
-                        Key.GetComponent<Key>().Door = Door;
-                }
-                else if (currentColor == Color.white){
-                    //spawns light with X rotation of 90 deg (Euler)
-                    Instantiate(LightPrefab, new Vector3(i, 4.00f, j), Quaternion.Euler(new Vector3(90, 0, 0))).GetComponent<Light>().color = LightColor;
-                }
-                /*Yellow*/ else if (currentColor.r == 255 && currentColor.g == 255 && currentColor.b == 0.00f && !spawnedKey){
-                    Key = Instantiate(KeyPrefab, new Vector3(i,  1.5f/*1.2f*/, j), Quaternion.identity);
+    private void AddPlayer(PlayerObjectJson playerObjectJson){
+        //add player to the scene
+        GameObject playerObject = Instantiate(PlayerPrefab, new Vector3(playerObjectJson.X, 1.00f, playerObjectJson.Y), Quaternion.identity);
+        GameObject.Find("GameManager").GetComponent<MessageManager>().player = playerObject;
+        //TODO: add player properties
+        HealthManager healthManager = playerObject.GetComponent<HealthManager>();
+        healthManager.health = playerObjectJson.Health;
+        healthManager.ChangeHealthText(playerObjectJson.Health);
+
+        AmmoManager ammoManager = playerObject.GetComponent<AmmoManager>();
+        ammoManager.shotgunAmmo = playerObjectJson.ShotgunAmmo;
+        ammoManager.pistolAmmo = playerObjectJson.RevolverAmmo;
+        ammoManager.uziAmmo = playerObjectJson.SmgAmmo;
+        
+        Shoot shoot = playerObject.GetComponent<Shoot>();
+        shoot.HasRevolver = playerObjectJson.HasRevolver;
+        shoot.HasShotgun = playerObjectJson.HasShotgun;
+        shoot.HasSmg = playerObjectJson.HasSmg;
+        if(playerObjectJson.HasShotgun) {
+            shoot.currentWeapon = 3;
+            shoot.ChangeSprite(3);
+            ammoManager.ChangeAmmoText(ammoManager.shotgunAmmo, 2);
+        }
+        else if(playerObjectJson.HasRevolver) {
+            shoot.currentWeapon = 2;
+            shoot.ChangeSprite(2);
+            ammoManager.ChangeAmmoText(ammoManager.pistolAmmo, 1);
+        }
+        else if(playerObjectJson.HasSmg){
+            shoot.currentWeapon = 4;
+            shoot.ChangeSprite(4);
+            ammoManager.ChangeAmmoText(ammoManager.uziAmmo, 3);
+        }
+        else {
+            shoot.currentWeapon = 1;
+            shoot.NoWeaponSprite();
+            ammoManager.ClearText();
+        }
+
+        AudioListener.pause = PlayerPrefs.GetInt("Sound", 1) == 0;
+    }
+
+    private void AddPickups(){
+        //add pickups to the scene
+        foreach(PickupJson pickup in mapJson.Pickups){
+            GameObject tmp;
+            switch(pickup.Type){
+                case "SmallMedkit":
+                    tmp = Instantiate(HealthPickup, new Vector3(pickup.X, 1.5f, pickup.Y), Quaternion.identity);
+                    tmp.GetComponent<Pickup>().HealthPickupValue = pickup.Value;
+                    break;
+                case "ShotgunAmmo":
+                    tmp = Instantiate(ShotgunAmmoPickup, new Vector3(pickup.X, 1.5f, pickup.Y), Quaternion.identity);
+                    tmp.GetComponent<Pickup>().ShotgunAmmoPickupValue = pickup.Value;
+                    break;
+                case "RevolverAmmo":
+                    tmp = Instantiate(RevolverAmmoPickup, new Vector3(pickup.X, 1.5f, pickup.Y), Quaternion.identity);
+                    tmp.GetComponent<Pickup>().RevolverAmmoPickupValue = pickup.Value;
+                    break;
+                case "smgAmmo":
+                    tmp = Instantiate(SmgAmmoPickup, new Vector3(pickup.X, 1.5f, pickup.Y), Quaternion.identity);
+                    tmp.GetComponent<Pickup>().UziAmmoPickupValue = pickup.Value;
+                    break;
+            }
+            //TODO: set pickup properties
+        }
+    }
+
+    private void AddNpcs(){
+        //maybe default should handle properties of the npc, if every npc ends up extending the same class
+        //probably the 'Imp' class
+        //but leave this for now
+
+        //add npc objects to the scene
+        foreach(MapNpcObjectJson npc in mapJson.MapNpcObjects){
+            GameObject tmp;
+            switch(npc.Type){
+                case "Tri_horn":
+                    tmp = Instantiate(TriImpPrefab, new Vector3(npc.X, 1.79f, npc.Y), Quaternion.identity);
+                    TriImp tri = tmp.GetComponent<TriImp>();
+                    tri.health = npc.Health;
+                    tri.walkRange = npc.PatrolRange;
+                    tri.sightRange = npc.ChaseRange;
+                    tri.attackRange = npc.AttackRange;
+                    tri.timeBetweenAttacks = npc.FiringRate;
+                    Fireball[] fireballs = tri.projectile.GetComponentsInChildren<Fireball>();
+                    foreach(Fireball fireball in fireballs) //evenly distribute damage between fireballs
+                        fireball.Damage = npc.ProjectileDamage / fireballs.Length;
+                    //tri.canMove = npc.CanMove;
+                    if(!npc.CanMove){
+                        tri.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+                        tri.agent.speed = 0f;
+                        tri.agent.isStopped = true;
+                    }
+                    tri.agent.enabled = npc.CanMove;
+                    break;
+                case "Imp":
+                    tmp = Instantiate(ImpPrefab, new Vector3(npc.X, 1.79f, npc.Y), Quaternion.identity);
+                    Imp imp = tmp.GetComponent<Imp>();
+                    imp.health = npc.Health;
+                    imp.walkRange = npc.PatrolRange;
+                    imp.sightRange = npc.ChaseRange;
+                    imp.attackRange = npc.AttackRange;
+                    imp.timeBetweenAttacks = npc.FiringRate;
+                    imp.projectile.GetComponent<Fireball>().Damage = npc.ProjectileDamage;
+                    //imp.canMove = npc.CanMove;
+                    if(!npc.CanMove){
+                        imp.agent.speed = 0f;
+                        imp.agent.isStopped = true;
+                        imp.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+                    }
+                    imp.agent.enabled = npc.CanMove;
+                    break;
+                case "PlasmaEater":
+                    tmp = Instantiate(PlasmaEaterPrefab, new Vector3(npc.X, 1.3f, npc.Y), Quaternion.identity);
+                    PlasmaEater plasmaEater = tmp.GetComponent<PlasmaEater>();
+                    plasmaEater.health = npc.Health;
+                    plasmaEater.walkRange = npc.PatrolRange;
+                    plasmaEater.sightRange = npc.ChaseRange;
+                    plasmaEater.attackRange = npc.AttackRange;
+                    plasmaEater.timeBetweenAttacks = npc.FiringRate;
+                    Fireball[] plasmaEaterfireballs = plasmaEater.projectile.GetComponentsInChildren<Fireball>();
+                    foreach(Fireball fireball in plasmaEaterfireballs) //evenly distribute damage between fireballs
+                        fireball.Damage = npc.ProjectileDamage / plasmaEaterfireballs.Length;
+                    //plasmaEater.canMove = npc.CanMove;
+                    if(!npc.CanMove){
+                        plasmaEater.agent.speed = 0f;
+                        plasmaEater.agent.isStopped = true;
+                        plasmaEater.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+                    }
+                    plasmaEater.agent.enabled = npc.CanMove;
+                    break;
+            }
+            //TODO: set npc properties
+        }
+    }
+
+    private void AddMapObjects(){
+        GameObject tmp;
+        foreach(MapObjectJson obj in mapJson.MapObjects){
+            switch(obj.Type){
+                case "wallBrick":
+                    Instantiate(WallPrefab, new Vector3(obj.X, 1.5f, obj.Y), Quaternion.identity);
+                    break;
+                case "wallStone":
+                    tmp = Instantiate(WallPrefab, new Vector3(obj.X, 1.5f, obj.Y), Quaternion.identity);
+                    tmp.GetComponentInChildren<WallTexture>().materialIndex = 1;
+                    //change wall texture
+                    break;
+                case "wallMoss":
+                    tmp = Instantiate(WallPrefab, new Vector3(obj.X, 1.5f, obj.Y), Quaternion.identity);
+                    tmp.GetComponentInChildren<WallTexture>().materialIndex = 2;
+                    //change wall texture
+                    break;
+                case "tileWall":
+                    tmp = Instantiate(WallPrefab, new Vector3(obj.X, 1.5f, obj.Y), Quaternion.identity);
+                    tmp.GetComponentInChildren<WallTexture>().materialIndex = 3;
+                    //change wall texture
+                    break;
+                case "Cobweb_Wall":
+                    Instantiate(CobwebWallPrefab, new Vector3(obj.X, 1.5f, obj.Y), Quaternion.identity);
+                    break;
+                case "Torch":
+                    Instantiate(TorchPrefab, new Vector3(obj.X, 1.5f, obj.Y), Quaternion.identity);
+                    break;
+                case "ArmorBlink":
+                    Instantiate(KnightPrefab, new Vector3(obj.X, 1.5f, obj.Y), Quaternion.identity);
+                    break;
+                case "Stone":
+                    Instantiate(PebblePrefab, new Vector3(obj.X, 1.5f, obj.Y), Quaternion.identity);
+                    break;
+                case "ExitDoor":
+                    Instantiate(ExitPrefab, new Vector3(obj.X, 1.5f, obj.Y), Quaternion.identity);
+                    break;
+                case "EnergyBall":
+                    Instantiate(EnergySphereTrapPrefab, new Vector3(obj.X, 0.5f, obj.Y), Quaternion.identity);
+                    break;
+                case "ArchwaySingle":
+                    Instantiate(Archway, new Vector3(obj.X, 1.5f/*1.2f*/, obj.Y), Quaternion.identity);
+                    break;
+                case "ArchwaySmall":
+                    Instantiate(ArchwaySmall, new Vector3(obj.X, 1.5f/*1.2f*/, obj.Y), Quaternion.identity);
+                    break;
+                case "Key":
+                    Key = Instantiate(KeyPrefab, new Vector3(obj.X, 1.5f, obj.Y), Quaternion.identity);
                     Key.GetComponentInChildren<SpriteRenderer>().color = KeyColor;
                     spawnedKey = true;
                     if(spawnedDoor)
                         Key.GetComponent<Key>().Door = Door;
-                }
-                else if (currentColor == Color.red)
-                    Instantiate(ImpPrefab, new Vector3(i, 1.79f, j), Quaternion.identity);
-                /*Dark Red*/else if (currentColor.r == 185 && currentColor.g == 0 && currentColor.b == 30)
-                    Instantiate(TriImpPrefab, new Vector3(i, 1.79f, j), Quaternion.identity);
-                else if (currentColor.r == 192 && currentColor.g == 192 && currentColor.b == 192){
-                    Instantiate(TorchPrefab, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
-                }
-                else if (currentColor.r == 255 && currentColor.g == 153 && currentColor.b == 255){
-                    Instantiate(KnightPrefab, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
-                }
-                else if (currentColor.r == 255 && currentColor.g == 128 && currentColor.b == 64){
-                    Instantiate(PebblePrefab, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
-                }
-                // else if (currentColor.r == 0.2f && currentColor.g == 0.00f && currentColor.b == 0.2f){
-                //     Instantiate(EmptyBlockPrefab, new Vector3(i, 1.5f/*1.2f*/, j), Quaternion.identity);
-                // }
-                //Debug.Log(currentColor);
+                    break;
+                case "DoorGate":
+                    Door = Instantiate(DoorPrefab, new Vector3(obj.X, 1.5f, obj.Y), Quaternion.identity);
+                    spawnedDoor = true;
+                    if(spawnedKey)
+                        Key.GetComponent<Key>().Door = Door;
+                    break;
             }
         }
-        surface.BuildNavMesh();
     }
 
-    public string[] mapNames;
+    private bool devMode = false;
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.F1)){
-            PlayerPrefs.SetString("LevelToLoad", mapNames[0]);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        if(Input.GetKeyDown(KeyCode.Home)){
+            devMode = !devMode;
+            GetComponent<MessageManager>().MessageUpdate("Dev mode: " + devMode.ToString(), 1.2f);
         }
-        else if (Input.GetKeyDown(KeyCode.F2)){
-            PlayerPrefs.SetString("LevelToLoad", mapNames[1]);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        if(devMode){
+            if(Input.GetKeyDown(KeyCode.F1) && mapNames.Length > (KeyCode.F1 - KeyCode.F1)){
+                PlayerPrefs.SetString("LevelToLoad", mapNames[0]);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+            else if (Input.GetKeyDown(KeyCode.F2) && mapNames.Length > (KeyCode.F2 - KeyCode.F1)){
+                PlayerPrefs.SetString("LevelToLoad", mapNames[1]);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+            else if (Input.GetKeyDown(KeyCode.F3) && mapNames.Length > (KeyCode.F3 - KeyCode.F1)){
+                PlayerPrefs.SetString("LevelToLoad", mapNames[2]);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+            else if (Input.GetKeyDown(KeyCode.F4) && mapNames.Length > (KeyCode.F4 - KeyCode.F1)){
+                PlayerPrefs.SetString("LevelToLoad", mapNames[3]);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+            else if (Input.GetKeyDown(KeyCode.F5) && mapNames.Length > (KeyCode.F5 - KeyCode.F1)){
+                PlayerPrefs.SetString("LevelToLoad", mapNames[4]);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+            else if (Input.GetKeyDown(KeyCode.F6) && mapNames.Length > (KeyCode.F6 - KeyCode.F1)){
+                PlayerPrefs.SetString("LevelToLoad", mapNames[5]);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+            else if (Input.GetKeyDown(KeyCode.F7) && mapNames.Length > (KeyCode.F7 - KeyCode.F1)){
+                PlayerPrefs.SetString("LevelToLoad", mapNames[6]);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+            else if (Input.GetKeyDown(KeyCode.F8) && mapNames.Length > (KeyCode.F8 - KeyCode.F1)){
+                PlayerPrefs.SetString("LevelToLoad", mapNames[7]);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+            else if (Input.GetKeyDown(KeyCode.F9) && mapNames.Length > (KeyCode.F9 - KeyCode.F1)){
+                PlayerPrefs.SetString("LevelToLoad", mapNames[8]);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+            else if (Input.GetKeyDown(KeyCode.F10) && mapNames.Length > (KeyCode.F10 - KeyCode.F1)){
+                PlayerPrefs.SetString("LevelToLoad", mapNames[9]);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+            else if (Input.GetKeyDown(KeyCode.F11) && mapNames.Length > (KeyCode.F11 - KeyCode.F1)){
+                PlayerPrefs.SetString("LevelToLoad", mapNames[10]);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+            else if (Input.GetKeyDown(KeyCode.F12) && mapNames.Length > (KeyCode.F12 - KeyCode.F1)){
+                PlayerPrefs.SetString("LevelToLoad", mapNames[11]);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+        }
+    }
+
+    private void CheckAudio(){
+        AudioSource audioSource = GetComponent<AudioSource>();
+        if(!audioSource.isPlaying){
+            audioSource.enabled = false;
+            audioSource.enabled = true;
         }
     }
 }

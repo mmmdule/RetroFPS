@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1004103905984279563}
   - component: {fileID: 8810547864847516022}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: FireballSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ GameObject:
   - component: {fileID: 2702737535923401002}
   - component: {fileID: 7576933786673954125}
   - component: {fileID: 4526104475947076679}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Fireball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -209,10 +209,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2d5ffa35c55fd446a37920c14a5ad73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isPlayerProjectile: 0
   Speed: 0.4
   SpriteChild: {fileID: 2258689061459155521}
   ownerImp: {fileID: 0}
   audioSource: {fileID: 7576933786673954125}
+  notStatic: 1
   healthManager: {fileID: 0}
   Damage: 16
 --- !u!212 &2702737535923401002
