@@ -21,6 +21,24 @@ To install the game, simply unzip the downloaded file and run the executable fil
 ## System requirements
 **Operating system**: Windows 10 (64-bit)
 
+## Controls
+### Interaction
+- **W-A-S-D** — _Movement_               
+- **L-Click** — _Fire_                   
+- **Space** — _Jump_                   
+- **Shift** — _Sprint_                 
+
+### Weapons             
+- **2** — _Revolver_               
+- **3** — _Shotgun_                
+- **4** — _Plasma-shooter_         
+
+### Pause menu             
+- **Escape, P** — _Pause game_                
+- **Q** — _Quit (when paused)_     
+- **R** — _Restart (when paused)_  
+- **E** — _Continue (when paused)_ 
+
 ## Screenshots
 ![Pandemonium FPS 2023-11-28 19-02-06-999](https://github.com/mmmdule/RetroFPS/assets/113645355/8ba9713b-ed38-4cf6-8c58-7085a818909b)
 ![Pandemonium FPS 2023-11-28 19-01-51-789](https://github.com/mmmdule/RetroFPS/assets/113645355/704a7af0-9d4d-489b-9d65-5ddbb231b512)
