@@ -5,7 +5,7 @@ RetroFPS is a first-person-shooter created using C# and Unity Engine. Currently 
 This project was inspired by first-person shooter classics such as idSoftware's DOOM and Wolfenstein 3D. The goal was to create a game that would bring back the fun and excitement of old-school FPS titles, and give our contribution to the modern "boomer shooter" 90s revival genre. 
 
 ## Releases
-The [first episode](https://shorturl.at/adf01), titled "Hellfort Halls" contains 9 levels and an original story.
+The [first episode](https://shorturl.at/adf01), titled "**_Hellfort Halls_**" contains 9 levels and an original story.
 \
 The original version of the game available at the link above contains the original episode can also be downloaded from this repository's releases section.
 
