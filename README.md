@@ -17,6 +17,7 @@ To install the game, simply unzip the downloaded file and run the executable fil
 - Three enemy and weapon types
 - Health and ammo pickups
 - Level layout, enemy behavior, story text etc. customization support with [my level editor desktop app](https://github.com/mmmdule/RetroFPS-LevelEditor).
+- Classic _key hunting_ level structure
 
 ## System requirements
 **Operating system**: Windows 10 (64-bit)
