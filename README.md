@@ -2,21 +2,31 @@
 
 RetroFPS is a first-person-shooter created using C# and Unity Engine. Currently the target platform is Windows PC.
 
-The project's main inspiration are 90s FPS games (Doom, Dark Forces, Chasm) now also known as _boomer shooters_. 
+This project was inspired by first-person shooter classics such as idSoftware's DOOM and Wolfenstein 3D. The goal was to create a game that would bring back the fun and excitement of old-school FPS titles, and give our contribution to the modern "boomer shooter" 90s revival genre. 
 
 ## Releases
-The [current version](https://shorturl.at/adf01) contains a couple of demo maps, with each of them showing off the base gameplay and enemy/obstacle types.
+The [first episode](https://shorturl.at/adf01), titled "Hellfort Halls" contains 9 levels and an original story.
+\
+The original version of the game available at the link above contains the original episode can also be downloaded from this repository's releases section.
+
+### Installation
+To install the game, simply unzip the downloaded file and run the executable file titled "Pandemonium FPS.exe". 
 
 ## Features
 - Stylized old-school graphics, with added overlay filters which can be toggled on/off.
-- Two enemy and weapon types, with more on the way
+- Three enemy and weapon types
 - Health and ammo pickups
-- Customizable game/episode title, map packs, level textures and endgame messages
+- Level layout, enemy behavior, story text etc. customization support with [my level editor desktop app](https://github.com/mmmdule/RetroFPS-LevelEditor).
 
-## Map Editor
-Maps are currently read from a bitmap files stored in the game's StreamingAssets folder. Each pixel on the grid represents an object type which is instantiated during gameplay. 
+## System requirements
+**Operating system**: Windows 10 (64-bit)
 
-The [Map Editor desktop app](https://github.com/mmmdule/RetroFPS-LevelEditor) is coming soon, and will allow for much greater map customization with added parameter editing for every object.
+## Screenshots
+![Pandemonium FPS 2023-11-28 19-02-06-999](https://github.com/mmmdule/RetroFPS/assets/113645355/8ba9713b-ed38-4cf6-8c58-7085a818909b)
+![Pandemonium FPS 2023-11-28 19-01-51-789](https://github.com/mmmdule/RetroFPS/assets/113645355/704a7af0-9d4d-489b-9d65-5ddbb231b512)
+![Pandemonium FPS 2023-11-28 19-01-08-041](https://github.com/mmmdule/RetroFPS/assets/113645355/278a012c-2a44-4782-9269-f2c04ed35722)
+![Pandemonium FPS 2023-11-28 18-59-52-947](https://github.com/mmmdule/RetroFPS/assets/113645355/4a33e60f-2374-483d-82cc-0ea1aeae957e)
+
 
 ## Gameplay video (Older version)
 https://user-images.githubusercontent.com/113645355/232907015-cc5c44cf-72e5-4824-9f24-dcf0b61c20b5.mp4
